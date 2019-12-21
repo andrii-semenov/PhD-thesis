@@ -1,0 +1,474 @@
+\documentclass[twoside]{vakaref}
+
+\usepackage{cmap}
+\usepackage[english,russian,ukrainian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+
+\usepackage[intlimits]{amsmath}
+\allowdisplaybreaks
+\usepackage{amsthm}
+\usepackage{amssymb, amsfonts}
+\usepackage{enumerate,enumitem}
+%\usepackage{hyperref}
+\usepackage{tabularx, multirow}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{wrapfig}
+\graphicspath{{images/}}
+\usepackage{threeparttable,tablefootnote}
+\usepackage{cite}
+
+\usepackage{ulem}[normalem]
+\usepackage{xcolor}
+\usepackage{import}
+
+%\usepackage{geometry}
+%\geometry{hmargin={20mm,10mm},vmargin={20mm,20mm}}
+
+\usepackage{geometry}
+\geometry{total={12cm,17cm},includehead}
+
+
+\begin{document}
+
+\author{СЕМЕНОВ АНДРІЙ КОСТЯНТИНОВИЧ}
+
+\udc{538.956; 537.9; 544.72.05; 544.77}
+
+\title{ЕЛЕКТРОФІЗИЧНІ ВЛАСТИВОСТІ\\ БАГАТОФАЗНИХ
+ДИСПЕРСНИХ СИСТЕМ}
+
+\speciality[теоретична фізика]{01.04.02}[фізико-математичних наук]
+
+\supervisor{Сушко Мирослав Ярославович}
+  {кандидат фізико-математичних наук, доцент}
+  {доцент кафедри теоретичної фізики та астрономії, 
+  Одеський національний університет імені І.",І.",Мечникова}
+
+\institution{на кафедрі теоретичної фізики і астрономії Одеського національного університету імені {І.",І.",Мечникова}}
+
+\opponent{Кошманенко Володимир Дмитрович}
+  {доктор фізико-математичних наук, професор}
+  {Інститут математики НАН України,
+   провідний науковий співробітник відділу математичної фізики}
+
+\opponent{Назаренко Микола Олексійович}
+  {кандидат фізико-математичних наук, \linebreak[1] старший науковий співробітник}
+  {доцент кафедри математичного аналізу, Київський національний університет імені Тараса Шевченка}
+
+\council{Д~41.051.04}
+  [ОДЕСЬКИЙ НАЦІОНАЛЬНИЙ УНІВЕРСИТЕТ\\ імені {І.",І.",МЕЧНИКОВА}, МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ]
+  {Одеський національний університет імені {І.",І.",Мечникова}}
+  {65082 м.~Одеса, вул.~Пастера, 27, ОНУ імені {І.",І.",Мечникова}, Велика фізична аудиторія}
+  
+\secretary{Панько~О.",О.}{доктор фізико-математичних наук, професор}
+
+\library{Одеський національний університет імені {І.",І.",Мечниковa}}
+{65026 м.~Одеса, вул.~Преображенська, 24 та на сайті: http://theorphys.onu.edu.ua/thesises}
+
+% Дата захисту і дата розсилання автореферату
+% Відкрийте, коли готуєте варіант для ВАК уже після захисту
+%\defencedate{2007/04/24}{15:00}
+%\postdate{2007/03/23}
+
+\maketitle
+
+
+% Автореферат не має розділів, підрозділів і т. д., а лише
+% структурні частини, що позначаються командою \part
+\part{Загальна характеристика роботи}
+\import{/}{thesis_intro}
+
+
+\part{Основний зміст роботи}
+
+У {\bf Вступі} обґрунтовано актуальність теми дисертації, 
+визначені мета, завдання, об'єкт, предмет та методи 
+дослідження. Обговорені наукова новизна і практичне
+значення отриманих результатів.
+
+В {\bf першому розділі} наведено огляд деяких з основних теорій, що 
+використовуються для вивчення та аналізу електрофізичних 
+властивостей макроскопічно однорідних дисперсних систем.
+Задля простоти всі теоретичні викладки робилися для
+діелектричних двофазних систем, якщо не було зазначено інше,
+але всі приведені результати легко розповсюджуються й
+на випадок комплексної діелектричної проникності.
+Розглянуті границі Вінера~\cite{Wiener1912} та 
+Хашина-Штрікмана~\cite{HS1962} для лінійного відгуку; 
+останні більш точні для даного типу дисперсних систем, 
+та можуть бути строго отримані в рамках варіаційного
+принципу. Далі розглядаються класичні одночастинкові 
+підходи Максвела-Гарнетта~\cite{M-G1904} та ефективного середовища 
+Бруггемана~\cite{Bruggeman1935}, що досі часто використовуються та грають 
+роль бази для побудови нових теорії. Зокрема, 
+розглянуті дві модифікації підходу Бругемана: 1)
+емпіричний ``узагальнений'' підхід ефективного середовища
+Маклачлана~\cite{McLachlan1987,McLachlan1990,McLachlan1997,McLachlan2003},
+що представляє собою модифікацію закону Бругемана
+шляхом штучного введення підгінних параметрів таким 
+чином, щоб поблизу порогу перколяції задовільнялися
+скейлінгові співвідношення; 2) теорія Накамури-Нана~\cite{Nan1987,Nan1993}, 
+яка була розроблена для опису концентраційної поведінки 
+композитних електролітів, та представляє собою 
+спрощений варіант модифікації Накамури~\cite{Nakamura1984} 
+підходу Бругемана. Далі розглянуті так звані
+диференціальній~\cite{Bruggeman1935, Hanai1960, Sen1981} 
+та поступовий (incremental)~\cite{Lakhtakia1998, Michel2001}
+підходи, які є по суті розвиненнями ідеї Максвела-Гарнетта на 
+клас підходів ефективного середовища. Після цього
+розглянуті два сучасні більш послідовні підходи:
+теорія сильних флуктуацій~\cite{Bourret1962, Ryzhov1965,
+RyzhovRev, Tsang1981, Mackay2000, Mackay2001} та метод 
+компактних груп (МКГ) неоднорідностей~\cite{Sushko2004, 
+Sushko2007, Sushko2009, Sushko2017}. Обґрунтовано вибір 
+останнього методу як базового для роботи в рамках дисертації.
+
+\begin{figure}[tb]
+	\begin{center}
+		\includegraphics[height=0.5\textwidth]{Fig1_Microstructure_new5}
+	\end{center}
+	\caption{\label{fig:model-1layer}Схематичне зображення 
+		моделі тверду ядро-проникна оболонка. 
+		Розглядається макроскопічно однорідна
+		та ізотропна система сферичних частинок, що знаходяться в однорідній матриці
+		з проникністю $\hat{\varepsilon}_0$ (біла область). Кожна частинка складається з 
+		твердого (непроникного) ядра радіусом $R_1 = d/2$ та проникністю
+		$\hat{\varepsilon}_1$ (чорні області), покритого електрично однорідною концентричною проникною 
+		оболонкою товщиною $R_2 = R_1\delta_M$ та проникністю
+		$\hat{\varepsilon}_2 = \hat{\varepsilon}_2({\bf r})$ (сірі області). Всі проникності комплексні
+		та мають форму (\ref{eq:eps_complex}). Локальне значення проникності визначається відстанню від даної точки до центру найближчої частинки.}
+\end{figure}
+{\bf Другий розділ} дисертації присвячений 
+розвиненню моделі тверде ядро--проникна оболонка 
+(див. рис.~\ref{fig:model-1layer}) в рамках МКГ, 
+сформульованого для випадку квазістатичної комплексної діелектричної
+проникності. Ця модель широко відома в літературі та
+часто використовується при роботі з дисперсними системами, 
+однак її формальні реалізації навіть у найпростішому
+випадку електрично однорідних оболонок не є тривіальною
+задачею. Вже при досить невеликих концентраціях
+перекриття оболонок стає істотним, тож виникає
+питання чи вважати поляризацію кластера декількох 
+частинок з перекритими оболонками одночастинковою
+(як для частинки зі складною структурою) чи 
+багаточастинковою. Математично це пов'язано з необхідністю 
+розрахунку всіх багаточастинкових вкладів вже на етапі 
+розрахунку об'ємної концентрації таких частинок.
+Крім цього, постає питання вибору електродинмічної 
+гомогенізації такої системи. МКГ дозволяє ефективно
+впоратися з цими обома задачами у довгохвильовому наближенні.
+
+В {\bf підрозділі 2.1} робиться послідовне узагальнення МКГ 
+для немагнітних провідних систем у квазістатичному наближенні.
+Останнє позначає, що робочі частоти падаючого поля на 
+стільки малі, що будь-якими вкладами процесів діелектричних
+втрат можна знехтувати. Тоді, для таких систем у комплексному
+представленні діелектрична проникність буде мати вигляд:
+\begin{equation}\label{eq:eps_complex}
+\hat{\varepsilon} = \varepsilon + i\,\frac{4\pi\sigma}{\omega},
+\end{equation}
+де $\varepsilon$, $\sigma$ -- відповідно, низькочастотні
+дійсна частина діелектричної проникності та провідність; 
+$i$ -- уявна одиниця; символ ``хатки'' над символом 
+позначає його комплексність. Ефективна комплексна проникність 
+системи $\hat{\varepsilon}_{\rm eff}$ визначається
+як коефіцієнт пропорційності між статистичними середніми
+комплексного струму та напруженістю електричного поля:
+\begin{equation}\label{eq:eff_complex}
+\langle {\bf{J}} ({\bf{r}})\rangle =
+-i\frac{\omega}{4\pi}\langle \hat{\varepsilon} ({\bf{r}}) {\bf{E}}
+({\bf{r}}) \rangle = -i\frac{\omega}{4\pi} \hat{\varepsilon}_{\rm
+	eff} \langle {\bf{E}} ({\bf{r}}) \rangle,
+\end{equation}
+де кутові дужки відповідають за статистичне усереднення.
+Показано, що ці співвідношення легко знаходяться з
+макроскопічних рівнянь Максвела для електромагнітної хвилі 
+в середовищі та рівняння неперервності.
+
+Для знаходження $\langle {\bf{J}}\rangle$ та $\langle {\bf{E}} \rangle$
+в рамках МКГ, розглядається допоміжна система $\cal{S}$,
+що складається з реальної системи $\cal{D}$, розташованої 
+у однорідній матриці $\cal{M}$ з поки що невідомою проникністю
+$\hat{\varepsilon}_{\rm f}$. В рамках МКГ вважається,
+що у довгохвильовому наближенні відгук $\cal{S}$
+еквівалентний відгуку $\cal{D}$~\cite{Sushko2017,
+Sushko2018PRE}, тобто $\hat{\varepsilon}_{\rm f}$ є
+параметр електродинамічної гомогенізації системи.
+Сама ж система $\cal{S}$ розглядається як сукупність
+областей (компактних груп) з лінійними розмірами $d$,
+набагато меньшими за довжину хвилі $\lambda$ в системі,
+але досить великими, щоб мати властивості всієї $\cal{S}$.
+Тоді локальне значення комплексної проникності можна
+записати наступним чином:
+\begin{equation*}\label{eq:local_perm}
+\hat{\varepsilon} ({\bf r}) = \hat{\varepsilon}_{\rm f} + \delta\hat{\varepsilon} ({\bf r}),
+\end{equation*}
+де $\delta\hat{\varepsilon} ({\bf r})$ -- частково гладка функція
+локальних відхилень проникності, викликаних компактною групою
+у точці ${\bf r}$. 
+
+Середні поля знаходяться як довгохвильове
+наближення ітераційного рішення рівняння розповсюдження 
+електромагнитної хвилі в $\cal{S}$:
+\begin{equation}\label{eq:E_average}
+\langle {\bf E} ({\bf r}) \rangle = \left[ 1 + \langle \hat{Q}({\bf r}) \rangle \right] {\bf E}_0;
+\end{equation}
+\begin{equation}\label{eq:C_average}
+\langle {\bf J} ({\bf r}) \rangle = - i \frac{\omega\hat{\varepsilon}_{\rm f}}{4\pi} \left[ 1 - 2\langle \hat{Q}({\bf r}) \rangle \right] {\bf E}_0,
+\end{equation}
+де
+\begin{equation}\label{eq:Q}
+\hat{Q}({\bf r}) = -\frac{\delta\hat{\varepsilon}({\bf r})}{3\varepsilon_{\rm f} + \delta\hat{\varepsilon}({\bf r})}.
+\end{equation}
+Показано, що цей ряд є асимптотичним. 
+
+Нарешті, підставляючи вирази для середніх полів (\ref{eq:E_average}), 
+(\ref{eq:C_average}) до (\ref{eq:eff_complex}) отримаємо наступне 
+рівняння для $\varepsilon_{\rm eff}$, що залежить лише від 
+$\hat{\varepsilon}_{\rm f}$ та $\delta\hat{\varepsilon}$:
+\begin{equation}\label{eq:general_not_homogenized}
+\langle \hat{Q} \rangle = \frac{\hat{\varepsilon}_{\rm f}-\hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm f} + \hat{\varepsilon}_{\rm eff}}.
+\end{equation}
+
+Тип гомогенізації (значення параметру $\hat{\varepsilon}_{\rm f}$)
+знаходиться в {\bf підрозділі 2.2} виходячи з граничних умов 
+для нормальних компонент комплексних струмів на межі розділу
+допоміжної матриці $\cal{M}$ та гомогенізованим середовищем:
+\begin{equation}\label{eq:boundary}
+\hat{\varepsilon}_{\rm f} {\bf E}_0 = \hat{\varepsilon}_{\rm eff} \langle {\bf E}({\bf r}) \rangle.
+\end{equation}
+Користуючись цією рівністю та виразом (\ref{eq:E_average}), 
+відкидаючи нефізичні розв'язки отримано $\hat{\varepsilon}_{\rm f} = \hat{\varepsilon}_{\rm eff}$, що разом з (\ref{eq:general_not_homogenized})
+дає рівняння для $\varepsilon_{\rm eff}$:
+\begin{equation}\label{eq:general_Q}
+\langle Q ({\bf r}) \rangle = 0.
+\end{equation}
+Рівняння (\ref{eq:general_Q}) є точним у наближенні $\omega \to 0$
+для кусково-гладких функцій $\delta\hat{\varepsilon}({\bf r})$. 
+
+Модель ядро-оболонка (див. рис.~\ref{fig:model-1layer}) розвинена 
+{\bf в підрозділі 2.3} в рамках симетричного підходу
+моделювання мікроструктури системи через те, що він не робить додаткових
+припущень щодо моделювання компонентів, може бути застосований для 
+всієї концентраційної області та, як буде показано у
+Розділі~5, є більш послідовним ніж асиметричний 
+диференціальний підхід. 
+
+Спочатку розглядається випадок електрично однорідного профілю оболонки.
+Функція  $\delta\hat{\varepsilon}({\bf r})$ такої моделі
+може подаватись у вигляді ступінчатої функції, що залежить від відстані
+$l = \min\limits_{1 \leq a \leq N} |{\bf r} - {\bf r}_a|$ від даної 
+точки ${\bf r}$ до найближчої частинки, та може бути записана
+в термінах характеристичних функцій відповідних областей:
+\begin{equation}\label{eq:delta-eps-1layer}
+\delta\hat{\varepsilon} ({\bf r}) = (1 - \tilde{\chi}_2 ({\bf r})) \Delta\hat{\varepsilon}_0
++ \tilde{\chi}_1 ({\bf r}) \Delta\hat{\varepsilon}_1
++ (\tilde{\chi}_2 ({\bf r}) - \tilde{\chi}_1 ({\bf r})) \Delta\hat{\varepsilon}_2,
+\end{equation}
+де $\Delta\hat{\varepsilon}_j = [\hat{\varepsilon}_j - 
+\hat{\varepsilon}_{\rm f}]$ ($j = \{0,1,2\}$);
+$\tilde{\chi}_1$ та $\tilde{\chi}_2$ -- характеристичні
+функції, відповідно, всіх ядер (всієї чорної області на 
+рис.~\ref{fig:model-1layer}) та частинок разом з їх
+оболонками (всі чорні та сірі області). 
+Використовуючи властивості цих характеристичних функцій, моменти
+$\delta\hat{\varepsilon}$ можна записати у наступному вигляді:
+\begin{equation}\label{eq:moment-1layer}
+\langle (\delta\hat{\varepsilon})^s \rangle = (1 - \phi) (\Delta\hat{\varepsilon}_0)^s 
++ c (\Delta\hat{\varepsilon}_1)^s
++ (\phi - c) (\Delta\hat{\varepsilon}_2)^s,
+\end{equation}
+де 
+\begin{equation}\label{eq:phi-full}
+\phi = \langle \tilde{\chi}_2 ({\bf r}) \rangle = N \langle \chi_2^{(1)} ({\bf r}) \rangle
+- \frac{N(N-1)}{2} \langle \chi_2^{(1)} ({\bf r}) \chi_2^{(2)} ({\bf r}) \rangle + ...
+\end{equation}
+є об'ємною концентрацією всіх частинок разом з їх оболонками,
+та для нашої системи може бути розрахована статистичними
+методами у наближенні Кірквуда~\cite{RikvoldP.1985} 
+($\psi=(1+\delta)^{-3}$, $\phi_t = c/\psi$):
+\begin{eqnarray}
+&&\phi(c,\delta) = 1 - (1-c)\exp{\left[ -\frac{(1-\psi)\phi_t}{1-c} \right]} \times \nonumber\\
+&&\times\exp{\left[ -\frac{3c\phi_t}{2(1-c)^3} \left( 2 - 3
+	\psi^{1/3} + \psi - c \left( 3\psi^{1/3} - 6\psi^{2/3} +3\psi
+	\right) \right) \right]}.
+\label{eq:phi_pen}
+\end{eqnarray}
+
+Далі у {\bf підрозділі 2.3.1} ця модель узагальнюється на випадок
+електрично неоднорідного профілю провідності оболонок. Спершу,
+розглядається випадок частинок, що складаються з $M$ концентричних 
+однорідних оболонок, кожна $m$-а з яких має зовнішній радіус
+$R_{2,m} = R_1 (1+\delta_m)$ ($R_{m-1}<R_m$) та проникність
+$\hat{\varepsilon}_{2,m}$. Правило перекриття оболонок залишається 
+тим самим. Тоді локальні відхилення проникності можна знову ж
+таки записати в термінах характеристичних функцій:
+\begin{eqnarray}\label{eq:delta-eps-Mlayers}
+\delta\hat{\varepsilon} ({\bf r}) = (1 - \tilde{\chi}_{2,M} ({\bf r})) \Delta\hat{\varepsilon}_0
++ \tilde{\chi}_1 ({\bf r}) \Delta\hat{\varepsilon}_1
++ (\tilde{\chi}_{2,1} ({\bf r}) - \tilde{\chi}_{1} ({\bf r})) \Delta\hat{\varepsilon}_{2,1} +\nonumber\\
++ \sum\limits_{m=2}^M (\tilde{\chi}_{2,m} ({\bf r}) - \tilde{\chi}_{2,m-1} ({\bf r})) \Delta\hat{\varepsilon}_{2,m},
+\end{eqnarray}
+де $\Delta\hat{\varepsilon}_{2,m} = [\hat{\varepsilon}_{2,m} - \hat{\varepsilon}_{\rm f}]$. Користуючись властивостями 
+характеристичних функцій відповідних областей, моменти 
+$\delta\hat{\varepsilon}$ можна записати у наступному вигляді:
+\begin{equation}\label{eq:moment-Mlayer}
+\langle (\delta\hat{\varepsilon})^s \rangle = 
+(1 - \phi(c,\delta)) (\Delta\hat{\varepsilon}_0)^s + 
+c (\Delta\hat{\varepsilon}_1)^s + 
+\sum\limits_{m=1}^M (\phi(c,\delta_m) - \phi(c,\delta_{m-1})) (\Delta\hat{\varepsilon}_{2,m})^s,
+\end{equation}
+де було введено позначення $\delta_0 = 0$ ($\phi(c,\delta_0) = c$), 
+та $\phi(c,\delta_m) \equiv \langle \tilde{\chi}_{2,m} ({\bf r}) 
+\rangle$ -- об'ємна концентрація областей всіх ядер разом з їх першими
+$m$ оболонками, що для сферичних частинок дається виразом
+(\ref{eq:phi_pen}) при $\delta = \delta_m$. Нарешті переходячи до
+границь $M \to \infty$, $|\delta_{2,m} - \delta_{2,m-1}| \to 0$, 
+($\delta_M = {\rm const}$) та вимагаючи, щоб $\phi (c, \delta)$ була
+диференційована за $\delta$, для систем частинок з кусково-гладкої
+функції профілю оболонки $\hat{\varepsilon}_{2} (r)$ отримуємо:
+\begin{equation}\label{eq:moment-integral}
+\langle (\delta\hat{\varepsilon})^s \rangle = 
+(1 - \phi(c,\delta)) (\Delta\hat{\varepsilon}_0)^s + 
+c (\Delta\hat{\varepsilon}_1)^s + 
+\int\limits_{0}^{\delta_m} \frac{\partial \phi(c,u)}{\partial u} (\Delta\hat{\varepsilon}_2 (u))^s \, du,
+\end{equation}
+де $\Delta\hat{\varepsilon}_2 (u)$ є функція $\hat{\varepsilon}_2 (r) -
+\hat{\varepsilon}_{\rm f}$, що виражена в термінах змінної 
+$u = (r - R_1)/R_1$, а $\delta_M$ відповідає зовнішній границі оболонки.
+Для однорідної оболонки ($\Delta\hat{\varepsilon}_2 (u) = {\rm const}$)
+вираз (\ref{eq:moment-integral}) одразу зводиться до
+(\ref{eq:moment-1layer}) при $\delta = \delta_M = \delta_1$.
+
+Нарешті в {\bf розділі 2.4} за результатами попередніх розділів 
+надаються остаточні рівняння для $\hat{\varepsilon}_{\rm eff}$ 
+в рамках моделей з однорідною та кусково-гладкою радіально-симетричною
+неоднорідною оболонками, відповідно:
+\begin{equation}\label{eq:general_1layer_complex}
+(1 - \phi) \frac{\hat{\varepsilon}_0 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_0}
++ c \frac{\hat{\varepsilon}_1 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_1}
++ (\phi - c) \frac{\hat{\varepsilon}_2 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_2} = 0;
+\end{equation}
+\begin{equation}\label{eq:general_Contlayer_complex}
+(1 - \phi) \frac{\hat{\varepsilon}_0 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_0}
++ c \frac{\hat{\varepsilon}_1 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_1}
++ \int\limits_0^{\delta_M} \frac{\partial \phi(c,u)}{\partial u} \frac{\hat{\varepsilon}_2 (u) - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_2 (u)} du = 0.
+\end{equation}
+Зазначимо, що форма частинок грала роль лише на етапі вибору їх
+статистичного розподілу, тобто вибору функції $\phi$; в
+загальному випадку, результати (\ref{eq:general_1layer_complex}) та
+(\ref{eq:general_Contlayer_complex}) можуть бути застосовані до 
+будь-яких багатофазних макроскопічно однорідних та ізотропних систем у 
+довгохвильовому наближенні, відповідним чином вибираючи функцію $\phi$.
+
+Наостанок ці вирази були записані у квазістатичному наближенні:
+\begin{subequations}
+	\begin{equation}\label{eq:general_1layer_sigma}
+	(1 - \phi) \frac{\sigma_0 - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_0}
+	+ c \frac{\sigma_1 - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_1}
+	+ (\phi - c) \frac{\sigma_2 - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_2} = 0,
+	\end{equation}
+	\begin{equation}\label{eq:general_1layer_eps}
+	(1 - \phi) \frac{\varepsilon_0\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_0}{(2\sigma_{\rm eff} + \sigma_{0})^2} 
+	+ c \frac{\varepsilon_1\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_1}{(2\sigma_{\rm eff} + \sigma_1)^2}
+	+ (\phi - c) \frac{\varepsilon_2\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_2}{(2\sigma_{\rm eff} + \sigma_2)^2} = 0.
+	\end{equation}
+\end{subequations}
+
+\begin{subequations}
+	\begin{equation}\label{eq:general_Contlayer_sigma}
+	(1 - \phi) \frac{\sigma_0 - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_0}
+	+ c \frac{\sigma_1 - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_1}
+	+ \int\limits_0^{\delta_M} \frac{\partial \phi(c,u)}{\partial u} \frac{\sigma_2 (u) - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_2 (u)} du = 0,
+	\end{equation}
+	\begin{equation}\label{eq:general_Contlayer_eps}
+	(1 - \phi) \frac{\varepsilon_0\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_0}{(2\sigma_{\rm eff} + \sigma_{0})^2} 
+	+ c \frac{\varepsilon_1\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_1}{(2\sigma_{\rm eff} + \sigma_1)^2}
+	+ \int\limits_0^{\delta_M} \frac{\partial \phi(c,u)}{\partial u} \frac{\varepsilon_2 (u)\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_2 (u)}{(2\sigma_{\rm eff} + \sigma_2 (u))^2} du = 0.
+	\end{equation}
+\end{subequations}
+за умови
+\begin{equation}\label{eq:cond_1layer}
+|\sigma_i - \sigma_{\rm eff}| \gg \epsilon_0 \omega (\varepsilon_i + 2\varepsilon_{\rm eff}).
+\end{equation}
+Надалі розглядаються тільки такі системи, для яких ця умова виконується.
+
+В {\bf розділі 3} розроблена модель застосовується та аналізується 
+для невпорядкованих систем типу композитних електролітів на
+неорганічній та полімерній основі. Характерною особливістю цих 
+систем є наявність навколо дисперсної фази областей, що мають 
+велику провідність у порівнянні з іншими компонентами системи
+($\sigma_1, \sigma_0 \ll \sigma_2$). {\color{red}За рахунок цього концентраційна 
+поведінка провідності має немонотонний характер: .}
+
+Для аналізу основних характеристик концентраційної поведінки 
+$\sigma_{\rm eff}$ таких систем розглядалась найпростіша модель 
+композиту з електрично однорідною оболонкою ($\sigma_2(u)=const$)
+у наближенні $\sigma_1 \to 0$. 
+
+
+
+\part{Висновки}
+\import{/}{thesis_conclusion}
+
+
+\part{Список праць за темою дисертації}
+
+\import{/}{thesis_publications}
+
+
+% Список опублікованих праць за темою дисертації буде тут. Команда
+% \part "захована" всередині команди \bibliography
+%GATHER{xampl-mybib.bib}
+\bibliographystyle{gost780}
+\bibliography{disser}
+%\printbibliography
+
+%ABSTRACTS
+\bigskip
+
+\import{/}{abstract_ua}
+
+\bigskip
+
+\import{/}{abstract_ru}
+
+\bigskip
+
+\import{/}{abstract_en}
+
+
+% Випускні дані друкарні
+% Відкрити наступні два рядки, якщо потрібно на окремому аркуші
+%\newpage
+%\pagestyle{empty}
+\parindent0pt
+
+\hbox{}
+\vfill
+
+
+
+\begin{center}
+%\hrulefill
+
+% Це приклад з друкарні Інституту математики НАН України
+% Тут користувач вписує "свої" дату, к-сть друкованих аркушів,
+% (можливо тираж), номер замовлення і адресу друкарні
+Підп. до друку ??.??.????. Формат $60\times84/16$.\\
+Гарн. Таймс. Умов.-друк. арк. ??. Тираж 100 прим.\\
+Зам. № ???.
+
+%\hrulefill
+\bigskip
+Видавець і виготовлювач:\\
+{\bf Одеський національний університет\\ імені І.",І.",Мечникова}
+\bigskip
+
+Україна, 65082, м. Одеса, вул. Єлісаветинська, 12\\
+Тел.: (048) 723 28 39. E-mail: druk@onu.edu.ua\\
+Свідоцтво ДК № 4215 від 22.11.2011 р.
+
+\end{center}
+\end{document}
