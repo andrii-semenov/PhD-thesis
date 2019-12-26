@@ -26,11 +26,9 @@
 %% To put cites into this list, use \citeNew.
 %\newcites{New}{The other list}
 
-%\usepackage[sorting=none, backend=biber]{biblatex} % load the package
-%\addbibresource{references.bib} % add a bib-reference file
 
 \usepackage{geometry}
-\geometry{hmargin={20mm,10mm},vmargin={20mm,20mm}}
+\geometry{hmargin={30mm,10mm},vmargin={20mm,20mm}}
 
 
 
@@ -57,6 +55,9 @@
 
 %\chapter*{Аннотація}
 \import{/}{abstract_ua}
+
+\newpage
+\import{/}{abstract_ru}
 
 \newpage
 \import{/}{abstract_en}
@@ -100,23 +101,23 @@
 
 ТСФ -- теорія сильних флуктуацій
 
-RRN -- random resistor network
+RRN -- Random Resistor Network
 
 $\varepsilon$ -- дійсна частина квазістатичної діелектричної проникності
 
 $\sigma$ -- статична провідність
 
-$\omega$ -- циклічна частота падаючого поля
+$\omega$ -- циклічна частота поля
 
-$\hat{\varepsilon}$ -- комплексна діелектрична проникність
+$\hat{\varepsilon}$ -- комплексна квазістатична діелектрична проникність
 
-$c$ -- об'ємна концентрація твердих частинок (ядер)
+$c$ -- об'ємна концентрація твердих ядер частинок
 
 $\phi$ -- об'ємна концентрація ядер разом з оболонками
 
 $\delta$ -- відношення товщини оболонки до радіусу ядра
 
-$\delta\hat{\varepsilon}({\bf r})$ -- локальні відхилення комплексної проникності, створювані компактними групами 
+$\delta\hat{\varepsilon}({\bf r})$ -- локальні відхилення комплексної проникності за рахунок компактних груп 
 
 
 \chapter*{Вступ}
@@ -3706,7 +3707,7 @@ $\varepsilon_{\rm eff}$ при інших концентраціях.
 
 
 %\begin{bibset}{Список використаних джерел}
-\bibliographystyle{gost780}
+\bibliographystyle{bibgosts/gost780}
 %\bibliographystyle{ugost2003}
 %\bibliographystyle{unsrt}%abbrv or plain - alphaeticaly
 \bibliography{disser}
