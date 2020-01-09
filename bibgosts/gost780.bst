@@ -842,7 +842,7 @@ INTEGERS { nameptr namesleft numnames }
 
 FUNCTION {format.names}
 {
-  #1 "{vv~}{ll}{~jj}{,~f.}" format.name$
+  #1 "{vv~}{ll}{~jj}{,~ff}" format.name$
 }
 
 
@@ -943,7 +943,9 @@ FUNCTION {format.compiler.after}
 FUNCTION {format.title}
 { title empty$
     { "" }
-    { title "t" change.case$ }
+    { title 
+      %"t" change.case$ 
+    }
   if$
 }
 
@@ -1336,7 +1338,7 @@ FUNCTION {author.before}
 {
   author empty$
     'skip$
-    {author num.names$ #4 <
+    {author num.names$ #5 <
       {format.authors output
        new.sentence}
       'skip$

@@ -1,9 +1,9 @@
 \documentclass[twoside]{vakaref}
 
 \usepackage{cmap}
-\usepackage[english,russian,ukrainian]{babel}
 \usepackage[T2A]{fontenc}
 \usepackage[cp1251]{inputenc}
+\usepackage[english,russian,ukrainian]{babel}
 
 \usepackage[intlimits]{amsmath}
 \allowdisplaybreaks
@@ -22,11 +22,9 @@
 \usepackage{xcolor}
 \usepackage{import}
 
-%\usepackage{geometry}
-%\geometry{hmargin={20mm,10mm},vmargin={20mm,20mm}}
-
 \usepackage{geometry}
-\geometry{total={12cm,17cm},includehead}
+%\geometry{total={12cm,17cm},includehead}
+\geometry{hmargin={20mm,10mm},vmargin={20mm,20mm}}
 
 
 \begin{document}
@@ -79,7 +77,7 @@
 \part{Загальна характеристика роботи}
 \import{/}{thesis_intro}
 
-
+\newpage
 \part{Основний зміст роботи}
 
 У {\bf Вступі} обґрунтовано актуальність теми дисертації, 
@@ -90,22 +88,22 @@
 В {\bf першому розділі} наведено огляд деяких з основних теорій, що 
 використовуються для вивчення та аналізу електрофізичних 
 властивостей макроскопічно однорідних та ізотропних дисперсних 
-систем: теорія перколяції (ТП) для квазістатичної провідності й
-проникності; класичні одночастинкові підходи Максвела-Гарнетта (ММГ)
-та Бруггемана (СМБ), що досі часто використовуються 
+систем: теорія перколяції для квазістатичної провідності й
+проникності; класичні одночастинкові підходи Максвела-Гарнетта
+та Бруггемана, що досі часто використовуються 
 та грають роль бази для побудови нових теорії, з яких розглянута
-теорія Накамури Нана Вічорека (ТННВ) для опису концентраційної поведінки 
+теорія Накамури Нана Вічорека для опису концентраційної поведінки 
 композитних електролітів; диференціальній та поступовий
 (incremental) підходи (DS); багаточастинкові теорія сильних флуктуацій
 властивостей (strong-property-fluctuation theory, SPFT) та
 метод компактних груп неоднорідностей (МКГ); 
-межі Хашина-Штрікмана (МХШ) для лінійного відгуку, яким повинна
+межі Хашина-Штрікмана для лінійного відгуку, яким повинна
 задовільняти кожна теорія для опису невпорядкованих дисперсних 
 систем. 
 
 \begin{figure}[tb]
 	\begin{center}
-		\includegraphics[height=0.45\textwidth]{Fig1_Microstructure_new5}
+		\includegraphics[height=0.43\textwidth]{Fig1_Microstructure_new5}
 	\end{center}
 	\caption{\label{fig:model-1layer}Схематичне зображення моделі $\cal{D}$ системи невпорядкованих частинок з морфологією тверде ядро--проникна оболонка. 
 		Розглядається макроскопічно однорідна та ізотропна система сферичних частинок, що знаходяться в однорідній матриці з проникністю $\hat{\varepsilon}_0$ (біла область). Кожна частинка складається з 
@@ -116,7 +114,8 @@
 для опису квазістатичної ефективної комплексної діелектричної 
 проникності немагнітних провідних систем невпорядкованих частинок
 з морфологією тверде ядро--проникна оболонка 
-(див. рис.~\ref{fig:model-1layer}) в рамках МКГ. 
+(див. рис.~\ref{fig:model-1layer}) в рамках МКГ
+\cite{Sushko2007,Sushko2009,SushkoJPD2009,Sushko2017}. 
 Ця модель широко відома в літературі та
 часто використовується при роботі з дисперсними системами, 
 однак її формальні реалізації навіть у найпростішому
@@ -172,7 +171,7 @@ $\hat{\varepsilon}_{\rm f}$. Вважається, що відгук $\cal{S}$
 лінійними розмірами $D$ набагато меншими за довжину хвилі 
 $\lambda$ в $\cal{M}$, але досить великими, щоб мати 
 властивості всієї $\cal{S}$. Тоді локальне значення комплексної 
-проникності можна записати наступним чином:
+проникності можна записати як:
 \begin{equation}\label{eq:local_perm}
 \hat{\varepsilon} ({\bf r}) = \hat{\varepsilon}_{\rm f} + \delta\hat{\varepsilon} ({\bf r}),
 \end{equation}
@@ -192,19 +191,10 @@ $\lambda$ в $\cal{M}$, але досить великими, щоб мати
 \begin{equation}\label{eq:Q}
 \hat{Q}({\bf r}) = \sum\limits_{s=1}^{\infty} \left( - \frac{1}{3\hat{\varepsilon}_{\rm f}} \right)^s (\delta\hat{\varepsilon}({\bf r}))^s.
 \end{equation}
-Далі показано, що цей ряд можна трактувати як асимптотичний для
-\begin{equation}\label{eq:Q-direct}
-\hat{Q}({\bf r}) = -\frac{\delta\hat{\varepsilon}({\bf r})}{3\varepsilon_{\rm f} + \delta\hat{\varepsilon}({\bf r})}.
-\end{equation}
-
-Нарешті, підставляючи вирази для середніх полів (\ref{eq:E_average}), 
-(\ref{eq:C_average}) до (\ref{eq:eff_complex}) отримано наступне 
-рівняння для $\varepsilon_{\rm eff}$, що залежить лише від 
-$\hat{\varepsilon}_{\rm f}$ та $\delta\hat{\varepsilon}$:
-\begin{equation}\label{eq:general_not_homogenized}
-\langle \hat{Q}({\bf r}) \rangle 
-= -\frac{\hat{\varepsilon}_{\rm eff} - \hat{\varepsilon}_{\rm f}}{2\hat{\varepsilon}_{\rm f} + \hat{\varepsilon}_{\rm eff}}.
-\end{equation}
+%Далі показано, що цей ряд можна трактувати як асимптотичний для
+%\begin{equation}\label{eq:Q-direct}
+%\hat{Q}({\bf r}) = -\frac{\delta\hat{\varepsilon}({\bf r})}{3\varepsilon_{\rm f} + \delta\hat{\varepsilon}({\bf r})}.
+%\end{equation}
 
 Значення $\hat{\varepsilon}_{\rm f}$ знаходиться в 
 {\bf підрозділі 2.2} виходячи з граничних умов 
@@ -214,12 +204,12 @@ $\hat{\varepsilon}_{\rm f}$ та $\delta\hat{\varepsilon}$:
 \hat{\varepsilon}_{\rm f} {\bf E}_{0n} = \hat{\varepsilon}_{\rm eff} \langle {\bf E}({\bf r}) \rangle_n.
 \end{equation}
 Користуючись цією рівністю та виразом (\ref{eq:E_average}), 
-відкидаючи нефізичні розв'язки отримано $\hat{\varepsilon}_{\rm f} = \hat{\varepsilon}_{\rm eff}$, що разом з (\ref{eq:general_not_homogenized})
+відкидаючи нефізичні розв'язки отримано $\hat{\varepsilon}_{\rm f} = \hat{\varepsilon}_{\rm eff}$, що разом з (\ref{eq:eff_complex})
 дає рівняння для $\varepsilon_{\rm eff}$:
 \begin{equation}\label{eq:general_Q}
 \langle \hat{Q}({\bf r}) \rangle = 0.
 \end{equation}
-Рівняння (\ref{eq:general_Q}) є строгим у наближенні $\omega \to 0$. 
+Рівняння (\ref{eq:general_Q}) є строгим у статичному наближенні. 
 
 Модель ядро-оболонка (див. рис.~\ref{fig:model-1layer}) в 
 термінах $\delta\hat{\varepsilon}({\bf r})$ розвинена 
@@ -228,16 +218,17 @@ $\hat{\varepsilon}_{\rm f}$ та $\delta\hat{\varepsilon}$:
 При цьому вважалося, що локальне значення комплексної проникності 
 $\hat{\varepsilon}({\bf r})$ залежить від відстані 
 $l = \min\limits_{1 \leq a \leq N} |{\bf r} - {\bf r}_a|$ 
-від даної точки ${\bf r}$ до центру найближчої частинки:
-\begin{equation}
-	\hat{\varepsilon}({\bf r}) = \left\{ 
-	\begin{array}{l}
-	\hat{\varepsilon}_1, l<R_1,   \\
-	\hat{\varepsilon}_2, R_1 < l < R_2,  \\
-	\hat{\varepsilon}_0, l > R_2.
-	\end{array}    
-	\right. 
-\end{equation}
+від даної точки ${\bf r}$ до центру найближчої частинки та
+визначається одночастинковим профілем останньої.
+%\begin{equation}
+%	\hat{\varepsilon}({\bf r}) = \left\{ 
+%	\begin{array}{l}
+%	\hat{\varepsilon}_1, l<R_1,   \\
+%	\hat{\varepsilon}_2, R_1 < l < R_2,  \\
+%	\hat{\varepsilon}_0, l > R_2.
+%	\end{array}    
+%	\right. 
+%\end{equation}
 Тоді $\delta\hat{\varepsilon}({\bf r})$ можна записати 
 в термінах характеристичних функцій відповідних областей:
 \begin{equation}\label{eq:delta-eps-1layer}
@@ -250,8 +241,8 @@ $l = \min\limits_{1 \leq a \leq N} |{\bf r} - {\bf r}_a|$
 $\tilde{\chi}_1$ та $\tilde{\chi}_2$ -- характеристичні
 функції, відповідно, всіх ядер (всієї чорної області на 
 рис.~\ref{fig:model-1layer}) та частинок разом з їх
-оболонками (всі чорні та сірі області). Зі визначенням
-$\tilde{\chi}_1$ та $\tilde{\chi}_2$ виконуються співвідношення
+оболонками (всі чорні та сірі області). За визначенням
+$\tilde{\chi}_1$ та $\tilde{\chi}_2$, виконуються співвідношення
 $\tilde{\chi}_1\tilde{\chi}_2 = 0$, 
 $(\tilde{\chi}_1)^s = \tilde{\chi}_1$,
 $(\tilde{\chi}_2)^s = \tilde{\chi}_2$,
@@ -270,7 +261,7 @@ $(\tilde{\chi}_2)^s = \tilde{\chi}_2$,
 наближення Кірквуда~\cite{RikvoldP.1985}:
 \begin{equation}\label{eq:phi_pen}
 \begin{split}
-\phi(c,\delta) &= 1 - (1-c)\exp{\left[ -\frac{(1-\psi)\phi_t}{1-c} \right]} \times \\
+\phi(c,&\delta) = 1 - (1-c)\exp{\left[ -\frac{(1-\psi)\phi_t}{1-c} \right]} \times \\
 &\times\exp{\left[ -\frac{3c\phi_t}{2(1-c)^3} \left( 2 - 3
 	\psi^{1/3} + \psi - c \left( 3\psi^{1/3} - 6\psi^{2/3} +3\psi
 	\right) \right) \right]},
@@ -281,26 +272,26 @@ $(\tilde{\chi}_2)^s = \tilde{\chi}_2$,
 \phi_t = c (1+\delta)^3 = c/\psi
 \end{equation}
 є об'ємною концентрацією ядер з твердими оболонками ($\psi=(1+\delta)^{-3}$).
-Авторами стверджується, що цей результат є точним в даному наближенні.
-Крім цього, він добре узгоджується з розрахунками методами
-Монте-Карло~\cite{Rotter2003}.
+Авторами стверджується, що результат є точним в даному наближенні.
+%Крім цього, він добре узгоджується з розрахунками методами
+%Монте-Карло~\cite{Rotter2003}.
 
 Далі модель була узагальнена на випадок електрично неоднорідних  
 оболонок. Спершу, розглядається випадок частинок, що складаються 
 з $M$ концентричних однорідних оболонок, кожна $m$-а з яких має 
 зовнішній радіус $R_{2,m} = R_1 (1+\delta_m)$ ($R_{m-1}<R_m$) та 
 проникність $\hat{\varepsilon}_{2,m}$; $\hat{\varepsilon}({\bf r})$
-знову ж таки залежить від $l$:
-\begin{equation}\label{eq:local-perm-Mlayers}
-\hat{\varepsilon} ({\bf r}) = \left\{ 
-\begin{array}{ll}
-\hat{\varepsilon}_0, & l > R_{2,M},\\
-\hat{\varepsilon}_1, & l < R_1,\\
-\hat{\varepsilon}_{2,1}, & R_1 < l < R_{2,1},\\
-\hat{\varepsilon}_{2,m}, & R_{2,m-1} < l < R_{2,m},\,\, 2 \leq m \leq M,
-\end{array}
-\right.
-\end{equation}
+знову ж таки залежить від $l$ за тим самим правилом.
+%\begin{equation}\label{eq:local-perm-Mlayers}
+%\hat{\varepsilon} ({\bf r}) = \left\{ 
+%\begin{array}{ll}
+%\hat{\varepsilon}_0, & l > R_{2,M},\\
+%\hat{\varepsilon}_1, & l < R_1,\\
+%\hat{\varepsilon}_{2,1}, & R_1 < l < R_{2,1},\\
+%\hat{\varepsilon}_{2,m}, & R_{2,m-1} < l < R_{2,m},\,\, 2 \leq m \leq M,
+%\end{array}
+%\right.
+%\end{equation}
 Тоді $\delta\hat{\varepsilon}({\bf r})$:
 \begin{equation}\label{eq:delta-eps-Mlayers}
 \begin{split}
@@ -312,25 +303,26 @@ $(\tilde{\chi}_2)^s = \tilde{\chi}_2$,
 \end{equation}
 де $\Delta\hat{\varepsilon}_{2,m} = [\hat{\varepsilon}_{2,m} - \hat{\varepsilon}_{\rm f}]$; $\tilde{\chi}_{2,m} ({\bf r})$ --
 багаточастинкові характеристичні функції відповідних областей. 
-Користуючись властивостями цих функцій, моменти 
-$\delta\hat{\varepsilon}$ можна записати у наступному вигляді:
-\begin{equation}\label{eq:moment-Mlayer}
-\begin{split}
-\langle (\delta\hat{\varepsilon})^s \rangle =& 
-(1 - \phi(c,\delta)) (\Delta\hat{\varepsilon}_0)^s + 
-c (\Delta\hat{\varepsilon}_1)^s + \\
-&+\sum\limits_{m=1}^M (\phi(c,\delta_m) - \phi(c,\delta_{m-1})) (\Delta\hat{\varepsilon}_{2,m})^s,
-\end{split}
-\end{equation}
-де було введено позначення $\delta_0 = 0$ ($\phi(c,\delta_0) = c$), 
-та $\phi(c,\delta_m) \equiv \langle \tilde{\chi}_{2,m} ({\bf r}) 
-\rangle$ -- об'ємна концентрація областей всіх ядер разом з їх першими
-$m$ оболонками, що для сферичних частинок дається виразом
-(\ref{eq:phi_pen}) при $\delta = \delta_m$. Переходячи до
+%Користуючись властивостями цих функцій, моменти 
+%$\delta\hat{\varepsilon}$ можна записати у наступному вигляді:
+%\begin{equation}\label{eq:moment-Mlayer}
+%\begin{split}
+%\langle (\delta\hat{\varepsilon})^s \rangle =& 
+%(1 - \phi(c,\delta)) (\Delta\hat{\varepsilon}_0)^s + 
+%c (\Delta\hat{\varepsilon}_1)^s + \\
+%&+\sum\limits_{m=1}^M (\phi(c,\delta_m) - \phi(c,\delta_{m-1})) (\Delta\hat{\varepsilon}_{2,m})^s,
+%\end{split}
+%\end{equation}
+%де були введені позначення $\delta_0 = 0$ ($\phi(c,\delta_0) = c$), 
+%та $\phi(c,\delta_m) \equiv \langle \tilde{\chi}_{2,m} ({\bf r}) 
+%\rangle$ -- об'ємна концентрація областей всіх ядер разом з їх першими
+%$m$ оболонками, що для сферичних частинок дається виразом
+%(\ref{eq:phi_pen}) при $\delta = \delta_m$. 
+Переходячи до
 границь $M \to \infty$, $|\delta_{2,m} - \delta_{2,m-1}| \to 0$, 
 ($\delta_M = {\rm const}$) та вимагаючи, щоб $\phi (c, \delta)$ була
 диференційована за $\delta$, для систем частинок з кусково-гладкої
-функції профілю оболонки $\hat{\varepsilon}_{2} (r)$ отримуємо:
+функції профілю оболонки $\hat{\varepsilon}_{2} (r)$ отримано:
 \begin{equation}\label{eq:moment-integral}
 \langle (\delta\hat{\varepsilon})^s \rangle = 
 (1 - \phi(c,\delta)) (\Delta\hat{\varepsilon}_0)^s + 
@@ -344,40 +336,42 @@ $u = (r - R_1)/R_1$, а $\delta_M$ відповідає зовнішній границі оболонки.
 вираз (\ref{eq:moment-integral}) одразу зводиться до
 (\ref{eq:moment-1layer}) при $\delta = \delta_M = \delta_1$.
 
-В {\bf розділі 2.4} за результатами попередніх розділів 
+В {\bf підрозділі 2.4} за отриманими результатами попередніх розділів 
 надаються остаточні рівняння для $\hat{\varepsilon}_{\rm eff}$ 
-в рамках моделей з однорідною та кусково-гладкою радіально-симетричною
-неоднорідною оболонками, відповідно:
-\begin{equation}\label{eq:general_1layer_complex}
-(1 - \phi) \frac{\hat{\varepsilon}_0 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_0}
-+ c \frac{\hat{\varepsilon}_1 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_1}
-+ (\phi - c) \frac{\hat{\varepsilon}_2 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_2} = 0;
-\end{equation}
+в рамках моделей з однорідною та радіально-симетричною 
+неоднорідною оболонками, першу з яких легко отримати з останньої:
+%\begin{equation}\label{eq:general_1layer_complex}
+%(1 - \phi) \frac{\hat{\varepsilon}_0 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_0}
+%+ c \frac{\hat{\varepsilon}_1 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_1}
+%+ (\phi - c) \frac{\hat{\varepsilon}_2 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_2} = 0;
+%\end{equation}
 \begin{equation}\label{eq:general_Contlayer_complex}
 (1 - \phi) \frac{\hat{\varepsilon}_0 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_0}
 + c \frac{\hat{\varepsilon}_1 - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_1}
-+ \int\limits_0^{\delta_M} \frac{\partial \phi(c,u)}{\partial u} \frac{\hat{\varepsilon}_2 (u) - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_2 (u)} du = 0.
++ \int\limits_0^{\delta_M} \frac{\partial \phi(c,u)}{\partial u} \frac{\hat{\varepsilon}_2 (u) - \hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm eff} + \hat{\varepsilon}_2 (u)} du = 0,
 \end{equation}
+підставляючи $\hat{\varepsilon}_2 (u) = const$.
 Зазначимо, що форма частинок грала роль лише на етапі вибору їх
-статистичного розподілу, тобто вибору функції $\phi$; в
-загальному випадку, результати (\ref{eq:general_1layer_complex}) та
-(\ref{eq:general_Contlayer_complex}) можуть бути застосовані до 
-будь-яких багатофазних макроскопічно однорідних та ізотропних систем у 
-довгохвильовому наближенні, відповідним чином вибираючи функцію $\phi$.
+статистичного розподілу, тобто вибору $\phi$; в
+загальному випадку, результат (\ref{eq:general_Contlayer_complex}) 
+може бути застосовані до будь-яких багатофазних макроскопічно 
+однорідних та ізотропних систем у квазістатичному наближенні, 
+при належному виборі $\phi$.
 
-Наостанок ці вирази були записані у квазістатичному наближенні:
-\begin{subequations}
-	\begin{equation}\label{eq:general_1layer_sigma}
-	(1 - \phi) \frac{\sigma_0 - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_0}
-	+ c \frac{\sigma_1 - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_1}
-	+ (\phi - c) \frac{\sigma_2 - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_2} = 0,
-	\end{equation}
-	\begin{equation}\label{eq:general_1layer_eps}
-	(1 - \phi) \frac{\varepsilon_0\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_0}{(2\sigma_{\rm eff} + \sigma_{0})^2} 
-	+ c \frac{\varepsilon_1\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_1}{(2\sigma_{\rm eff} + \sigma_1)^2}
-	+ (\phi - c) \frac{\varepsilon_2\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_2}{(2\sigma_{\rm eff} + \sigma_2)^2} = 0.
-	\end{equation}
-\end{subequations}
+Наостанок були записані явні вирази для квазістатичних провідності та 
+діелектричної проникності:
+%\begin{subequations}
+%	\begin{equation}\label{eq:general_1layer_sigma}
+%	(1 - \phi) \frac{\sigma_0 - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_0}
+%	+ c \frac{\sigma_1 - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_1}
+%	+ (\phi - c) \frac{\sigma_2 - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_2} = 0,
+%	\end{equation}
+%	\begin{equation}\label{eq:general_1layer_eps}
+%	(1 - \phi) \frac{\varepsilon_0\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_0}{(2\sigma_{\rm eff} + \sigma_{0})^2} 
+%	+ c \frac{\varepsilon_1\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_1}{(2\sigma_{\rm eff} + \sigma_1)^2}
+%	+ (\phi - c) \frac{\varepsilon_2\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_2}{(2\sigma_{\rm eff} + \sigma_2)^2} = 0.
+%	\end{equation}
+%\end{subequations}
 
 \begin{subequations}
 	\begin{equation}\label{eq:general_Contlayer_sigma}
@@ -386,44 +380,46 @@ $u = (r - R_1)/R_1$, а $\delta_M$ відповідає зовнішній границі оболонки.
 	+ \int\limits_0^{\delta_M} \frac{\partial \phi(c,u)}{\partial u} \frac{\sigma_2 (u) - \sigma_{\rm eff}}{2\sigma_{\rm eff} + \sigma_2 (u)} du = 0,
 	\end{equation}
 	\begin{equation}\label{eq:general_Contlayer_eps}
+	\begin{split}
 	(1 - \phi) \frac{\varepsilon_0\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_0}{(2\sigma_{\rm eff} + \sigma_{0})^2} 
-	+ c \frac{\varepsilon_1\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_1}{(2\sigma_{\rm eff} + \sigma_1)^2}
-	+ \int\limits_0^{\delta_M} \frac{\partial \phi(c,u)}{\partial u} \frac{\varepsilon_2 (u)\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_2 (u)}{(2\sigma_{\rm eff} + \sigma_2 (u))^2} du = 0.
+	+ c \frac{\varepsilon_1\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_1}{(2\sigma_{\rm eff} + \sigma_1)^2} +&\\
+	+ \int\limits_0^{\delta_M} \frac{\partial \phi(c,u)}{\partial u} \frac{\varepsilon_2 (u)\sigma_{\rm eff} - \varepsilon_{\rm eff}\sigma_2 (u)}{(2\sigma_{\rm eff} + \sigma_2 (u))^2} du &= 0,
+	\end{split}
 	\end{equation}
 \end{subequations}
-за умови
-\begin{equation}\label{eq:cond_1layer}
-|\sigma_i - \sigma_{\rm eff}| \gg \epsilon_0 \omega (\varepsilon_i + 2\varepsilon_{\rm eff}).
-\end{equation}
+що мають місце за умови $|\sigma_i - \sigma_{\rm eff}| \gg \epsilon_0 \omega (\varepsilon_i + 2\varepsilon_{\rm eff})$.
 Надалі розглядаються тільки такі системи, для яких ця умова виконується.
 
 Також розглянуто тип гомогенизації Максвелла-Гарнетта 
 $\hat{\varepsilon}_{\rm f} = \hat{\varepsilon}_0$ в рамках 
-досліджуваної моделі, що у квазістатичному наближенні дає наступне 
-співвідношення для $\sigma_{\rm eff}$:
+досліджуваної моделі, що не узгоджується з граничними умовами
+(\ref{eq:boundary}), але часто використовується у побудові 
+теоретичних моделей:
 \begin{equation}\label{eq:MG-core-shell-sigma}
 \frac{\sigma_{\rm eff} - \sigma_0}{2\sigma_0 + \sigma_{\rm eff}} = 
 c \frac{\sigma_1 - \sigma_0}{2\sigma_0 + \sigma_1}
 + \int\limits_0^{\delta_M} \frac{\partial \phi(c,u)}{\partial u} \frac{\sigma_2 (u) - \sigma_0}{2\sigma_0 + \sigma_2 (u)} du.
 \end{equation}
 
-В {\bf розділі 3} тестується строгість отриманого у Розділі 2 
-співвідношення між ефективною статичною провідністю та 
-геометричними й електричними параметрами системи. Щоб уникнути 
-урахування неконтрольованих експериментальних похибок та 
-різноманітних ефектів й механізмів, що можуть виникати у 
-конкретній системі, використовувалися результати числових 
-симуляцій для обраної моделі. Широкий масив даних для 
-тривимірних систем був отриманий в рамках алгоритму 
-Random Resistor Network (RRN)~\cite{Siekierski2005, 
-Siekierski2006, Siekierski2007}, де вивчалися залежності 
-провідності таких систем від об'ємної концентрації ядер 
-при різних діаметрах ядер та товщинах оболонок для двох 
-випадків: електрично однорідні оболонки~\cite{Siekierski2005,
-Siekierski2007} та електрично неоднорідними оболонками, 
-де провідність залежить від відстані до поверхні ядра 
-за Гаусовим законом~\cite{Siekierski2006}. Це викладено
-в {\bf підрозділі 3.1}, разом із самим алгоритмом RRN: 
+В {\bf розділі 3} тестуються отримані в розділі 2 співвідношення 
+(\ref{eq:general_Contlayer_sigma}) та (\ref{eq:MG-core-shell-sigma}) 
+між ефективною статичною провідністю 
+та геометричними й електричними параметрами системи. Щоб уникнути 
+урахування різноманітних ефектів, механізмів та неконтрольованих
+експериментальних похибок, що залежать від конкретного експерименту,
+використовувалися результати числових симуляцій. Широкий масив даних 
+для тривимірних систем був отриманий в рамках алгоритму 
+Random Resistor Network (RRN)~\cite{Siekierski2005, Siekierski2006,
+Siekierski2007}, де вивчалися залежності провідності систем частинок 
+з морфологією тверде ядро--проникна оболонка, для яких виконувалась 
+нерівність $\sigma_1 \ll \sigma_0 \ll \sigma_2$, від об'ємної 
+концентрації ядер при різних діаметрах 
+ядер та товщинах оболонок для двох випадків: електрично 
+однорідні оболонки~\cite{Siekierski2005, Siekierski2007} 
+та електрично неоднорідними оболонками з профілем провідності,
+задаваним радіально за Гаусовим законом~\cite{Siekierski2006}. 
+Це викладено в {\bf підрозділі 3.1}, разом із стислим описом 
+самого алгоритму RRN: 
 \begin{enumerate}[label=\alph*)]
 \item генерація досліджуваної тривимірної системи частинок з 
 морфологією тверде ядро--проникна оболонка для бажаної
@@ -431,90 +427,72 @@ Siekierski2007} та електрично неоднорідними оболонками,
 \item генерація системи кубічних комірок виходячи з попередньо 
 згенерованої моделі, за умови, що об'ємна концентрація $c'$ 
 комірок, що відповідають ядрам, дорівнює $c$; 
-\item побудова ґратки резисторів на основі отриманої системи
-кубів, розглядаючи кожні дві сусідні комірки.
+\item побудова ґратки резисторів, властивості яких сформовані 
+розглядаючи відповідні дві сусідні комірки.
 \end{enumerate}
-Використані
-параметри симуляцій представлені в Таблиці~\ref{tab:RRN-exper-params}.
-\begin{table}[bt]
-	\begin{center}%\centering
-		\caption{\label{tab:RRN-exper-params} Значення провідності відповідних компонент системи в С/см, що використовувались в числових експериментах RRN~\cite{Siekierski2005, Siekierski2006, Siekierski2007}.}
-		\begin{tabular}{|l|c|c|c|c|c|}
-			\hline
-			Експерименти  & $\sigma_0$ & $\sigma_1$ & $\sigma_2$ & $\sigma_{\rm min}^\prime$ & $\sigma_{\rm max}^\prime$ \\
-			\hline
-			\cite{Siekierski2005,Siekierski2007}  & $1\times 10^{-8}$ & $1\times 10^{-12}$ & $1\times 10^{-4}$     & & \\
-			\hline
-			\cite{Siekierski2006}  & $1\times 10^{-8}$ & $1\times 10^{-12}$ &   & $1\times 10^{-6}$ & $1\times 10^{-4}$\\
-			\hline
-		\end{tabular}
-	\end{center}
-\end{table}
+Використані параметри симуляцій представлені в тексті дисертації.
+%Таблиці~\ref{tab:RRN-exper-params}.
+%\begin{table}[bt]
+%	\begin{center}%\centering
+%		\caption{\label{tab:RRN-exper-params} Значення провідності відповідних компонент системи в С/см, що використовувались в числових симуляціях RRN~\cite{Siekierski2005, Siekierski2006, Siekierski2007}.}
+%		\begin{tabular}{|l|c|c|c|c|c|}
+%			\hline
+%			Експерименти  & $\sigma_0$ & $\sigma_1$ & $\sigma_2$ & $\sigma_{\rm min}^\prime$ & $\sigma_{\rm max}^\prime$ \\
+%			\hline
+%			\cite{Siekierski2005,Siekierski2007}  & $1\times 10^{-8}$ & $1\times 10^{-12}$ & $1\times 10^{-4}$     & & \\
+%			\hline
+%			\cite{Siekierski2006}  & $1\times 10^{-8}$ & $1\times 10^{-12}$ &   & $1\times 10^{-6}$ & $1\times 10^{-4}$\\
+%			\hline
+%		\end{tabular}
+%	\end{center}
+%\end{table}
 
 Треба зазначити, що переходи між системами а)$\to$б) та б)$\to$в)
 не передбачають зберігання повної еквівалентності як геометричних
-так і електричних параметрів, тож й електричні відгуки систем
-а) й в) не будуть еквівалентні без врахування перших. В дисертаційній 
-роботі розглядається тільки перехід від а) до б), як найважливіший
-(при переході б)$\to$в) сусідні комірки, що знаходяться на межах фаз,
-будуть створювати додаткові шари з відповідними провідностями та
-товщиною в одну комірку).
+так і електричних параметрів:
+%, тож й електричні відгуки систем
+%а) й в) не будуть еквівалентні без врахування перших. 
+при переході а)$\to$б) об'ємна концентрація матеріалу оболонок
+буде змінюватися через те, що розміри сферичних частинок та 
+кубічних комірок співрозмірні; при переході б)$\to$в) сусідні 
+комірки, що знаходяться на межах фаз, будуть створювати додаткові 
+шари з відповідними провідностями та товщиною в одну комірку.
 
+В дисертаційній роботі розглядається проблема еквівалентності 
+лише а) та б), як більш вагома.
 В {\bf підрозділі~3.1.1} показано, що, якщо виконується рівність 
-$c=c'$, відносна товщина $\delta$ у вхідній системі а) пов'язана
-з відносною товщиною $\delta'$ в системі б) наступним чином:
+$c=c'$, відносна товщина $\delta$ у системі а) дорівнює
+відносній товщині $\delta'$ в системі б) з точністю до
+коефіцієнту $K$:
 \begin{equation}\label{eq:K-delta-def}
-\delta' = K^{-1} \delta,
+\delta' = K^{-1} \delta; \qquad k = (\pi/6)^{1/3} \leq K \leq 1.
 \end{equation}
-де $K$ -- параметр переходу ($k \leq K \leq 1$;
-$k \equiv (\pi/6)^{1/3} \approx 0.806$). Якщо на одну частинку
-припадає одна комірка, $K=k$; чим більша кількість комірок, 
-тим ближче $K$ до одиниці. В досліджуваних числових
+Якщо на одну частинку
+припадає одна комірка, то $K=k$; чим більша кількість комірок, 
+тим ближче $K$ до одиниці. В досліджуваних 
 симуляціях~\cite{Siekierski2005, Siekierski2006,
 	Siekierski2007}, лінійні розміри комірки $a'$ були 
 $0.5$~мкм, а ядер $a \leq 11$~мкм, тож відхилення 
 $K$ від одиниці повинні бути помітними.
-Необхідність використання параметру $K$ при обробці
-даних симуляції підтверджується порівнянням досить точного
+Необхідність використання параметру $K$ 
+підтверджується порівнянням досить точного
 результату (\ref{eq:phi_pen}) з даними симуляцій RRN~\cite{Siekierski2007} 
-для $(\phi - c)$ (див. рис.~\ref{fig:simulations-phi-sigma-1layer2007-a},
-\ref{fig:simulations-phi-sigma-1layer2007-b}).
+для $(\phi - c)$ (див. рис.~\ref{fig:simulations-phi}).
 
-\clearpage
-\begin{figure*}[!h]
+\begin{figure*}[!htb]
 	\centering
 	\begin{subfigure}[c]{0.44\textwidth}
 		\includegraphics[width=\textwidth]{SiekierskiShell_107.eps}
-		\caption{} \label{fig:simulations-phi-sigma-1layer2007-a}
+		\caption{$d = 7$~мкм ($\blacktriangle$)} \label{fig:simulations-phi-sigma-1layer2007-a}
 	\end{subfigure}%
 	\quad
 	\begin{subfigure}[c]{0.44\textwidth}
 		\includegraphics[width=\textwidth]{SiekierskiShell_103-9.eps}
-		\caption{} \label{fig:simulations-phi-sigma-1layer2007-b}
+		\caption{$d = 3$ ($\blacklozenge$), 5 ($\blacksquare$), $9$ ($\bullet$) мкм} \label{fig:simulations-phi-sigma-1layer2007-b}
 	\end{subfigure}
-	\begin{subfigure}[c]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{Fig5_SiekierskiConductivity107a_4.eps}
-		\caption{} \label{fig:simulations-phi-sigma-1layer2007-c}
-	\end{subfigure}
-	~
-	\begin{subfigure}[c]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{SiekierskiShellConductivity_105-9.eps}
-		\caption{} \label{fig:simulations-phi-sigma-1layer2007-d}
-	\end{subfigure}
-	\caption{\label{fig:simulations-phi-sigma-1layer2007} (а), (б) Дані~\cite{Siekierski2007} з
-		об'ємної концентрації оболонок як функції концентрації ядер $c$ та їх обробка за (\ref{eq:phi_pen}) для різних $K$ в (\ref{eq:K-delta-def}) при $t = 5$~мкм; пусті точки ($\circ$) на рис.~(a) -- отримані після симуляції дані для $c'$ {\color{violet}(середньоквадратична похибка дорівнювала $\approx0.0024$)}. Неперервні лінії -- найкращі результати обробки.
-		(в), (г) Дані симуляцій~\cite{Siekierski2007} з провідності як функції концентрації ядер $c$ та їх обробка за (\ref{eq:general_1layer_sigma}) при $t = 5$~мкм та (в) різних $K$ (у відповідних позначеннях ліній з рис. (a); товста неперервна лінія -- $K=1.03k$); (г) пусті точки -- отримані результати для відповідних $\delta$ при $\phi$ взятому з симуляцій на рис. (б). Інші параметри на рис. (а), (в) $d = 7$~мкм ($\blacktriangle$); на рис. (б), (г) $d = 3$ ($\blacklozenge$), 5 ($\blacksquare$), $9$ ($\bullet$) мкм. Лінія 1 -- $\sigma_{\rm eff}$ використовуючи $\phi$ для твердих оболонок (\ref{eq:phi-hard}) при $K=1.07k$; лінія 2 -- розрахунок $\sigma_{\rm eff}$ за отриманим рівняння типу Максвелла-Гарнетта (\ref{eq:MG-core-shell-sigma}) при $K=1.03k$.}
+	\caption{\label{fig:simulations-phi} Дані~\cite{Siekierski2007} з
+		об'ємної концентрації оболонок як функції $c$ та їх обробка за (\ref{eq:phi_pen}) для різних $K$ при $t = 5$~мкм. Пусті точки ($\circ$) на рис.~(a) -- отримані після симуляції дані для $c'$. Неперервні лінії -- найкращі результати обробки.}
 \end{figure*}
-
-%\begin{figure}[tb]
-%	\centering
-%	\includegraphics[height=0.35\textwidth]{SiekierskiShell_107.eps}
-%	\qquad
-%	\includegraphics[height=0.35\textwidth]{SiekierskiShell_103-9.eps}\\
-%	\quad\quad(а)\qquad\quad\quad\qquad\qquad\qquad\qquad\qquad\qquad(б)
-%	\caption{\label{fig:simulations-phi}Дані~\cite{Siekierski2007} з
-%		об'ємної концентрації оболонок як функції концентрації ядер $c$ та їх обробка за (\ref{eq:phi_pen}) для різних $K$ в (\ref{eq:K-delta-def}) при $t = 5$~мкм та (а) $d = 7$ ($\blacktriangle$), (б) $d = 3$ ($\blacklozenge$), 5 ($\blacksquare$), та $9$ ($\bullet$) мкм; пусті точки ($\circ$) на рис.~(a) -- отримані після симуляції дані для $c'$ {\color{violet}(середньоквадратична похибка дорівнювала $\approx0.0024$)}. Неперервні лінії -- найкращі результати обробки.}
-%\end{figure}
 
 Крім цього, для систем з електрично неоднорідними оболонками
 при переході від а) до б) можуть змінюватися й параметри профілю
@@ -535,25 +513,22 @@ $$
 $$
 де $n = t/a'$ є середнє число комірок, що припадають на радіальну 
 товщину оболонки. Ці деталі не були зазначені в роботі~\cite{Siekierski2006}, тому для обробки даних за (\ref{eq:GaussianProfile}) один з 
-параметрів вибирався підгінним, а інший -- фіксованим у значенні з Таблиці
-\ref{tab:RRN-exper-params}; наразі $\sigma_{\rm max}$ був вибраний у 
-якості підгінного.
+параметрів вибирався підгінним, а інший -- фіксованим; 
+наразі $\sigma_{\rm max}$ був вибраний у якості підгінного.
 
 В {\bf підрозділі 3.2} представлена обробка результатів 
 симуляцій RRN~\cite{Siekierski2005, Siekierski2007} з
 концентраційних залежностей ефективної статичної провідності
+в рамках моделі однорідної оболонки
 при різних значеннях радіусів ядер та товщин оболонок
-згідно (\ref{eq:general_1layer_sigma}) (див.
-рис.~\ref{fig:simulations-phi-sigma-1layer2007-c},
-\ref{fig:simulations-phi-sigma-1layer2007-d} та
+(див. рис.~\ref{fig:sigma-1layer2007} та
 \ref{fig:simulations-sigma-1layer2005}). Єдиним підгінним 
 параметром виступав $K$. Зазначимо, що використання
-значень $\phi$, отриманих на рис.~\ref{fig:simulations-phi-sigma-1layer2007-a}
-та \ref{fig:simulations-phi-sigma-1layer2007-b},
+значень $\phi$, отриманих на рис.~\ref{fig:simulations-phi},
 дає трохи завищені результати, що може бути пов'язано зі 
 зменшенням об'ємної долі високопровідних оболонок при 
-переході від системи б) до в); цей ефект нехтується за рахунок
-відповідного вибору $K$. При цьому, використання $\phi$
+переході від системи б) до в); цим ефектом можна знехтувати 
+належно вибираючи значення $K$. При цьому, використання $\phi$
 для твердих оболонок (\ref{eq:phi-hard}) не дає
 бажаного навіть якісного результату (див. криву 1 на
 рис.~\ref{fig:simulations-phi-sigma-1layer2007-c}); використання
@@ -562,85 +537,96 @@ $$
 дає якісний результат (на рисунку це не видно), але далеко не 
 кількісний. 
 
-З рис.~\ref{fig:simulations-phi-sigma-1layer2007-d}, де для
-в якості значень $\phi$ були використані дані з 
-рис.~\ref{fig:simulations-phi-sigma-1layer2007-b}, видно, що при 
+\begin{figure*}[tb]
+	\centering
+	\begin{subfigure}[c]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{Fig5_SiekierskiConductivity107a_4.eps}
+		\caption{} \label{fig:simulations-phi-sigma-1layer2007-c}
+	\end{subfigure}
+	~
+	\begin{subfigure}[c]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{SiekierskiShellConductivity_105-9.eps}
+		\caption{} \label{fig:simulations-phi-sigma-1layer2007-d}
+	\end{subfigure}
+	\caption{\label{fig:sigma-1layer2007} Дані симуляцій~\cite{Siekierski2007} з провідності як функції концентрації ядер $c$ та їх обробка за (\ref{eq:general_Contlayer_sigma}) для однорідної оболонки при $t = 5$~мкм та (а) різних $K$ (у відповідних позначеннях ліній з рис.~\ref{fig:simulations-phi-sigma-1layer2007-a}; товста неперервна лінія -- $K=1.03k$); (б) пусті точки -- отримані результати для відповідних $\delta$ при $\phi$ взятому з симуляцій на рис.~\ref{fig:simulations-phi-sigma-1layer2007-b}.  Лінія 1 -- $\sigma_{\rm eff}$ використовуючи $\phi$ для твердих оболонок (\ref{eq:phi-hard}) при $K=1.07k$; лінія 2 -- розрахунок $\sigma_{\rm eff}$ за отриманим рівняння типу Максвелла-Гарнетта (\ref{eq:MG-core-shell-sigma}) при $K=1.03k$.}
+\end{figure*}
+
+
+\begin{figure*}[htb]
+	\centering
+	\begin{subfigure}[c]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{Fig6_Siekierski_HomogeneousLayers_t_fixed.eps}
+		\caption{$t = 5$~мкм; $d = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$), 11 ($\blacklozenge$)~мкм} \label{fig:simulations-sigma-1layer2005-a}
+	\end{subfigure}%
+	\quad
+	\begin{subfigure}[c]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{Fig7_Siekierski_HomogeneousLayers_d_fixed.eps}
+		\caption{$d = 5$~мкм; $t = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$), 11 ($\blacklozenge$)~мкм} \label{fig:simulations-sigma-1layer2005-b}
+	\end{subfigure}%
+	\caption{\label{fig:simulations-sigma-1layer2005}Дані симуляцій~\cite{Siekierski2005} з провідності як функції концентрації ядер $c$. Використані параметри наведені в дисертаційній роботі.} 
+\end{figure*}
+
+%\begin{table}[htb]
+%	\centering
+%	\caption{Використані параметри для обробки даних симуляцій, зображених на рис.~\ref{fig:simulations-sigma-1layer2005} за формулою (\ref{eq:general_1layer_sigma}).}
+%	\label{tab:numerical-homogeneous}
+%	\begin{tabular}{|l|l|r|r|r|r|r|}
+%		\hline
+%		\multirow{2}{*}{(а)} & $d$, мкм & 3 & 5 & 7 & 9 & 11 \\ \cline{2-7} 
+%		& $K/k$ & 1.0 & 1.05 & 1.05 & 1.07 & 1.10 \\ \hline
+%		\multirow{2}{*}{(б)} & $t$, мкм & 3 & 5 & 7 & 9 & 11 \\ \cline{2-7} 
+%		& $K/k$ & 1.08 & 1.05 & 1.06 & 1.07 & 1.06 \\ \hline
+%	\end{tabular}
+%\end{table}
+
+З рис.~\ref{fig:sigma-1layer2007} видно, що при 
 $c \gtrsim 0.07$ дані досить добре узгоджуються з теорією.
 До цієї концентрації система демонструє перколяційних перехід,
 де поріг перколяції $c_c$ в рамках нашої моделі може бути оцінений із 
 співвідношення $\phi(c_c,\delta)=1/3$ (див. Розділ~5): 
 $d = 5$~мкм -- $c_c = 0.020$ ($K/k = 1.04$), $d = 7$~мкм -- $0.034$ 
 ($K/k = 1.07$) та $d = 9$~мкм -- $0.046$ ($K/k = 1.13$).
-Поріг перколяції $c_c$ в обмежених системах є
-випадковою негаусовою величиною~\cite{Berlyand1997}, тому
-його майже неможливо помітити на даних симуляцій.
+З даних симуляцій видно, визначити $c_c$ майже неможливо, що
+пов'язано з тим, що $c_c$ в обмежених системах є
+випадковою негаусовою величиною~\cite{Berlyand1997}.
 
 Використовуючи отриманий результат також відновлені дані всіх
 десятьох серій симуляцій~\cite{Siekierski2005} (див.
 рис.~\ref{fig:simulations-sigma-1layer2005}). 
 
-%\begin{figure}[tb]
-%	\centering
-%	\includegraphics[height=0.37\textwidth]{Fig5_SiekierskiConductivity107a_4.eps}
-%	\quad
-%	\includegraphics[height=0.37\textwidth]{SiekierskiShellConductivity_105-9.eps}\\
-%	\qquad\qquad(а)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
-%	\caption{\label{fig:simulations-sigma-1layer2007}Дані симуляцій~\cite{Siekierski2007} з провідності як функції концентрації ядер $c$ та їх обробка за (\ref{eq:general_1layer_sigma}) при $t = 5$~мкм та (а) різних $K$ (у відповідних позначеннях ліній з рис.~\ref{fig:simulations-phi}(a); товста неперервна лінія -- $K=1.03k$) й $d = 7$ ($\blacktriangle$); (б) $d = 5$ ($\blacklozenge$), 7 ($\blacksquare$), and $9$ ($\bullet$)~мкм, пусті точки -- отримані результати для відповідних $\delta$ при $\phi$ взятому з симуляцій на рис.~\ref{fig:simulations-phi}(б). Лінія 1 -- $\sigma_{\rm eff}$ використовуючи $\phi$ для твердих оболонок (\ref{eq:phi-hard}) при $K=1.07k$; лінія 2 -- розрахунок $\sigma_{\rm eff}$ за отриманим рівняння типу Максвелла-Гарнетта (\ref{eq:MG-core-shell-sigma}) при $K=1.03k$.}
-%\end{figure}
-
-\begin{figure}[htb]
-	\centering
-	\includegraphics[height=0.37\textwidth]{Fig6_Siekierski_HomogeneousLayers_t_fixed.eps}
-	\quad
-	\includegraphics[height=0.37\textwidth]{Fig7_Siekierski_HomogeneousLayers_d_fixed.eps}\\
-	\qquad\qquad(а)\qquad\qquad\qquad\qquad\quad\qquad\qquad\qquad\qquad(б)
-	\caption{\label{fig:simulations-sigma-1layer2005}Дані симуляцій~\cite{Siekierski2005} з провідності як функції концентрації ядер $c$ при (а) $t = 5$~мкм та $d = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$) та 11 ($\blacklozenge$)~мкм; (б) $d = 5$~мкм та $t = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$) та 11 ($\blacklozenge$)~мкм. Використані параметри наведені в Таблиці~\ref{tab:numerical-homogeneous}. {\color{violet}Максимальна 
-	середньоквадратична відносна похибка $\Delta_\sigma$ при $c \gtrsim 0.07$ дорівнює $\approx 0.065$.}} 
-\end{figure}
-
-\begin{table}[htb]
-	\centering
-	\caption{Використані параметри для обробки даних симуляцій, зображених на рис.~\ref{fig:simulations-sigma-1layer2005} за формулою (\ref{eq:general_1layer_sigma}).}
-	\label{tab:numerical-homogeneous}
-	\begin{tabular}{|l|l|r|r|r|r|r|}
-		\hline
-		\multirow{2}{*}{(а)} & $d$, мкм & 3 & 5 & 7 & 9 & 11 \\ \cline{2-7} 
-		& $K/k$ & 1.0 & 1.05 & 1.05 & 1.07 & 1.10 \\ \hline
-		\multirow{2}{*}{(б)} & $t$, мкм & 3 & 5 & 7 & 9 & 11 \\ \cline{2-7} 
-		& $K/k$ & 1.08 & 1.05 & 1.06 & 1.07 & 1.06 \\ \hline
-	\end{tabular}
-\end{table}
-
 В {\bf підрозділі 3.2.1} робиться аналіз екстремальної поведінки
-$\sigma_{\rm eff}$ систем, для яких виконується $\sigma_1 \ll 
-\sigma_0 \ll \sigma_2$, в рамках моделі однорідної оболонки.
-Знайдено, що умова положення $c_{\rm max}$ максимуму провідності
+$\sigma_{\rm eff}$ для розглянутих симуляцій.
+Знайдено, що умова положення максимуму провідності $c_{\rm max}$
 для моделі однорідних оболонок співпадає з умовою положення
-максимум об'ємної концентрації оболонок $(\phi - c)$:
+максимум об'ємної концентрації оболонок $\phi - c$:
+%(див. рис.~\ref{fig:simulations-max-1layer2005}):
 \begin{equation}  \label{eq:maximumLocation}
 \left. \frac{\partial \phi(c,\delta)}{\partial c}\,\right|_{c = c_{\rm
 		{max}}} = 1.
 \end{equation}
-Це підтверджується даними симуляцій \cite{Siekierski2005} (див.
-рис.~\ref{fig:simulations-max-1layer2005}).
 
-\begin{figure}[htb]
-	\centering
-	\includegraphics[height=0.35\textwidth]{Siekierski_MaximumLocation.eps}
-	\quad\quad
-	\includegraphics[height=0.35\textwidth]{Siekierski_MaxConductivity.eps}\\
-	\qquad\qquad(а)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
-	\caption{\label{fig:simulations-max-1layer2005} Результати симуляцій \cite{Siekierski2005}: (а) положення максимумів провідності $c_{\rm max}$ як функція $\delta$, взяті з даних рис.~\ref{fig:simulations-sigma-1layer2005} ($\vartriangle$ -- (а) та $\blacktriangle$ -- (б)), та побудовані згідно (\ref{eq:maximumLocation}), (\ref{eq:phi_pen}) та (\ref{eq:K-delta-def}) (неперервна лінія) {\color{violet}(середньоквадратична відносна похибка дорівнює $\approx 0.073$)}; (б) значення $\sigma_{\rm max}$ як функції діаметру $d$ при фіксованих $\sigma_2$ та $t = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$) та 11 ($\blacklozenge$)~мкм та їх обробка (неперервні лінії) при $K=k$ (точкові лінії -- те ж саме для $t = 3$ та 5~мкм при $K/k = 1.15$ та 1.07, відповідно). {\color{violet}Максимальна 
-	середньоквадратична відносна похибка $\Delta_\sigma$ дорівнює $\approx 0.48$.}}
-\end{figure}
+%\begin{figure}[htb]
+%	\centering
+%	\begin{subfigure}[c]{0.36\textwidth}
+%		\includegraphics[width=\textwidth]{Siekierski_MaximumLocation.eps}
+%		\caption{} \label{fig:simulations-max-1layer2005-a}
+%	\end{subfigure}%
+%	\quad\quad
+%	\begin{subfigure}[c]{0.43\textwidth}
+%		\includegraphics[width=\textwidth]{Siekierski_MaxConductivity.eps}
+%		\caption{} \label{fig:simulations-max-1layer2005-b}
+%	\end{subfigure}%
+%	\caption{\label{fig:simulations-max-1layer2005} Результати симуляцій \cite{Siekierski2005}: (а) положення максимумів провідності $c_{\rm max}$ як функція $\delta$, взяті з даних рис.~\ref{fig:simulations-sigma-1layer2005} ($\vartriangle$ -- (а) та $\blacktriangle$ -- (б)), та побудовані згідно (\ref{eq:maximumLocation}), (\ref{eq:phi_pen}) та (\ref{eq:K-delta-def}) (неперервна лінія) {\color{violet}(середньоквадратична відносна похибка дорівнює $\approx 0.073$)}; (б) значення $\sigma_{\rm max}$ як функції діаметру $d$ при фіксованих $\sigma_2$ та $t = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$) та 11 ($\blacklozenge$)~мкм та їх обробка (неперервні лінії) при $K=k$ (точкові лінії -- те ж саме для $t = 3$ та 5~мкм при $K/k = 1.15$ та 1.07, відповідно). {\color{violet}Максимальна 
+%	середньоквадратична відносна похибка $\Delta_\sigma$ дорівнює $\approx 0.48$.}}
+%\end{figure}
 
 В {\bf підрозділі 3.3} результат (\ref{eq:general_Contlayer_sigma})
-тестується даних симуляцій RRN~\cite{Siekierski2006} для неоднорідного
+тестується на даних симуляцій RRN \cite{Siekierski2006} для неоднорідного
 гаусового профілю, проаналізованого в підрозділі~3.1.2. З урахуванням
 останнього, вдається відновити ввесь спектр даних симуляцій (див.
 рис.~\ref{fig:simulations-sigma-Glayer2006}).
-Використані значення $K$ та $\sigma_{\rm max}$ подані у
-Таблиці~\ref{tab:numerical-inhomogeneous-1}. Відхилення пов'язані
+%Використані значення $K$ та $\sigma_{\rm max}$ подані у Таблиці~\ref{tab:numerical-inhomogeneous-1}. 
+Відхилення пов'язані
 з вже вказаними ефектами: неточність кількісного визначення $c_c$
 для вибраних симуляцій; поява нових оболонок при переході б)$\to$в).
 Останнім ефектом для електрично неоднорідних оболонок неможливо вже
@@ -650,125 +636,146 @@ $\sigma_{\rm eff}$ систем, для яких виконується $\sigma_1 \ll
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[height=0.35\textwidth]{Siekierski_t_fixed.eps}
+	\begin{subfigure}[c]{0.36\textwidth}
+		\includegraphics[width=\textwidth]{Siekierski_t_fixed.eps}
+		\caption{$t = 5$~мкм; $d = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$), 11 ($\blacklozenge$)~мкм} \label{fig:simulations-sigma-Glayer2006-a}
+	\end{subfigure}%
 	\quad\quad
-	\includegraphics[height=0.36\textwidth]{Siekierski_d_fixed.eps}\\
-	\qquad\qquad(а)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
-	\caption{\label{fig:simulations-sigma-Glayer2006} Точки: результати симуляцій \cite{Siekierski2006} концентраційної залежності провідності систем частинок з гаусовим профілем оболонок при (а) $t = 5$~мкм та $d = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$) та 11 ($\blacklozenge$)~мкм; (б) $d = 5$~мкм та $t = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$) та 11 ($\blacklozenge$)~мкм. Неперервні лінії: теоретичні результати (\ref{eq:general_Contlayer_sigma}) в рамках профілю (\ref{eq:GaussianProfile}) з параметрами, що представлені у Таблиці~\ref{tab:numerical-inhomogeneous-1}.}
+	\begin{subfigure}[c]{0.36\textwidth}
+	\includegraphics[width=\textwidth]{Siekierski_d_fixed.eps}
+	\caption{$d = 5$~мкм; $t = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$), 11 ($\blacklozenge$)~мкм} \label{fig:simulations-sigma-Glayer2006-b}
+	\end{subfigure}%
+	\caption{\label{fig:simulations-sigma-Glayer2006} Точки: результати симуляцій \cite{Siekierski2006} концентраційної залежності провідності систем частинок з гаусовим профілем оболонок. Неперервні лінії: теоретичні результати (\ref{eq:general_Contlayer_sigma}) в рамках профілю (\ref{eq:GaussianProfile}).}% з параметрами, що представлені у Таблиці~\ref{tab:numerical-inhomogeneous-1}.}
 \end{figure}
 
-\begin{table}[htb]
-	\caption{\label{tab:numerical-inhomogeneous-1} Використані параметри для обробки даних симуляцій, зображених на рис.~\ref{fig:simulations-sigma-Glayer2006} за формулою (\ref{eq:general_Contlayer_sigma}) з Гаусовим профілем  (\ref{eq:GaussianProfile}) оболонок при $\sigma'_{\rm min} = \sigma_{\rm min}$, $\sigma_0 = 10^{-8}$~С/см, $\sigma_1 = 10^{-12}$~С/см.}
-	\begin{center}
-		\begin{tabular}{|l|l|r|r|r|r|r|}
-			\hline
-			\multirow{3}{*}{(а)} & $d$, мкм & 3    & 5    & 7     & 9     & 11    \\ \cline{2-7}
-			& $K/k$    & 1.09 & 1.02 & 1.13  & 1.11  & 1.09   \\ 
-			\cline{2-7}
-			& ${\rm log_{10}}\left(\sigma_{\rm max}/\sigma_{\rm min}\right)$
-			& 1.83 & 1.89 & 1.82 & 1.88 & 1.98\\
-			\hline
-			\multirow{3}{*}{(б)} & $t$, мкм & 3    & 5    & 7     & 9     & 11    \\ \cline{2-7}
-			& $K/k$    & 1.00  & 1.00  & 1.05 & 1.07 & 1.13  \\ \cline{2-7}
-			& ${\rm log_{10}}\left(\sigma_{\rm max}/\sigma_{\rm min}\right)$
-			& 1.90  & 1.89  & 1.85 & 1.85 & 1.87 \\
-			\hline
-		\end{tabular}
-	\end{center}
-\end{table}
+%\begin{table}[htb]
+%	\caption{\label{tab:numerical-inhomogeneous-1} Використані параметри для обробки даних симуляцій, зображених на рис.~\ref{fig:simulations-sigma-Glayer2006} за формулою (\ref{eq:general_Contlayer_sigma}) з Гаусовим профілем  (\ref{eq:GaussianProfile}) оболонок при $\sigma'_{\rm min} = \sigma_{\rm min}$, $\sigma_0 = 10^{-8}$~С/см, $\sigma_1 = 10^{-12}$~С/см.}
+%	\begin{center}
+%		\begin{tabular}{|l|l|r|r|r|r|r|}
+%			\hline
+%			\multirow{3}{*}{(а)} & $d$, мкм & 3    & 5    & 7     & 9     & 11    \\ \cline{2-7}
+%			& $K/k$    & 1.09 & 1.02 & 1.13  & 1.11  & 1.09   \\ 
+%			\cline{2-7}
+%			& ${\rm log_{10}}\left(\sigma_{\rm max}/\sigma_{\rm min}\right)$
+%			& 1.83 & 1.89 & 1.82 & 1.88 & 1.98\\
+%			\hline
+%			\multirow{3}{*}{(б)} & $t$, мкм & 3    & 5    & 7     & 9     & 11    \\ \cline{2-7}
+%			& $K/k$    & 1.00  & 1.00  & 1.05 & 1.07 & 1.13  \\ \cline{2-7}
+%			& ${\rm log_{10}}\left(\sigma_{\rm max}/\sigma_{\rm min}\right)$
+%			& 1.90  & 1.89  & 1.85 & 1.85 & 1.87 \\
+%			\hline
+%		\end{tabular}
+%	\end{center}
+%\end{table}
 
-В {\bf розділі 4} розроблена модель (\ref{eq:general_Contlayer_sigma})
+В {\bf розділі 4} розроблена модель 
 застосовується для обробки та аналізу даних з концентраційної та 
 температурної залежностей квазістатичної провідності невпорядкованих 
 систем типу твердих композитних та полімерних композитних електролітів. 
-Процедура обробки цих експериментальних даних описана в {\bf підрозділі~4.1}
-та передбачає використання наступних трьох різновидів одночастинкового 
-профілю:\\
-1) однорідна оболонка з провідністю $x_{2,1} = \sigma_{2,1}/\sigma_0$
-	та товщиною $\delta_1$:
-	\begin{equation}\label{eq:profilex2-uniform}
-	x_2 (u) = x_{2,1} + (1 - x_{2,1}) \theta(u - \delta_1);
-	\end{equation}
-2) подвійна або потрійна оболонки:
-	\begin{equation}\label{eq:profilex2-double}
-	x_2 (u) = x_{2,1} + (x_{2,2} - x_{2,1}) \theta(u - \delta_1) 
-	+ (1 - x_{2,2}) \theta(u - \delta_2);
-	\end{equation}
-	\begin{equation}\label{eq:profilex2-triple}
-	\begin{split}
-	x_2 (u) =& x_{2,1} + (x_{2,2} - x_{2,1}) \theta(u - \delta_1) 
-	+ (x_{2,3} - x_{2,2}) \theta(u - \delta_2) +\\
-	&+ (1 - x_{2,3}) \theta(u - \delta_3);
-	\end{split}
-	\end{equation}
-3) неперервна гладка оболонка типу сигмоїди, що ``згладжує'' дві попередні:
-	\begin{equation}\label{eq:profilex2-sigmoid2}
-	x_2 (u) = x_{2,1}^{\ast} + \frac{x^{\ast}_{2,2} - x^{\ast}_{2,1}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_1}{\alpha} \right)}}  + \frac{1 - x^{\ast}_{2,2}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_2}{\alpha} \right)}},
-	\end{equation}
-	\begin{equation}\label{eq:profilex2-sigmoid3}
-	x_2 (u) = x_{2,1}^{\ast} + \frac{x^{\ast}_{2,2} - x^{\ast}_{2,1}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_1}{\alpha} \right)}}  + \frac{x^{\ast}_{2,3} - x^{\ast}_{2,2}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_2}{\alpha} \right)}}
-	+ \frac{1 - x^{\ast}_{2,3}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_3}{\alpha} \right)}}.
-	\end{equation}
-Тут: $x_{2,i} = \sigma_{2,i}/\sigma_0$ -- відносні провідності оболонок з
-відносними товщинами $\delta_i$ (відносні відстані зовнішнього радіусу $i$-ої
-оболонки до поверхні ядра); $x^{\ast}_{2,i}$, $\delta^{\ast}_{i}$ та $\alpha$
-виступають в ролі параметрів функції профілю оболонки. У наближенні $\alpha \to 0$
-параметри $x^{\ast}_{2,i}$, $\delta^{\ast}_{i}$ прямують до $x_{2,i}$,
-$\delta_i$, а рівняння (\ref{eq:profilex2-sigmoid2}),
-(\ref{eq:profilex2-sigmoid3}) приймають вигляд (\ref{eq:profilex2-double}),
-(\ref{eq:profilex2-triple}), відповідно. Верхня межа інтегрування 
-$\delta_M$ була зафіксована у значенні 5, що не вливало на остаточні 
-результати розрахунку.
+Процедура обробки описана в {\bf підрозділі~4.1} та передбачає 
+використання трьох різновидів одночастинкового профілю 
+$x_2 (u) = \sigma_2(u)/\sigma_0$: 1) однорідна оболонка з 
+провідністю $x_{2,1} = \sigma_{2,1}/\sigma_0$ та товщиною $\delta_1$;
+2) подвійна або потрійна оболонки; 3) неперервна гладка оболонка 
+типу сигмоїд, що ``згладжує'' дві попередні.
+%\begin{enumerate}
+%	\item 
+%	однорідна оболонка з провідністю $x_{2,1} = \sigma_{2,1}/\sigma_0$
+%	та товщиною $\delta_1$:
+%	\begin{equation}\label{eq:profilex2-uniform}
+%	x_2 (u) = x_{2,1} + (1 - x_{2,1}) \theta(u - \delta_1);
+%	\end{equation}
+%	\item 
+%	подвійна або потрійна оболонки:
+%	\begin{equation}\label{eq:profilex2-double}
+%	x_2 (u) = x_{2,1} + (x_{2,2} - x_{2,1}) \theta(u - \delta_1) 
+%	+ (1 - x_{2,2}) \theta(u - \delta_2);
+%	\end{equation}
+%	\begin{equation}\label{eq:profilex2-triple}
+%	\begin{split}
+%	x_2 (u) =& x_{2,1} + (x_{2,2} - x_{2,1}) \theta(u - \delta_1) 
+%	+ (x_{2,3} - x_{2,2}) \theta(u - \delta_2) +\\
+%	&+ (1 - x_{2,3}) \theta(u - \delta_3);
+%	\end{split}
+%	\end{equation}
+%	\item 
+%	неперервна гладка оболонка типу сигмоїди, що ``згладжує'' дві попередні:
+%	\begin{equation}\label{eq:profilex2-sigmoid2}
+%	x_2 (u) = x_{2,1}^{\ast} + \frac{x^{\ast}_{2,2} - x^{\ast}_{2,1}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_1}{\alpha} \right)}}  + \frac{1 - x^{\ast}_{2,2}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_2}{\alpha} \right)}},
+%	\end{equation}
+%	\begin{equation}\label{eq:profilex2-sigmoid3}
+%	\begin{split}
+%	x_2 (u) = x_{2,1}^{\ast} + \frac{x^{\ast}_{2,2} - x^{\ast}_{2,1}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_1}{\alpha} \right)}}  + \frac{x^{\ast}_{2,3} - x^{\ast}_{2,2}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_2}{\alpha} \right)}}+\\
+%	+ \frac{1 - x^{\ast}_{2,3}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_3}{\alpha} \right)}}.
+%	\end{split}
+%	\end{equation}
+%\end{enumerate}
+%Тут: $x_{2,i} = \sigma_{2,i}/\sigma_0$ -- відносні провідності оболонок;
+%$x^{\ast}_{2,i}$, $\delta^{\ast}_{i}$ та $\alpha$
+%виступають в ролі параметрів функції профілю оболонки. 
+%У наближенні $\alpha \to 0$
+%параметри $x^{\ast}_{2,i}$, $\delta^{\ast}_{i}$ прямують до $x_{2,i}$,
+%$\delta_i$, а рівняння (\ref{eq:profilex2-sigmoid2}),
+%(\ref{eq:profilex2-sigmoid3}) приймають вигляд (\ref{eq:profilex2-double}),
+%(\ref{eq:profilex2-triple}), відповідно.
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[height=0.35\textwidth]{Fig12_Liang_LiI-Al2O3-Processing.eps}
+	\begin{subfigure}[c]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{Fig12_Liang_LiI-Al2O3-Processing.eps}
+		\caption{} \label{fig:Liang_LiI-Al2O3-Processing-a}
+	\end{subfigure}%
 	\quad
-	\includegraphics[height=0.35\textwidth]{Fig13_Liang_LiI-Al2O3-Profile.eps}\\
-	(a)\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
+	\begin{subfigure}[c]{0.35\textwidth}
+	\includegraphics[width=\textwidth]{Fig13_Liang_LiI-Al2O3-Profile.eps}\\
+	\includegraphics[width=\textwidth]{Liang-matrix-a06.eps}
+	\caption{} \label{fig:Liang_LiI-Al2O3-Processing-b}
+	\end{subfigure}%
 	\caption{\label{fig:Liang_LiI-Al2O3-Processing} (а) Експериментальні дані
 		\cite{Liang1973} ($\circ$) з $\sigma_{\rm eff}$ для ТКЕ
 		$\rm{LiI/Al_2O_3}$ та їх обробка в рамках а) однорідної
-		(\ref{eq:profilex2-uniform}) (точкова лінія), б) подвійної
-		(\ref{eq:profilex2-double}) (штрихована лінія) та в)
-		сигмойдної (\ref{eq:profilex2-sigmoid2}) (неперервна лінія)
+		(точкова лінія), б) (зверху) подвійної
+		(штрихована лінія) та в)
+		сигмойдної (неперервна лінія)
 		моделей профілів $\sigma_2(r)$. Використані параметри приведені в 
-		Таблиці~\ref{tab:Liang}. Відповідні профілі оболонок представлені на
-		рис.~(б).}
+		тексті дисертації. (б) зверху -- відповідні профілі оболонок;
+		знизу -- залежність провідності матриці
+	від $c$ (неперервна лінія) для подвійного профілю зверху (штрихована
+	лінія: поріг перколяції $c_{\rm c} \approx 0.126$).}
 \end{figure}
 
-\begin{table}[htb]
-	\caption{\label{tab:Liang} Параметри, що використовувались для обробки
-		даних \cite{Liang1973} з $\sigma_{\rm eff}$ для ТКЕ $\rm{LiI/Al_2O_3}$
-		в рамках однорідної (\ref{eq:profilex2-uniform}), подвійної
-		(\ref{eq:profilex2-double}), та сигмойдної (\ref{eq:profilex2-sigmoid2})
-		моделей профілів $\sigma_2(r)$;
-		$\sigma_0 = 2.5 \times 10^{-7}\,{\rm S/cm}$,  $x_1 = 0$.}
-	\begin{center}
-		\begin{tabular}{|l|l|l|l|l|l|}
-			\hline
-			а) & $x_2$ & $\delta$ & &  &  \\
-			& 150    & 0.5   &  &  & \\
-			\hline
-			б)  & $x_{2,1}$   &$x_{2,2}$ & $\delta_1$ & $\delta_2$ &  \\
-			& 185         & 14  & 0.40       & 1.50       &  \\
-			\hline
-			в)  & $x^{\ast}_{2,1}$    &$x^{\ast}_{2,2}$    & $\delta^{\ast}_1$ & $\delta^{\ast}_2$ &  $\alpha$ \\
-			& 185         & 12        & 0.38       & 1.41       &   0.03    \\
-			\hline
-		\end{tabular}
-	\end{center}
-\end{table}
+%\begin{table}[tb]
+%	\caption{\label{tab:Liang} Параметри, що використовувались для обробки
+%		даних \cite{Liang1973} з $\sigma_{\rm eff}$ для ТКЕ $\rm{LiI/Al_2O_3}$
+%		в рамках однорідної (\ref{eq:profilex2-uniform}), подвійної
+%		(\ref{eq:profilex2-double}), та сигмойдної (\ref{eq:profilex2-sigmoid2})
+%		моделей профілів $\sigma_2(r)$;
+%		$\sigma_0 = 2.5 \times 10^{-7}\,{\rm S/cm}$,  $x_1 = 0$.}
+%	\begin{center}
+%		\begin{tabular}{|l|l|l|l|l|l|}
+%			\hline
+%			а) & $x_2$ & $\delta$ & &  &  \\
+%			& 150    & 0.5   &  &  & \\
+%			\hline
+%			б)  & $x_{2,1}$   &$x_{2,2}$ & $\delta_1$ & $\delta_2$ &  \\
+%			& 185         & 14  & 0.40       & 1.50       &  \\
+%			\hline
+%			в)  & $x^{\ast}_{2,1}$    &$x^{\ast}_{2,2}$    & $\delta^{\ast}_1$ & $\delta^{\ast}_2$ &  $\alpha$ \\
+%			& 185         & 12        & 0.38       & 1.41       &   0.03    \\
+%			\hline
+%		\end{tabular}
+%	\end{center}
+%\end{table}
 
 В {\bf підрозділі 4.2} ця процедура застосовується до обробки 
 експериментальних даних \cite{Liang1973} концентраційної залежності
 ефективної провідності твердого композитного електроліту, що 
 складається з частинок $\rm Al_2O_3$ у матриці $\rm LiI$ 
 (див. рис.~\ref{fig:Liang_LiI-Al2O3-Processing}). Показано, що 
-дальню частину профілю на рис.~\ref{fig:Liang_LiI-Al2O3-Processing}(б) 
-можна трактувати, як ефективний прояв концентраційної залежності 
+дальню частину профілю на рис.~\ref{fig:Liang_LiI-Al2O3-Processing-b}
+зверху можна трактувати, як ефективний прояв концентраційної залежності 
 провідності матриці $\sigma^*_0 = \sigma_0(c)$ (див.
-рис.~\ref{fig:Liang_LiI-Al2O3-Matrix}), що співпадає з
+рис.~\ref{fig:Liang_LiI-Al2O3-Processing-b} знизу), що співпадає з
 концентраційною залежністю ефективної провідністю в доперколяційній 
 області. Товщина $\delta_1 \approx 0.4$ та провідність $x_{2,1}\approx 185$
 ближньої частини профілю дуже добре узгоджується з результатами
@@ -776,16 +783,16 @@ $\delta_M$ була зафіксована у значенні 5, що не вливало на остаточні
 систем~\cite{Jiang1995a,Jiang1995b}: $\delta_1 \approx 0.4$, 
 $x_{2,1}\approx 324$. 
 
-\begin{figure}[htb]
-	\centering
-	\includegraphics[height=0.3\textwidth]{Fig14_Liang_LiI-Al2O3-Matrix_2.eps}
-	\caption{\label{fig:Liang_LiI-Al2O3-Matrix} Залежність провідності матриці
-		від $c$ (неперервна лінія), згідно рівняння~(\ref{eq:sigma0-vs-c}) 
-		для подвійного профілю на рис.~\ref{fig:Liang_LiI-Al2O3-Processing}(б)
-		(та його параметрів у стрічці б) Таблиці~\ref{tab:Liang}). Штрихована
-		лінія: поріг перколяції $c_{\rm c} \approx 0.126$ у системі з
-		внутрішньою оболонкою.}
-\end{figure}
+%\begin{figure}[htb]
+%	\centering
+%	\includegraphics[height=0.3\textwidth]{Fig14_Liang_LiI-Al2O3-Matrix_2.eps}
+%	\caption{\label{fig:Liang_LiI-Al2O3-Matrix} Залежність провідності матриці
+%		від $c$ (неперервна лінія), згідно рівняння~(\ref{eq:sigma0-vs-c}) 
+%		для подвійного профілю на рис.~\ref{fig:Liang_LiI-Al2O3-Processing}(б)
+%		(та його параметрів у стрічці б) Таблиці~\ref{tab:Liang}). Штрихована
+%		лінія: поріг перколяції $c_{\rm c} \approx 0.126$ у системі з
+%		внутрішньою оболонкою.}
+%\end{figure}
 
 В {\bf підрозділі 4.3} розглядаються концентраційні та температурні 
 залежності ефективної провідності для полімерних композитних 
@@ -796,11 +803,9 @@ $x_{2,1}\approx 324$.
 непровідні ($\rm \theta Al_2O_3$) частинки, або полімер іншого
 сорту (поліакриламінід (PAAM)), що не змішується з полімером матриці.
 
-В {\bf підрозділі~4.3.1} представлена обробка концентраційної залежності
-ефективної провідності таких систем (див. рис.~\ref{fig:PEO-NaI},
-\ref{fig:OMPEO-LiClO4}). 
-Базуючись на отриманих значеннях параметрів 
-(Таблиця~\ref{tab:adjustable_params}), можна зробити висновок, 
+З представленої в {\bf підрозділі~4.3.1} обробки концентраційної 
+залежності ефективної провідності таких систем (див. рис.~\ref{fig:PEO-NaI},
+\ref{fig:OMPEO-LiClO4}), можна зробити висновок, 
 що $\sigma_{\rm eff}$ формується за рахунок наступних механізмів:
 \begin{enumerate}
 	\item Аморфізація полімерної матриці навколо частинок дисперсної фази
@@ -814,7 +819,7 @@ $x_{2,1}\approx 324$.
 \end{enumerate}
 
 Пік з подальшою западиною профіля для композиту на основі OMPEO з
-PAAM (див. рис.~\ref{fig:OMPEO-LiClO4}(б)) пояснюється тим, що якщо 
+PAAM (див. рис.~\ref{fig:OMPEO-LiClO4-b}) пояснюється тим, що якщо 
 чистий полімер, з якого складається 
 матриця, має відносно високу провідність (наприклад, аморфізований 
 OMPEO по відношенню до напівкристалічного PEO), тоді додавання 
@@ -827,13 +832,13 @@ PAAM).
 	\centering
 	\begin{subfigure}[c]{0.45\textwidth}
 		\includegraphics[width=\textwidth]{Fig2_PEO-NaI_NASICON_PEO-NaI-theta-Al2O3.eps}
-		\caption{} \label{fig:PEO-NaIa}
+		\caption{} \label{fig:PEO-NaI-a}
 	\end{subfigure}%
 	~
 	\begin{subfigure}[c]{0.38\textwidth}
 		\includegraphics[width=\textwidth]{Fig2_PEO-NaI_NASICON_Profile.eps}
 		\includegraphics[width=\textwidth]{Fig2_PEO-NaI-theta-Al2O3_Profile.eps}
-		\caption{} \label{fig:PEO-NaIb}
+		\caption{} \label{fig:PEO-NaI-b}
 	\end{subfigure}
 	\caption{\label{fig:PEO-NaI} (а) Експериментальні дані з
 		$\sigma_{\rm eff}$ як функції від $c$ для ПКЕ PEO--NaI--NASICON
@@ -842,7 +847,7 @@ PAAM).
 		($\bullet$), та їх підгонки в рамках моделей однорідної,
 		подвійної та неперервної оболонок. Позначення вказують на
 		відповідні параметри, що приведені у
-		Таблиці~\ref{tab:adjustable_params}. (б) Відповідні 
+		тексті дисертації. (б) Відповідні 
 		одночастинкові профілі провідності, що були використані 
 		для моделювання мезоскопічної структури ПКЕ.}
 \end{figure*}
@@ -851,13 +856,13 @@ PAAM).
 	\centering
 	\begin{subfigure}[c]{0.45\textwidth}
 		\includegraphics[width=\textwidth]{Fig3_PEO-PAAM_LiClO4_OMPEO-PAAM_LiClO4.eps}
-		\caption{} \label{fig:OMPEO-LiClO4a}
+		\caption{} \label{fig:OMPEO-LiClO4-a}
 	\end{subfigure}%
 	~
 	\begin{subfigure}[c]{0.38\textwidth}
 		\includegraphics[width=\textwidth]{Fig3_PEO-PAAM_LiClO4_Profile.eps}
 		\includegraphics[width=\textwidth]{Fig3_OMPEO-PAAM_LiClO4_Profile.eps}
-		\caption{} \label{fig:OMPEO-LiClO4b}
+		\caption{} \label{fig:OMPEO-LiClO4-b}
 	\end{subfigure}
 	\caption{\label{fig:OMPEO-LiClO4} (a) Експериментальні дані з
 		$\sigma_{\rm eff}$ як функції від $c$ для ПКЕ PEO--LiClO$_4$--PAAM
@@ -865,82 +870,10 @@ PAAM).
 		\cite{Wiec1994} ($\bullet$), та їх підгонки в рамках моделей 
 		подвійної, потрійної та неперервної оболонок. Позначення вказують на
 		відповідні параметри, що приведені у
-		Таблиці~\ref{tab:adjustable_params}. (б) Відповідні 
+		тексті дисертації. (б) Відповідні 
 		одночастинкові профілі провідності, що були використані 
 		для моделювання мезоскопічної структури ПКЕ.}
 \end{figure*}
-
-\begin{table*}[htb]
-	\centering \caption{\label{tab:adjustable_params} Параметри, що були
-		використані для обробки даних \cite{Przl1995,Wiec1994} з 
-		концентраційних залежностей для ПКЕ при $t= 25\,\rm{^oC}$ в 
-		рамках моделей дискретних (рівняння
-		(\ref{eq:profilex2-uniform})--(\ref{eq:profilex2-triple})) 
-		та неперервних (рівняння (\ref{eq:profilex2-sigmoid2}),
-		(\ref{eq:profilex2-sigmoid3})) оболонок та значення $R^2$
-		для найкращих результатів.}
-	\begin{threeparttable}
-		\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
-			\hline
-			\multirow{2}{*}{Оболонка} &\multirow{2}{*}{L\tnote{a}} &   \multirow{2}{*}{$x_1$} & $\delta_1$\tnote{b} & $\delta_2$\tnote{b} & $\delta_3$\tnote{b} & $x_{21}$\tnote{b} & $x_{22}$\tnote{b} & $x_{23}$\tnote{b} & \multirow{2}{*}{$R^2$, \%} \\
-			&  & & $\delta^\ast_1$\tnote{c}& $\delta^\ast_2$\tnote{c}&$\delta^\ast_3$\tnote{c}&$x^\ast_{21}\tnote{c}$&$x^\ast_{22}$\tnote{c}&$x^\ast_{23} \tnote{c}$ & \\
-			\hline
-			\multicolumn{10}{c}{PEO--NaI--NASICON ($\sigma_0 \approx 9.86\times 10^{-9}$~S/cm)}\\
-			\hline
-			однорідна  &1a   & $1.4\times 10^4$ &1.6& -- & -- & 1000& -- & -- & -- \\
-			однорідна                 &1b                                       &1.4             &1.6& -- & -- & 1300& -- & -- & -- \\
-			подвійна                 &1c                                       &70              &1.0&1.55& -- & 400  &  20000 & -- &  99.4 \\
-			неперервна, &1d                   &70              &1.0&1.55& -- & 400 &  6000 & -- &  95.5 \\
-			$\alpha =0.05$ &    & & & & & &  & &  \\
-			\hline
-			\multicolumn{10}{c}{(PEO)$_{10}$--NaI--$\theta$-Al$_2$O$_3$ ($\sigma_0 \approx 1.54\times 10^{-8}$~S/cm)}\\
-			\hline
-			однорідна &2a & \multirow{5}{*}{$6.5\times 10^{-13}$} &2.1&--&--&230&--&-- & -- \\
-			подвійна &2b                                       &                   &0.7&2.1&--&0.12&435&--& 92.8\\
-			подвійна &2c                                       &                   &0.8&2.1&--&0.12&520&-- & 98.6\\
-			неперервна, &2d                                  &                   &0.9&2.1&--&0.12&560&--& 95.0\\
-			$\alpha =0.05$  &  & & & & & &  &  &  \\
-			\hline
-			\multicolumn{10}{c}{PEO--LiClO$_4$--PAAM ($\sigma_0 \approx 6.12\times 10^{-7}$~S/cm)}\\
-			\hline
-			подвійна &3a & \multirow{4}{*}{$1.6\times 10^{-6}$} &0.15&0.60& -- & 5.0           &800 &--& 88.7 \\
-			потрійна  &3b                                     &                  &0.16&0.50&0.80 & 5.0 &1800 &27 &  92.3 \\
-			неперервна,  &3c                      &                   &0.32&0.45&0.48 & 2.0     &9400&27 & 92.9 \\
-			$\alpha =0.03$ &   & & & & & &  & & \\
-			\hline
-			\multicolumn{10}{c}{OMPEO--LiClO$_4$--PAAM, після отжигу ($\sigma_0 \approx 1.61\times 10^{-5}$~S/cm)}\\
-			\hline
-			подвійна   &4a  & \multirow{4}{*}{$6.2\times 10^{-8}$} &0.36&0.75& -- &0.60& 75 &--& 46.3\\
-			потрійна   & 4b                  &                    &0.40&0.80&1.40&0.57& 750&0.10 &  93.8\\
-			неперервна, &4c                     &                    &0.54&0.64&1.53&0.44&14200&0.10 &  81.7\\
-			$\alpha =0.02$ &  &  & & & & &  & & \\
-			\hline
-		\end{tabular}
-		\begin{tablenotes}
-			\item[a] Використані позначення для підгонок на відповідних
-			рисунках.
-			\item[b] Параметри для моделей дискретних оболонок.
-			\item[c] Параметри для моделей неперервних оболонок.
-		\end{tablenotes}
-	\end{threeparttable}
-\end{table*}
-
-На останок, порівняні результати модифікованої теорії Накамури Нана Вічорека
-та досліджуваної моделі для двох систем з рис.~\ref{fig:OMPEO-LiClO4} (див.
-рис.~\ref{fig:comparison_polymer}).
-
-\begin{figure}[htb]
-	\centering
-	\includegraphics[width=0.45\textwidth]{Fig5_Comparison.eps}
-	\caption{\label{fig:comparison_polymer} Порівняння результатів
-		моделі з потрійним оболонками (неперервні лінії 3b та 4b, див.
-		Таблицю~\ref{tab:adjustable_params}) з модифікованою  
-		теорією Накамури Нана Вічорека~\cite{Wiec1994} (штрихована лінія, див. 
-		Таблицю~7 та рис.~10 у \cite{Wiec1994}) для
-		PEO--LiClO$_4$--PAAM ($\circ$) та
-		OMPEO--LiClO$_4$--PAAM (після отжигу) ($\bullet$) при $25 {\rm
-			^oC}$ \cite{Wiec1994}.}
-\end{figure}
 
 В {\bf підрозділі~4.3.2} вивчалася температурна залежність
 ефективної провідності систем OMPEO--LiClO$_4$--PAAM~\cite{Wiec1994}
@@ -948,175 +881,158 @@ PAAM).
 температури залежать лише провідність аморфізованої матриці 
 $\sigma_0$ та параметри $\sigma_{2,i}$ ($i=1,2,3$) використаного 
 профілю провідності області аморфізованого полімеру навколо 
-частинок за емпіричним законом Фогеля-Таммана-Фульхера (VTF):
-\begin{equation}\label{eq:VTF}
- \sigma = \frac{A}{\sqrt{T}} \exp\left[ - \frac{B}{T-T_0} \right],
-\end{equation}
-де $A$, $B$ та $T_0$ -- підгінні параметри ($T_0$ зазвичай 
-беруть на 30-50 градусів нижче ніж $T_g$~\cite{Wiec1994}).
-Ці параметри знаходилися з обробки даних концентраційної
-залежності для трьох ізотерм (див. рис.~\ref{fig:OMPEO-LiClO4-Temp}
-та Таблицю~\ref{tab:isotherms}). Всі ці отримані параметри VTF 
-(див. Таблицю~\ref{tab:temp}) для оболонок лягають у допустимі 
+частинок за емпіричним законом Фогеля-Таммана-Фульхера (VTF).
+%\begin{equation}\label{eq:VTF}
+% \sigma = \frac{A}{\sqrt{T}} \exp\left[ - \frac{B}{T-T_0} \right],
+%\end{equation}
+%де $A$, $B$ та $T_0$ -- підгінні параметри ($T_0$ зазвичай 
+%беруть на 30-50 градусів нижче ніж $T_g$~\cite{Wiec1994}).
+Параметри VTF для кожної компоненти знаходилися з обробки даних 
+концентраційної
+залежності для трьох ізотерм (див. рис.~\ref{fig:OMPEO-LiClO4-Temp}). 
+Всі ці отримані параметри для оболонок лягають у допустимі 
 границі, вказані у \cite{Wiec1994} для всіх зразків 
 OMPEO--LiClO$_4$--PAAM. З цієї точки зору наші результати узгоджені.
-Далі, використовуючи
-знайдені параметри (див. Таблицю~\ref{tab:temp}), будувалися
-температурні ізохори для п'яти значень $c$ (див.
+Далі, використовуючи знайдені параметри, будувалися температурні 
+ізохори для п'яти значень $c$ (див. 
 рис.~\ref{fig:OMPEO-LiClO4-TempDependence}), чотири з яких
 із задовільною точністю відновили відповідні експериментальні 
-залежності. Ізохора при $c=0.1$ якісно відповідає експериментальним
-точкам, але щоб отримати кількісну відповідність потрібно
-домножити кожне значення на сталий множник (тим самим методом
-можна покращити результати для $c=0.5$). Це може бути наслідком
-неспроможності моделі з трьома оболонками охопити відповідний
-ефект.
+залежності. 
+%Ізохора при $c=0.1$ якісно відповідає експериментальним
+%точкам, але щоб отримати кількісну відповідність потрібно
+%домножити кожне значення на сталий множник (тим самим методом
+%можна покращити результати для $c=0.5$). Це може бути наслідком
+%неспроможності моделі з трьома оболонками охопити відповідний
+%ефект.
 
-\begin{figure}[htb]
+\begin{figure*}[htb]
 	\centering
-	\includegraphics[width=0.45\textwidth]{Fig6_Isochores.eps}
-	\caption{\label{fig:OMPEO-LiClO4-Temp} Експериментальні 
-		дані~\cite{Wiec1994} при $t=0 {\rm ^oC}$ ($\circ$), $25 {\rm
-			^oC}$ ($\bullet$) та $100 {\rm ^oC}$ ($\nabla$) ізотерм 
-		$\sigma_{\rm eff}$ для ПКЕ OMPEO--LiClO$_4$--PAAM як функції 
-		концентрації PAAM.
-		Штриховані лінії: підгонки за законом ФТФ~\cite{Wiec1994} за 
+	\begin{subfigure}[c]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{Fig6_Isochores.eps}
+		\caption{$t{\rm ^o}=0$ ($\circ$), $25$ ($\bullet$), $100$ ($\nabla$) $ {\rm ^oC}$\\ \hfill} 
+		\label{fig:OMPEO-LiClO4-Temp-a}
+	\end{subfigure}%
+	\quad
+	\begin{subfigure}[c]{0.48\textwidth}
+		\includegraphics[width=\textwidth]{Fig8_TemperatureDependence_1.eps}
+		\caption{$c$ = 0.05 ($\nabla$), 0.25 ($\square$), 0.40 ($\blacktriangle$),\\ 0.50 ($\bullet$)} \label{fig:OMPEO-LiClO4-TempDependence}
+	\end{subfigure}%
+	\caption{\label{fig:OMPEO-LiClO4-Temp} (a) Експериментальні 
+		дані~\cite{Wiec1994} для ізотерм 
+		$\sigma_{\rm eff}$ як функції 
+		концентрації PAAM та (б) експериментальні дані~\cite{Wiec1994} для ізохор $\sigma_{\rm eff}$ як функції температури для ПКЕ OMPEO--LiClO$_4$--PAAM (з молярною концентрацією LiClO$_4$ 10~\%, після отжигу).
+		Штриховані лінії: підгонки за законом VTF~\cite{Wiec1994} з 
 		параметрами, що вказані у Таблиці~5 в \cite{Wiec1994}. 
-		Неперервні лінії: підгонки з використанням моделі потрійної оболонки; 
-		параметри вказані в Таблиці~\ref{tab:isotherms}. 
-		Відносні відхилення цих даних та значення $R^2$ для підгонок в
-		рамках запропонованої моделі представлені на
-		рис.~\ref{fig:OMPEO-LiClO4-Temp-Deviation}.}
-\end{figure}
-\begin{table*}[htb]
-	\centering
-	\begin{threeparttable}
-		\caption{\label{tab:isotherms} Значення провідності, в См/см, що були
-			використані для підгонок ізотерм концентраційних залежностей
-			$\sigma_{\rm{eff}}$ для ПКЕ OMPEO--LiClO$_4$--PAAM \tnote{a,b} 
-			(див. рис.~\ref{fig:OMPEO-LiClO4-Temp}). }
-		
-		\begin{tabular}{|l|l|l|l|}
-			\hline
-			\textrm{Складова}   & $t = 0\,\rm { ^oC}$ & $t = 25\, \rm {^oC}$ & $t = 100\, \rm {^oC}$ \\
-			\hline
-			Матриця, $\sigma_0$           &  $4.64\times 10^{-7}$  &  $1.57\times 10^{-5}$  &  $1.78\times 10^{-3}$   \\
-			Перша оболонка, $\sigma_{21}$   &  $5.75\times 10^{-7}$  &  $8.70\times 10^{-6}$  &  $4.21\times 10^{-4}$    \\
-			Друга оболонка, $\sigma_{22}$  &  $1.025\times 10^{-3}$ &  $7.74\times 10^{-3}$  &  $1.00\times 10^{-1}$   \\
-			Третя оболонка, $\sigma_{23}$   &  $1.07\times 10^{-7}$  &  $3.12\times 10^{-6}$  &  $1.36\times 10^{-4}$ \\
-			\hline
-		\end{tabular}
-		\begin{tablenotes}
-			\item[a] З молярною долею LiClO$_4$ 10 \%. 
-			\item[b]  За рахунок формування комплексів катіонів $\rm{Li}^+ $
-			з ланцюгами PAAM, ядра PAAM--LiClO$_4$ непровідні, та мають
-			при кімнатній температурі провідність 
-			$\sigma_1\sim 1\times 10^{-12}$~См/см \cite{Wiec1994}. 
-			Це значення й було використано в наших розрахунках.
-			Зростання $\sigma_1$ на декілька порядків не вплинуло
-			на отримані результати (у границях потрібної точності).
-		\end{tablenotes}
-	\end{threeparttable}
-\end{table*}
-
-\begin{table*}[htb]
-	\centering
-	\begin{threeparttable} \caption{\label{tab:temp} Параметри VTF, що 
-			отримані для ПКЕ OMPEO--LiClO$_4$--PAAM \tnote{a}}
-		\begin{tabular}{|l|l|l|l|}
-			\hline
-			\textrm{Складова}   & $A$, См$\cdot \rm{K}^{1/2}/$см & $B$, K & $T_0$, K  \\
-			\hline
-			Матриця, $\sigma_0$           &  36.1\tnote{a}  &  1270  &  190   \\
-			Перша оболонка, $\sigma_{21}$   &  4.33  &  1210   &  180    \\
-			Друга оболонка, $\sigma_{22}$  &  71.1   &  634     &  197   \\
-			Третя оболонка, $\sigma_{23}$   & 0.229   &  720   &  212 \\
-			\hline
-		\end{tabular}
-		\begin{tablenotes}
-			\item[a] З молярною долею LiClO$_4$ 10 \%.
-		\end{tablenotes}
-	\end{threeparttable}
-\end{table*}
-
-
-\begin{figure}[htb]
-	\centering
-	\includegraphics[width=0.45\textwidth]{Fig8_TemperatureDependence_1.eps}
-	~
-	\includegraphics[width=0.45\textwidth]{Fig8_TemperatureDependence_2.eps}\\
-	(a)\hfil(b)\hfil \caption{\label{fig:OMPEO-LiClO4-TempDependence}
-		Експериментальні дані~\cite{Wiec1994} для температурної залежності
-		$\sigma_{\rm eff}$ ПКЕ OMPEO--LiClO$_4$--PAAM
-		(з молярною концентрацією LiClO$_4$ 10~\%, після отжигу) з 5 
-		($\nabla$), 10 ($\circ$), 25 ($\square$), 40 ($\blacktriangle$) 
-		та 50 ($\bullet$)~\% об'ємної концентрації PAAM. Штриховані лінії, 
-		(b): підгонки за ФТФ, використовуючи параметри з Таблиці~5 в
-		\cite{Wiec1994}, що запропоновані відповідними авторами для цих ПКЕ 
-		при 10 та 50~\% PAAM. Неперервні лінії: результати наших розрахунків
+		Неперервні лінії: результати наших розрахунків
 		в рамках моделі трьох оболонок, вважаючи, що провідності складових
-		підкоряються закону ФТФ (\ref{eq:VTF}) з параметрами, представленими 
-		у Таблиці~\ref{tab:temp}. Точкові лінії, (b): те ж саме, але з
-		використанням сталого множнику для $\sigma_{\rm eff}$:
-		$0.40\, \sigma_{\rm eff}$ та $0.75\, \sigma_{\rm eff}$ для ПКЕ з 
-		10 та 50~\% PAAM, відповідно. Відносні відхилення представлених 
-		даних від експериментальних та значення $R^2$ для розрахованих кривих
-		представлені на рис.~\ref{fig:OMPEO-LiClO4-TempDependence}.}
-\end{figure}
+		підкоряються закону VTF.}
+\end{figure*}
+%\begin{table*}[htb]
+%	\centering
+%	\begin{threeparttable}
+%		\caption{\label{tab:isotherms} Значення провідності, в См/см, що були
+%			використані для підгонок ізотерм концентраційних залежностей
+%			$\sigma_{\rm{eff}}$ для ПКЕ OMPEO--LiClO$_4$--PAAM \tnote{a,b} 
+%			(див. рис.~\ref{fig:OMPEO-LiClO4-Temp}). }
+%		
+%		\begin{tabular}{|l|l|l|l|}
+%			\hline
+%			\textrm{Складова}   & $t = 0\,\rm { ^oC}$ & $t = 25\, \rm {^oC}$ & $t = 100\, \rm {^oC}$ \\
+%			\hline
+%			Матриця, $\sigma_0$           &  $4.64\times 10^{-7}$  &  $1.57\times 10^{-5}$  &  $1.78\times 10^{-3}$   \\
+%			Перша оболонка, $\sigma_{21}$   &  $5.75\times 10^{-7}$  &  $8.70\times 10^{-6}$  &  $4.21\times 10^{-4}$    \\
+%			Друга оболонка, $\sigma_{22}$  &  $1.025\times 10^{-3}$ &  $7.74\times 10^{-3}$  &  $1.00\times 10^{-1}$   \\
+%			Третя оболонка, $\sigma_{23}$   &  $1.07\times 10^{-7}$  &  $3.12\times 10^{-6}$  &  $1.36\times 10^{-4}$ \\
+%			\hline
+%		\end{tabular}
+%		\begin{tablenotes}
+%			\item[a] З молярною долею LiClO$_4$ 10 \%. 
+%			\item[b]  За рахунок формування комплексів катіонів $\rm{Li}^+ $
+%			з ланцюгами PAAM, ядра PAAM--LiClO$_4$ непровідні, та мають
+%			при кімнатній температурі провідність 
+%			$\sigma_1\sim 1\times 10^{-12}$~См/см \cite{Wiec1994}. 
+%			Це значення й було використано в наших розрахунках.
+%			Зростання $\sigma_1$ на декілька порядків не вплинуло
+%			на отримані результати (у границях потрібної точності).
+%		\end{tablenotes}
+%	\end{threeparttable}
+%\end{table*}
+
+%\begin{table*}[htb]
+%	\centering
+%	\begin{threeparttable} \caption{\label{tab:temp} Параметри VTF, що 
+%			отримані для ПКЕ OMPEO--LiClO$_4$--PAAM \tnote{a}}
+%		\begin{tabular}{|l|l|l|l|}
+%			\hline
+%			\textrm{Складова}   & $A$, См$\cdot \rm{K}^{1/2}/$см & $B$, K & $T_0$, K  \\
+%			\hline
+%			Матриця, $\sigma_0$           &  36.1\tnote{a}  &  1270  &  190   \\
+%			Перша оболонка, $\sigma_{21}$   &  4.33  &  1210   &  180    \\
+%			Друга оболонка, $\sigma_{22}$  &  71.1   &  634     &  197   \\
+%			Третя оболонка, $\sigma_{23}$   & 0.229   &  720   &  212 \\
+%			\hline
+%		\end{tabular}
+%		\begin{tablenotes}
+%			\item[a] З молярною долею LiClO$_4$ 10 \%.
+%		\end{tablenotes}
+%	\end{threeparttable}
+%\end{table*}
 
 В {\bf розділі 5} досліджується ефект електричної перколяції
 в рамках моделі з однорідними оболонками для систем типу 
 діелектрик--провідник ($\sigma_0 < \sigma_2 \leq \sigma_1$).
 Поріг та критичні індекси перколяції, поведінка діелектричної
 проникності та ефект подвійної перколяції аналізуються в 
-{\bf підрозділі~5.1}. А саме, в {\bf підрозділі~5.1.1} отримано, 
-що при $x_0\to 0$ можливі три розв'язки, при цьому єдиний фізично 
-послідовний результат можливий тільки за умови
+{\bf підрозділі~5.1}. В {\bf підрозділі~5.1.1} отримано, 
+що при $x_0\to 0$ єдиний фізично послідовний нетривіальний 
+результат можливий тільки за умови
 \begin{equation}\label{eq:threshold}
 \phi(c_c, \delta) = \frac{1}{3},
 \end{equation}
 що відповідає умові на знаходження порогу перколяції $c_c$.
+
 В {\bf підрозділі~5.1.2} показано, що критичні індекси перколяції
-$s$ та $t$, що формально визначаються як
-$$
-\sigma_{\rm eff} \sim \left\{\begin{array}{ll}
-(c_c - c)^{-s}, & c \to c_c - 0;\sigma_{1,2} \to \infty; \\
-(c - c_c)^t, & c \to c_c + 0; \sigma_0 \to 0, 
-\end{array} \right.
-$$
+$s$ та $t$, що 
+%формально визначаються як
+%$$
+%\sigma_{\rm eff} \sim \left\{\begin{array}{ll}
+%(c_c - c)^{-s}, & c \to c_c - 0;\sigma_{1,2} \to \infty; \\
+%(c - c_c)^t, & c \to c_c + 0; \sigma_0 \to 0, 
+%\end{array} \right.
+%$$
 на практиці визначаються на деякому концентраційному 
-інтервалі в околі $c_c$, та не несуть універсальний характер.
+інтервалі в околі $c_c$, не несуть універсальний характер.
 Щоб це показати, $s$ та $t$ розглядалися як ефективні величини,
-що залежать від інтервалу $[c_1,c_2]$ їх вимірювання:
-\begin{equation} \label{eq:index_teff}
-t_{eff} = {\lg \frac{\sigma (c_2)}{\sigma (c_1)}}\bigg/{\lg \frac{c_2
-		-c_{\rm c}}{c_1 -c_{\rm c}}},
-\end{equation}
-\begin{equation} \label{eq:seff}
-s_{eff} = - {\lg \frac{\sigma (c_2)}{\sigma (c_1)}}\bigg/{\lg
-	\frac{c_{\rm c}-c_2}{c_{\rm c}-c_1 }}.
-\end{equation}
-З рис.~\ref{fig:teff-seff} видно, що отримані результати 
-відновлюють відповідні значення теоретичних ($t \approx 1.3 \div 1.7$~\cite{Kirkpatrick1973}; $t \approx 1.9,2.14$, $s\approx 0.75$~\cite{BernasconiJ.1978,LuckJ.M.1985}) та експериментальних ($t \approx 1.5\div 2$, $s \approx 0.7 \div 1.0$~\cite{Nan1993})
+що залежать від інтервалу $[c_1,c_2]$ їх вимірювання.
+%\begin{equation} \label{eq:index_teff}
+%t_{eff} = {\lg \frac{\sigma (c_2)}{\sigma (c_1)}}\bigg/{\lg \frac{c_2
+%		-c_{\rm c}}{c_1 -c_{\rm c}}},
+%\end{equation}
+%\begin{equation} \label{eq:seff}
+%s_{eff} = - {\lg \frac{\sigma (c_2)}{\sigma (c_1)}}\bigg/{\lg
+%	\frac{c_{\rm c}-c_2}{c_{\rm c}-c_1 }}.
+%\end{equation}
+Показано, що отримані результати 
+відновлюють відповідні відомі значення теоретичних ($t \approx 1.3 \div 1.7$~\cite{Kirkpatrick1973}; $t \approx 1.9,2.14$, $s\approx 0.75$~\cite{BernasconiJ.1978,LuckJ.M.1985}) та експериментальних ($t \approx 1.5\div 2$, $s \approx 0.7 \div 1.0$~\cite{Nan1993})
 даних.
 
-\begin{figure}[htb]
-	\centering
-	\includegraphics[width=0.45\textwidth]{teff.eps}\quad
-	\includegraphics[width=0.45\textwidth]{seff.eps}\\
-	\qquad(а)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
-	\caption{\label{fig:teff-seff}
-		(a) Ефективний критичний індекс $t_{eff}$ як функція $c_2$
-		при фіксованому $c_1$, $\delta = 0.1$ ($c_c \approx 0.251$)
-		та $x_2 = 5 \times 10^{-5}$, розрахований за формулами
-		(\ref{eq:general_1layer_sigma}) та (\ref{eq:index_teff}).
-		Знизу догори, $c_1 = 0.26, 0.27, 0.28$.
-		(б) Ефективний критичний індекс $s_{eff}$ нижче $c_c$
-		як функція $x_0$ для $\delta = 0.1$ ($c_c \approx 0.251$)
-		та $x_2 = 5 \times 10^{-5}$, розрахована за формулами
-		(\ref{eq:general_1layer_sigma}) та (\ref{eq:seff}) при
-		$c_1 = 0.24$ та $c_2 = 0.25$.}
-\end{figure}
+%\begin{figure}[htb]
+%	\centering
+%	\includegraphics[width=0.45\textwidth]{teff.eps}\quad
+%	\includegraphics[width=0.45\textwidth]{seff.eps}\\
+%	\qquad(а)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
+%	\caption{\label{fig:teff-seff}
+%		(a) Ефективний критичний індекс $t_{eff}$ як функція $c_2$
+%		при фіксованому $c_1$, $\delta = 0.1$ ($c_c \approx 0.251$)
+%		та $x_2 = 5 \times 10^{-5}$, розрахований за формулами
+%		(\ref{eq:general_1layer_sigma}) та (\ref{eq:index_teff}).
+%		Знизу догори, $c_1 = 0.26, 0.27, 0.28$.
+%		(б) Ефективний критичний індекс $s_{eff}$ нижче $c_c$
+%		як функція $x_0$ для $\delta = 0.1$ ($c_c \approx 0.251$)
+%		та $x_2 = 5 \times 10^{-5}$, розрахована за формулами
+%		(\ref{eq:general_1layer_sigma}) та (\ref{eq:seff}) при
+%		$c_1 = 0.24$ та $c_2 = 0.25$.}
+%\end{figure}
 
 В {\bf підрозділі~5.2} проаналізовано поведінку 
 квазістатичної діелектричної проникності в околі порогу перколяції 
@@ -1128,27 +1044,35 @@ s_{eff} = - {\lg \frac{\sigma (c_2)}{\sigma (c_1)}}\bigg/{\lg
 отримано, що перший перколяційних перехід виникає за рахунок 
 оболонок, а другий -- за рахунок ядер.
 
-В {\bf підрозділі 5.3} в рамках моделі систем частинок з електрично 
+В {\bf підрозділі 5.3} в рамках моделі з електрично 
 однорідними оболонками оброблені дані з концентраційних залежностей
-квазістатичних провідності та проникності нанокомпозитів на основі
+квазістатичних провідності \cite{Chen1986} та проникності 
+\cite{Grannan1981} нанокомпозитів на основі
 KCl з наночастинками Ag ($R_1 \approx 10$~нм), покритими оксидним 
 шаром ($t \approx 1$~нм), що перешкоджав їх злипанню, але дозволяв
 утворювати контакти метал-метал під великим тиском (див. рис.~\ref{fig:KCl-Ag}).
 \begin{figure}[htb]
 	\centering
-	\includegraphics[height=0.35\textwidth]{KCl-Ag-rho.eps}\quad
-	\includegraphics[height=0.35\textwidth]{KCl-Ag-eps.eps}\\
-	\qquad(а)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
+	\begin{subfigure}[c]{0.41\textwidth}
+		\includegraphics[width=\textwidth]{KCl-Ag-rho.eps}
+		\caption{} \label{fig:KCl-Ag-a}
+	\end{subfigure}%
+	~
+	\begin{subfigure}[c]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{KCl-Ag-eps.eps}
+		\caption{} \label{fig:KCl-Ag-b}
+	\end{subfigure}%
 	\caption{\label{fig:KCl-Ag}
 		Дані з ефективного (а) опору \cite{Chen1986} та (б) проникності \cite{Grannan1981} для зразків композитів KCl--Ag
-		та їх обробка за формулою (\ref{eq:general_1layer_sigma}) при 
-		(а) $\delta = 0.162$ ($c_c \approx 0.214$), 
-		$\sigma_1 = 6.3 \times 10^7$~См/м,
-		$x_0 = 5 \times 10^{-16}$, $x_2 = 4 \times 10^{-6}$; 
-		(б) $\varepsilon_0 = 5$,
-		$\delta = 0.186$ (чорна лінія, для кружків) та 
-		$\varepsilon_0 = 7.0$, $\delta = 0.145$ (сіра лінія,
-		для трикутників).
+		та їх обробка в рамках моделі однорідної оболонки. 
+		Параметри оброки вказані в тексті дисертації.
+%		при (а) $\delta = 0.162$ ($c_c \approx 0.214$), 
+%		$\sigma_1 = 6.3 \times 10^7$~См/м,
+%		$x_0 = 5 \times 10^{-16}$, $x_2 = 4 \times 10^{-6}$; 
+%		(б) $\varepsilon_0 = 5$,
+%		$\delta = 0.186$ (чорна лінія, для кружків) та 
+%		$\varepsilon_0 = 7.0$, $\delta = 0.145$ (сіра лінія,
+%		для трикутників).
 		Чорна лінія ((а), з права) -- модель з проникною оболонкою
 		(\ref{eq:phi_pen}), сіра ((а), зліва) -- модель з твердою 
 		оболонкою (\ref{eq:phi-hard}). Точкові лінії -- скейлінгові підгонки
@@ -1166,30 +1090,13 @@ KCl з наночастинками Ag ($R_1 \approx 10$~нм), покритими оксидним
 (асиметричної моделі Бругемана) квазістатичного електричного відгуку
 невпорядкованих дисперсних систем в рамках МКГ. Для цього розглядається
 невпорядкована система діелектричних куль в однорідній діелектричній
-матриці. Спочатку в {\bf підрозділі~6.1} показано як відновити класичну
-асиметричну модель Бругемана (АМБ) для такої системи, в термінах
-$\delta\varepsilon({\bf r})$ використовуючи (\ref{eq:general_Q}):
-\begin{align}
-\delta\varepsilon_{\rm ABM}^{(l)} ({\bf r}) &= (\varepsilon - (\varepsilon + \Delta\varepsilon)) [ 1 - {\tilde \chi}_1 ({\bf r}) - \Delta{\tilde \chi}_1 ({\bf r})]
-+ (\varepsilon_1 - (\varepsilon + \Delta\varepsilon)) \Delta{\tilde \chi}_1({\bf r}) \approx \nonumber\\
-&\approx - \Delta\varepsilon [ 1 - {\tilde \chi}_1 ({\bf r}) ] + (\varepsilon_1 - \varepsilon) \Delta{\tilde \chi}_1({\bf r}),
-\label{eq:delta-Hanai}
-\end{align}
-де були залишені тільки перші порядки малості за $\Delta \tilde{\chi}_1$
-(у сенсі його середнього значення) та $\Delta \varepsilon$; 
-верхній індекс $l$ у (\ref{eq:delta-Hanai}) 
-підкреслює, що ми працюємо в області малих концентрації. Аналогічним
-чином отримано вираз для $\delta\varepsilon({\bf r})$ в області 
-великих концентрацій:
-\begin{equation}\label{eq:delta-Hanai-high}
-\begin{split}
-\delta\varepsilon_{\rm ABM}^{(h)} ({\bf r}) &\approx - [ 1 - {\tilde \chi}_0 ({\bf r}) ] \Delta \varepsilon + (\varepsilon_0 - \varepsilon) \Delta{\tilde \chi}_0({\bf r}) \\
-&= - {\tilde \chi}_1 ({\bf r}) \Delta\varepsilon - (\varepsilon_0 - \varepsilon) \Delta{\tilde \chi}_1({\bf r}).
-\end{split}
-\end{equation}
+матриці. 
 
+Спочатку в {\bf підрозділі~6.1} показано як відновити класичну
+асиметричну модель Бругемана (АМБ) для такої системи, в термінах
+$\delta\varepsilon({\bf r})$ використовуючи (\ref{eq:general_Q}).
 Далі в {\bf підрозділі~6.2} побудовано загальну диференціальну схему 
-в термінах введених вище $\delta\varepsilon({\bf r})$:
+в термінах $\delta\varepsilon({\bf r})$:
 \begin{equation}\label{eq:delta-Brug-diff0}
 \begin{split}
 \widetilde{\delta\varepsilon}_{\rm CGA} ({\bf r}) =& (\varepsilon_0 - (\varepsilon + \Delta\varepsilon)) [1 - ({\tilde \chi}_1 ({\bf r}) + \Delta{\tilde \chi}_1 ({\bf r}))] +\\
@@ -1197,15 +1104,13 @@ $\delta\varepsilon({\bf r})$ використовуючи (\ref{eq:general_Q}):
 \approx& \delta\varepsilon_{\rm ABM}^{(l)} ({\bf r}) + \delta\varepsilon_{\rm ABM}^{(h)} ({\bf r}) + \delta\varepsilon_{\rm CGA} ({\bf r}),
 \end{split}
 \end{equation}
-де, знову ж таки, були залишені тільки перші порядки малості за 
-$\Delta \tilde{\chi}_1$ та $\Delta \varepsilon$. Таким чином, показано,
-що в рамках диференціальної схеми ефективний відгук формується не одним
-внеском $\delta\varepsilon_{\rm ABM}^{(l)}$ 
-(або $\delta\varepsilon_{\rm ABM}^{(h)}$), а трьома: 
-$\delta\varepsilon_{\rm CGA} ({\bf r})$ -- внесок 
-заданої компактної групи; $\delta\varepsilon_{\rm ABM}^{(l)}$ враховує 
+де були залишені тільки перші порядки малості за $\Delta \tilde{\chi}_1$ 
+(в сенсі його середнього) та $\Delta \varepsilon$. Показано,
+що в рамках диференціальної схеми ефективний відгук формується трьома
+внесками: $\delta\varepsilon_{\rm CGA} ({\bf r})$ -- внесок 
+заданої компактної групи; $\delta\varepsilon_{\rm ABM}^{(l)} = - \Delta\varepsilon [ 1 - {\tilde \chi}_1 ({\bf r}) ] + (\varepsilon_1 - \varepsilon) \Delta{\tilde \chi}_1({\bf r})$ враховує 
 вплив нових частинок на $\delta\varepsilon_{\rm CGA}$; 
-$\delta\varepsilon_{\rm ABM}^{(h)}$ враховує вплив зміни матриці 
+$\delta\varepsilon_{\rm ABM}^{(h)}=- {\tilde \chi}_1 ({\bf r}) \Delta\varepsilon - (\varepsilon_0 - \varepsilon) \Delta{\tilde \chi}_1({\bf r})$ враховує вплив зміни матриці 
 $\delta\varepsilon_{\rm CGA}$.
 
 Класичні закони АМБ можна отримати, якщо знехтувати внесками $\delta\varepsilon_{\rm CGA}$ та $\delta\varepsilon_{\rm ABM}^{(h)}$ 
@@ -1215,33 +1120,34 @@ $\delta\varepsilon_{\rm CGA}$.
 2) різниці між діелектричними проникностями компонентів малі.
 Якщо притримуватися тільки першої умови, як це робиться в класичних
 моделях, то внесками $\delta\varepsilon_{\rm CGA}$ знехтувати неможливо,
-що призводить до наступних нових узагальнених співвідношень АМБ при 
-низьких та високих концентраціях, відповідно:
-\begin{equation}\label{eq:Hanai-new}
-\begin{split}
-\ln{(1-c)} = \frac{9 \varepsilon_0 \varepsilon_1}{(2\varepsilon_1 + \varepsilon_0)^2} \ln{ \frac{3\varepsilon_0 (\varepsilon_{\rm eff} - \varepsilon_1)}{(\varepsilon_0 - \varepsilon_1) (2\varepsilon_{\rm eff} + \varepsilon_0)} }
-- \frac{2(\varepsilon_0 - \varepsilon_1) (\varepsilon_0 - \varepsilon_{\rm eff})}{(2\varepsilon_1 + \varepsilon_0) (2\varepsilon_{\rm eff} + \varepsilon_0)};
-\end{split}
-\end{equation}
-\begin{equation}\label{eq:Hanai-high-new}
-\ln{c} = \frac{9 \varepsilon_0 \varepsilon_1}{(2\varepsilon_0 + \varepsilon_1)^2} \ln{ \frac{3\varepsilon_1 (\varepsilon_{\rm eff} - \varepsilon_0)}{(\varepsilon_1 - \varepsilon_0) (2\varepsilon_{\rm eff} + \varepsilon_1)} }
-- \frac{2(\varepsilon_1 - \varepsilon_0) (\varepsilon_1 - \varepsilon_{\rm eff})}{(2\varepsilon_0 + \varepsilon_1) (2\varepsilon_{\rm eff} + \varepsilon_1)}.
-\end{equation}
+що призводить до нових узагальнених співвідношень АМБ.
+%при низьких та високих концентраціях, відповідно:
+%\begin{equation}\label{eq:Hanai-new}
+%\begin{split}
+%\ln{(1-c)} = \frac{9 \varepsilon_0 \varepsilon_1}{(2\varepsilon_1 + \varepsilon_0)^2} \ln{ \frac{3\varepsilon_0 (\varepsilon_{\rm eff} - \varepsilon_1)}{(\varepsilon_0 - \varepsilon_1) (2\varepsilon_{\rm eff} + \varepsilon_0)} }
+%- \frac{2(\varepsilon_0 - \varepsilon_1) (\varepsilon_0 - \varepsilon_{\rm eff})}{(2\varepsilon_1 + \varepsilon_0) (2\varepsilon_{\rm eff} + \varepsilon_0)};
+%\end{split}
+%\end{equation}
+%\begin{equation}\label{eq:Hanai-high-new}
+%\ln{c} = \frac{9 \varepsilon_0 \varepsilon_1}{(2\varepsilon_0 + \varepsilon_1)^2} \ln{ \frac{3\varepsilon_1 (\varepsilon_{\rm eff} - \varepsilon_0)}{(\varepsilon_1 - \varepsilon_0) (2\varepsilon_{\rm eff} + \varepsilon_1)} }
+%- \frac{2(\varepsilon_1 - \varepsilon_0) (\varepsilon_1 - \varepsilon_{\rm eff})}{(2\varepsilon_0 + \varepsilon_1) (2\varepsilon_{\rm eff} + \varepsilon_1)}.
+%\end{equation}
 Це показано в {\bf підрозділі~6.2.1}. 
 
 В {\bf підрозділі 6.3} показано, що отримані узагальнення АМБ не
-задовільняють межам Хашина-Штрікмана для діелектричної проникності
-(диф. рис.~\ref{fig:HS-bounds-check}), що свідчить про непослідовність
-перших. З рисунку видно, що класичні АМБ задовільняють цим межам, 
-але вони за визначенням застосовні лише до дуже вузького класу систем,
-що визначається зазначеними умовами.
+задовільняють межам Хашина-Штрікмана для діелектричної проникності,
+%(див. рис.~\ref{fig:HS-bounds-check}), 
+що свідчить про непослідовність
+перших; класичні АМБ задовільняють цим межам, але вони за визначенням 
+застосовні лише до дуже вузького класу систем, що визначається 
+зазначеними умовами.
 
-\begin{figure}[htb]
-	\centering
-	\includegraphics[width=0.4\textwidth]{HSbounds.eps}
-	\caption{\label{fig:HS-bounds-check}
-		Концентраційна залежність $\varepsilon$ від $c$ (при $\varepsilon_1/\varepsilon_0 = 10^2$): а) узагальнення АМБ (\ref{eq:Hanai-new}) та (\ref{eq:Hanai-high-new}) в рамках МКГ (товсті чорні лінії 1, 2); б) межі Хашина-Штрікмана (тонкі лінії 3 та 4); в) МКГ (штрихована лінія); г) класичні правила АМБ (точкові лінії 5 та 6).}
-\end{figure}
+%\begin{figure}[htb]
+%	\centering
+%	\includegraphics[width=0.4\textwidth]{HSbounds.eps}
+%	\caption{\label{fig:HS-bounds-check}
+%		Концентраційна залежність $\varepsilon$ від $c$ (при $\varepsilon_1/\varepsilon_0 = 10^2$): а) узагальнення АМБ в рамках МКГ (товсті чорні лінії 1, 2); б) межі Хашина-Штрікмана (тонкі лінії 3 та 4); в) МКГ (штрихована лінія); г) класичні правила АМБ (точкові лінії 5 та 6).}
+%\end{figure}
 
 
 \part{Висновки}
@@ -1263,9 +1169,9 @@ $\delta\varepsilon_{\rm CGA}$.
 
 \import{/}{abstract_ua}
 
-%\bigskip
+\bigskip
 
-%\import{/}{abstract_ru}
+\import{/}{abstract_ru}
 
 \bigskip
 

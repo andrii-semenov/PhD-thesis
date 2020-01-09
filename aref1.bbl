@@ -1,0 +1,187 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\selectlanguage{#1}\fi}
+\providecommand*{\href}[2]{{\small #2}}
+\providecommand*{\url}[1]{{\small #1}}
+\providecommand*{\BibUrl}[1]{\url{#1}}
+\providecommand{\BibAnnote}[1]{}
+\providecommand*{\BibEmph}[1]{#1}
+\ProvideTextCommandDefault{\cyrdash}{\iflanguage{russian}{\hbox
+  to.8em{--\hss--}}{\textemdash}}
+\providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em plus
+  0.1em\fi
+\cyrdash\hskip.2em plus 0.1em\ignorespaces}
+\renewcommand{\newblock}{\ignorespaces}
+
+\bibitem{Sushko2007}
+\selectlanguageifdefined{ukrainian}
+\BibEmph{Сушко,~М.Я.} О диэлектрической проницаемости суспензий~/ М.Я.~Сушко~//
+  \BibEmph{ЖЭТФ}. \BibDash
+\newblock 2007. \BibDash
+\newblock \CYRT. 132. \BibDash
+\newblock {\cyr\CYRS.}~478--484.
+
+\bibitem{Sushko2009}
+\selectlanguageifdefined{ukrainian}
+\BibEmph{Сушко,~М.Я.} Метод компактных групп в теории диэлектрической
+  проницаемости гетерогенных систем~/ М.Я.~Сушко, С.К.~Криськив~//
+  \BibEmph{ЖТФ}. \BibDash
+\newblock 2009. \BibDash
+\newblock \CYRT.~79. \BibDash
+\newblock {\cyr\CYRS.}~97--101.
+
+\bibitem{SushkoJPD2009}
+\selectlanguageifdefined{english}
+\BibEmph{Sushko,~M.Ya.} Effective permittivity of mixtures of anisotropic
+  particles~/ M.Ya.~Sushko~// \BibEmph{J. Phys. D: Appl. Phys.} \BibDash
+\newblock 2009. \BibDash
+\newblock Vol.~42. \BibDash
+\newblock P.~155410.
+
+\bibitem{Sushko2017}
+\selectlanguageifdefined{english}
+\BibEmph{Sushko,~M.Ya.} Effective dielectric response of dispersions of graded
+  particles~/ M.Ya.~Sushko~// \BibEmph{Phys. Rev. E}. \BibDash
+\newblock 2017. \BibDash
+\newblock Vol.~96. \BibDash
+\newblock P.~062121, 8~p.
+
+\bibitem{RikvoldP.1985}
+\selectlanguageifdefined{english}
+\BibEmph{Rikvold,~P.} D-dimensional interpenetrable-sphere models of random
+  two-phase media: Microstructure and an application to chromatography~/
+  P.~Rikvold, G.~Stell~// \BibEmph{J. Coll. and Int. Sci.} \BibDash
+\newblock 1985. \BibDash
+\newblock Vol. 108. \BibDash
+\newblock P.~158.
+
+\bibitem{Siekierski2005}
+\selectlanguageifdefined{english}
+\BibEmph{Siekierski,~M.} Modeling of conductivity in composites with random
+  resistor networks~/ M.~Siekierski, K.~Nadara~// \BibEmph{Electrochimica
+  Acta}. \BibDash
+\newblock 2005. \BibDash
+\newblock Vol.~50. \BibDash
+\newblock P.~3796.
+
+\bibitem{Siekierski2006}
+\selectlanguageifdefined{english}
+\BibEmph{Siekierski,~M.} Conductivity simulation in composite polymeric
+  electrolytes~/ M.~Siekierski, K.~Nadara, P.~Rzeszotarski~// \BibEmph{J. New
+  Mat. Electrochem. Systems}. \BibDash
+\newblock 2006. \BibDash
+\newblock Vol.~9. \BibDash
+\newblock P.~375.
+
+\bibitem{Siekierski2007}
+\selectlanguageifdefined{english}
+\BibEmph{Siekierski,~M.} Mesoscale models of ac conductivity in composite
+  polymeric electrolytes~/ M.~Siekierski, K.~Nadara~// \BibEmph{J. Pow. Sour.}
+  \BibDash
+\newblock 2007. \BibDash
+\newblock Vol. 173. \BibDash
+\newblock P.~748.
+
+\bibitem{Berlyand1997}
+\selectlanguageifdefined{english}
+\BibEmph{Berlyand,~L.} Non-{G}aussian Limiting Behavior of the Percolation
+  Threshold in a Large System~/ L.~Berlyand, J.~Wehr~// \BibEmph{Commun. Math.
+  Phys.} \BibDash
+\newblock 1997. \BibDash
+\newblock Vol. 185. \BibDash
+\newblock P.~73.
+
+\bibitem{Liang1973}
+\selectlanguageifdefined{english}
+\BibEmph{Liang,~C.~C.} Conduction characteristics of the lithium
+  iodide-aluminum oxide solid electrolytes~/ C.~C.~Liang~// \BibEmph{J.
+  Electrochem. Soc.} \BibDash
+\newblock 1973. \BibDash
+\newblock Vol. 120. \BibDash
+\newblock P.~1289.
+
+\bibitem{Jiang1995a}
+\selectlanguageifdefined{english}
+\BibEmph{Jiang,~Sh.} A theoretical model for composite electrolytes - I. Space
+  charge layer as a cause for charge-carrier enhancement~/ Sh.~Jiang,
+  B.~Jr.~Wagner~// \BibEmph{J. Phys. Chem. Solids.} \BibDash
+\newblock 1995. \BibDash
+\newblock Vol.~56. \BibDash
+\newblock P.~1101.
+
+\bibitem{Jiang1995b}
+\selectlanguageifdefined{english}
+\BibEmph{Jiang,~Sh.} A theoretical model for composite electrolytes - II.
+  Percolation model for ionic conductivity enhamcement~/ Sh.~Jiang,
+  B.~Jr.~Wagner~// \BibEmph{J. Phys. Chem. Solids.} \BibDash
+\newblock 1995. \BibDash
+\newblock Vol.~56. \BibDash
+\newblock P.~1113.
+
+\bibitem{Przl1995}
+\selectlanguageifdefined{english}
+\BibEmph{Przyluski,~J.} Effective medium theory in studies of conductivity of
+  composite polymeric electrolytes~/ J.~Przyluski, M.~Siekierski,
+  W.~Wieczorek~// \BibEmph{Electrichimica A.} \BibDash
+\newblock 1995. \BibDash
+\newblock Vol.~40. \BibDash
+\newblock P.~2101.
+
+\bibitem{Wiec1994}
+\selectlanguageifdefined{english}
+\BibEmph{Wieczorek,~W.} Polyether, Polyacrylamide, LiClO4 Composite
+  Electrolytes with Enhanced Conductivity~/ W.~Wieczorek, K.~Such,
+  Z.~Florjanczyk, J.R.~Stevens~// \BibEmph{J. Phys. Chem.} \BibDash
+\newblock 1994. \BibDash
+\newblock Vol.~98. \BibDash
+\newblock P.~6840.
+
+\bibitem{Kirkpatrick1973}
+\selectlanguageifdefined{english}
+\BibEmph{Kirkpatrick,~S.} Percolation and Conduction~/ S.~Kirkpatrick~//
+  \BibEmph{Rev. Mod. Phys.} \BibDash
+\newblock 1973. \BibDash
+\newblock Vol.~45. \BibDash
+\newblock P.~574.
+
+\bibitem{BernasconiJ.1978}
+\selectlanguageifdefined{english}
+\BibEmph{Bernasconi,~J.} Real-space renormalization of bond-disordered
+  conductance lattices~/ J.~Bernasconi~// \BibEmph{Phys. Rev. B}. \BibDash
+\newblock 1978. \BibDash
+\newblock Vol.~18. \BibDash
+\newblock P.~2185.
+
+\bibitem{LuckJ.M.1985}
+\selectlanguageifdefined{english}
+\BibEmph{Luck,~J.~M.} A real-space renormalisation group approach to electrical
+  and noise properties of percolation clusters~/ J.~M.~Luck~// \BibEmph{J.
+  Phys. A: Math. Gen.} \BibDash
+\newblock 1985. \BibDash
+\newblock Vol.~47. \BibDash
+\newblock P.~5371.
+
+\bibitem{Nan1993}
+\selectlanguageifdefined{english}
+\BibEmph{Nan,~C.-W.} Physics of inhomogeneous inorganic materials~/
+  C.-W.~Nan~// \BibEmph{Prog. Mater. Sci.} \BibDash
+\newblock 1993. \BibDash
+\newblock Vol.~37. \BibDash
+\newblock P.~1--116.
+
+\bibitem{Chen1986}
+\selectlanguageifdefined{english}
+\BibEmph{Chen,~L.} Materials for solid state batteries~/ L.~Chen. \BibDash
+\newblock World Scientific, Singapore, 1986.
+
+\bibitem{Grannan1981}
+\selectlanguageifdefined{english}
+\BibEmph{Grannan,~D.} Critical Behavior of the Dielectric Constant of a Random
+  Composite near the Percolation Threshold~/ D.~Grannan, J.~Garland,
+  D.~Tanner~// \BibEmph{Phys. Rev. Lett.} \BibDash
+\newblock 1981. \BibDash
+\newblock Vol.~46. \BibDash
+\newblock P.~375.
+
+\end{thebibliography}
