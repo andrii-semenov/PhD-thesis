@@ -490,7 +490,7 @@
                                       \rightskip\@flushglue}}
 \newcommand\subsubsection{\@startsection{subsubsection}{3}{\parindent}%
                                      {1.5ex\@plus 1ex \@minus .2ex}%
-                                     {-1em}%
+                                     {2.3ex \@plus 1ex \@minus .2ex}%{-1em}%
                                      {\normalfont\normalsize\bfseries}}
 \newcommand\paragraph{\@startsection{paragraph}{4}{\parindent}%
                                     {1ex \@plus .2ex \@minus .1ex}%
