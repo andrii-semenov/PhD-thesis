@@ -1069,10 +1069,15 @@ $\cal{M}$, а остаточні результати, з точністю до
 
 \begin{figure}[tbh]
 	\centering
-	\includegraphics[width=0.35\textwidth]{WienerBoundsMax.eps}
-	\qquad
-	\includegraphics[width=0.35\textwidth]{WienerBoundsMin.eps}\\
-	\qquad\qquad\qquad(a)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
+	\begin{subfigure}[c]{0.37\textwidth}
+		\includegraphics[width=\textwidth]{WienerBoundsMax.eps}
+		\caption{} \label{fig:wiener-bounds-a}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[c]{0.37\textwidth}
+		\includegraphics[width=\textwidth]{WienerBoundsMin.eps}
+		\caption{} \label{fig:wiener-bounds-b}
+	\end{subfigure}
 	\caption{\label{fig:wiener-bounds} Фізична інтерпретація границь 
 		Вінера двофазної системи (номера областей позначають індекси 
 		фаз в тексті): (а) верхня границя -- плоско-паралельні 
@@ -1917,10 +1922,15 @@ $K$ від одиниці повинні бути помітними.
 
 \begin{figure}[tb]
 	\centering
-	\includegraphics[height=0.35\textwidth]{SiekierskiShell_107.eps}
-	\qquad
-	\includegraphics[height=0.35\textwidth]{SiekierskiShell_103-9.eps}\\
-	\quad\quad(а)\qquad\quad\quad\qquad\qquad\qquad\qquad\qquad\qquad(б)
+	\begin{subfigure}[c]{0.37\textwidth}
+		\includegraphics[width=\textwidth]{SiekierskiShell_107.eps}
+		\caption{} \label{fig:simulations-phi-a}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[c]{0.37\textwidth}
+		\includegraphics[width=\textwidth]{SiekierskiShell_103-9.eps}
+		\caption{} \label{fig:simulations-phi-b}
+	\end{subfigure}
 	\caption{\label{fig:simulations-phi}Дані~\cite{Siekierski2007} з
 		об'ємної концентрації оболонок як функції концентрації ядер $c$ та їх обробка за (\ref{eq:phi_pen}) для різних $K$ в (\ref{eq:K-delta-def}) при $t = 5$~мкм та (а) $d = 7$ ($\blacktriangle$), (б) $d = 3$ ($\blacklozenge$), 5 ($\blacksquare$), та $9$ ($\bullet$) мкм; пусті точки ($\circ$) на рис.~(a) -- отримані після симуляції дані для $c'$ {\color{violet}(середньоквадратична похибка дорівнювала $\approx0.0024$)}. Неперервні лінії -- найкращі результати обробки.}
 \end{figure}
@@ -2027,10 +2037,15 @@ RRN~\cite{Siekierski2007}. При цьому результат
 
 \begin{figure}[tb]
 	\centering
-	\includegraphics[height=0.37\textwidth]{Fig5_SiekierskiConductivity107a_4.eps}
+	\begin{subfigure}[c]{0.37\textwidth}
+		\includegraphics[width=\textwidth]{Fig5_SiekierskiConductivity107a_4.eps}
+		\caption{} \label{fig:simulations-sigma-1layer2007-a}
+	\end{subfigure}
 	\quad
-	\includegraphics[height=0.37\textwidth]{SiekierskiShellConductivity_105-9.eps}\\
-	\qquad\qquad(а)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
+	\begin{subfigure}[c]{0.37\textwidth}
+		\includegraphics[width=\textwidth]{SiekierskiShellConductivity_105-9.eps}
+		\caption{} \label{fig:simulations-sigma-1layer2007-b}
+	\end{subfigure}
 	\caption{\label{fig:simulations-sigma-1layer2007}Дані симуляцій~\cite{Siekierski2007} з провідності як функції концентрації ядер $c$ та їх обробка за (\ref{eq:general_1layer_sigma}) при $t = 5$~мкм та (а) різних $K$ (у відповідних позначеннях ліній з рис.~\ref{fig:simulations-phi}(a); товста неперервна ліня -- $K=1.03k$) й $d = 7$ ($\blacktriangle$); (б) $d = 5$ ($\blacklozenge$), 7 ($\blacksquare$), and $9$ ($\bullet$)~мкм, пусті точки -- отримані результати для відповідних $\delta$ при $\phi$ взятому з симуляцій на рис.~\ref{fig:simulations-phi}(б). Лінія 1 -- $\sigma_{\rm eff}$ використовуючи $\phi$ для твердих оболонок (\ref{eq:phi-hard}) при $K=1.07k$; лінія 2 -- розрахунок $\sigma_{\rm eff}$ за отриманим рівняння типу Максвелла-Гарнетта (\ref{eq:MG-core-shell-sigma}) при $K=1.03k$.}
 \end{figure}
 
@@ -2053,10 +2068,15 @@ $\approx 0.065$)}. Нижче цієї концентрації наша теорія
 
 \begin{figure}[tb]
 	\centering
-	\includegraphics[height=0.37\textwidth]{Fig6_Siekierski_HomogeneousLayers_t_fixed.eps}
+	\begin{subfigure}[c]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{Fig6_Siekierski_HomogeneousLayers_t_fixed.eps}
+		\caption{} \label{fig:simulations-sigma-1layer2005-a}
+	\end{subfigure}
 	\quad
-	\includegraphics[height=0.37\textwidth]{Fig7_Siekierski_HomogeneousLayers_d_fixed.eps}\\
-	\qquad\qquad(а)\qquad\qquad\qquad\qquad\quad\qquad\qquad\qquad\qquad(б)
+	\begin{subfigure}[c]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{Fig7_Siekierski_HomogeneousLayers_d_fixed.eps}
+		\caption{} \label{fig:simulations-sigma-1layer2005-b}
+	\end{subfigure}
 	\caption{\label{fig:simulations-sigma-1layer2005}Дані симуляцій~\cite{Siekierski2007} з провідності як функції концентрації ядер $c$ при (а) $t = 5$~мкм та $d = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$) та 11 ($\blacklozenge$)~мкм; (б) $d = 5$~мкм та $t = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$) та 11 ($\blacklozenge$)~мкм. Використані параметри наведені в Таблиці~\ref{tab:numerical-homogeneous}.}
 \end{figure}
 
@@ -2130,10 +2150,15 @@ $\partial^2 \sigma_{\rm eff}/\partial c^2 < 0$. Через те, що біля
 
 \begin{figure}[tb]
 	\centering
-	\includegraphics[height=0.35\textwidth]{Siekierski_MaximumLocation.eps}
-	\quad\quad
-	\includegraphics[height=0.35\textwidth]{Siekierski_MaxConductivity.eps}\\
-	\qquad\qquad(а)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
+	\begin{subfigure}[c]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{Siekierski_MaximumLocation.eps}
+		\caption{} \label{fig:simulations-max-1layer2005-a}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[c]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{Siekierski_MaxConductivity.eps}
+		\caption{} \label{fig:simulations-max-1layer2005-b}
+	\end{subfigure}
 	\caption{\label{fig:simulations-max-1layer2005} Результати симуляцій \cite{Siekierski2005}: (а) положення максимумів провідності $c_{\rm max}$ як функція $\delta$, взяті з даних рис.~\ref{fig:simulations-sigma-1layer2005} ($\vartriangle$ -- (а) та $\blacktriangle$ -- (б)), та побудовані згідно (\ref{eq:maximumLocation}), (\ref{eq:phi_pen}) та (\ref{eq:K-delta-def}) (неперервна лінія); (б) значення $\sigma_{\rm max}$ як функції діаметру $d$ при фіксованих $\sigma_2$ та $t = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$) та 11 ($\blacklozenge$)~мкм, оброблені (неперервні лінії) в рамках (\ref{eq:sigma1to0_conductivity}), (\ref{eq:maximumLocation}) та (\ref{eq:K-delta-def}) при $K=k$ (точкові лінії -- те ж саме для $t = 3$ та 5~мкм при $K/k = 1.15$ та 1.07, відповідно).}
 \end{figure}
 
@@ -2183,10 +2208,15 @@ $t = 9$~мкм ($n = 18$) та $t = 11$~мкм ($n = 22$), що дають найкращі результати,
 
 \begin{figure}[tb]
 	\centering
-	\includegraphics[height=0.35\textwidth]{Siekierski_t_fixed.eps}
-	\quad\quad
-	\includegraphics[height=0.36\textwidth]{Siekierski_d_fixed.eps}\\
-	\qquad\qquad(а)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
+	\begin{subfigure}[c]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{Siekierski_t_fixed.eps}
+		\caption{} \label{fig:simulations-sigma-Glayer2006-a}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[c]{0.36\textwidth}
+		\includegraphics[width=\textwidth]{Siekierski_d_fixed.eps}
+		\caption{} \label{fig:simulations-sigma-Glayer2006-b}
+	\end{subfigure}
 	\caption{\label{fig:simulations-sigma-Glayer2006} Точки: результати симуляцій \cite{Siekierski2006} концентраційної залежності провідності систем частинок з гаусовим профілем оболонок при (а) $t = 5$~мкм та $d = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$) та 11 ($\blacklozenge$)~мкм; (б) $d = 5$~мкм та $t = 3$ ($\blacksquare$), 5 ($\square$), 7 ($\bullet$), 9 ($\circ$) та 11 ($\blacklozenge$)~мкм. Неперервні лінії: теоретичні результати (\ref{eq:general_Contlayer_sigma}) в рамках профілю (\ref{eq:GaussianProfile}) з параметрами, що представлені у Таблиці~\ref{tab:numerical-inhomogeneous-1}.}
 \end{figure}
 
@@ -2212,20 +2242,31 @@ $t = 9$~мкм ($n = 18$) та $t = 11$~мкм ($n = 22$), що дають найкращі результати,
 
 
 \section{Застосування до твердих композитних електролітів}\label{sec:CSE}
-({\bf описати експеримент}) 
+
+Експериментальні зразки ТКЕ $\rm LiI-Al_2O_3$ виготовлялися наступним 
+чином~\cite{Liang1973}.
+Суміш порошків безводного $\rm LiI$ та $\rm Al_2O_3$, висушеного 
+при $\rm 600^{o}C$, у різних співвідношеннях перемішувались, запікалась
+при $\rm 550^{o}C$ приблизно 17 годин, гасилась до кімнатної
+температури та дробилася. Все це виконувалось в сухій ємності,
+заповненій гелієм. Далі, для того щоб виготовити комірку
+конденсатора, відповідна зважена кількість порошку $\rm LiI-Al_2O_3$
+пресувалась до гранули у стальній матриці діаметром приблизно 
+1.5~см під тиском 690~МПА. Геометричні параметри гранули
+вимірювались поки вона ще знаходилась у матриці. До обох боків
+гранули були підключені літієві електроди зі стальними колекторами
+під тиском у 345~МПа. Вимірювання провідності отриманої комірки 
+проводилися при 1~кГц. 
 
 \subsection{Процедура обробки експериментальних даних}
 
-Процедура обробки експериментів складається з наступних кроків:
+Процедура аналізу даних \cite{Liang1973} складається з наступних кроків.
 
-1) ({\bf ДОПИСАТИ})
-Для обробки даних \cite{Liang1973} використовувалось
-рівняння (\ref{eq:general_Contlayer_sigma}) для випадку непровідних ядер 
-($x_1 \to 0$) для наступних трьох типів профілів оболонок $x_2 = x_2 (u)$ 
-($u > 0$):
+1) Обробка даних за допомогою рівняння (\ref{eq:general_Contlayer_sigma}),
+вважаючи ядра частинок непровідними ($x_1 \to 0$), з наступними трьома 
+типами профілів оболонок $x_2 = x_2 (u)$:
 \begin{enumerate}[label={\alph*)}]
-	\item однорідна оболонка з провідністю $x_{2,1} = \sigma_{2,1}/\sigma_0$
-	та товщиною $\delta_1$:
+	\item однорідна оболонка:
 	\begin{equation}\label{eq:profilex2-uniform}
 	x_2 (u) = x_{2,1} + (1 - x_{2,1}) \theta(u - \delta_1);
 	\end{equation}
@@ -2234,32 +2275,49 @@ $t = 9$~мкм ($n = 18$) та $t = 11$~мкм ($n = 22$), що дають найкращі результати,
 	x_2 (u) = x_{2,1} + (x_{2,2} - x_{2,1}) \theta(u - \delta_1) 
 	+ (1 - x_{2,2}) \theta(u - \delta_2);
 	\end{equation}
-	\item потрійна оболонка:
-	\begin{equation}\label{eq:profilex2-triple}
-	x_2 (u) = x_{2,1} + (x_{2,2} - x_{2,1}) \theta(u - \delta_1) 
-	+ (x_{2,3} - x_{2,2}) \theta(u - \delta_2) + (1 - x_{2,3}) \theta(u - \delta_3);
-	\end{equation}
-	\item неперервна гладка оболонка типу сигмоїди:
+	\item неперервна гладка оболонка типу сигмоїди, що є більш 
+	послідовною з фізичної точки зору, ніж попередні:
 	\begin{equation}\label{eq:profilex2-sigmoid2}
-	x_2 (u) = x_{2,1}^{\ast} + \frac{x^{\ast}_{2,2} - x^{\ast}_{2,1}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_1}{\alpha} \right)}}  + \frac{1 - x^{\ast}_{2,2}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_2}{\alpha} \right)}},
-	\end{equation}
-	\begin{equation}\label{eq:profilex2-sigmoid3}
-	x_2 (u) = x_{2,1}^{\ast} + \frac{x^{\ast}_{2,2} - x^{\ast}_{2,1}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_1}{\alpha} \right)}}  + \frac{x^{\ast}_{2,3} - x^{\ast}_{2,2}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_2}{\alpha} \right)}}
-	+ \frac{1 - x^{\ast}_{2,3}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_3}{\alpha} \right)}}.
+	x_2 (u) = X_{2,1} + \frac{X_{2,2} - X_{2,1}}{1 + \exp{\left( - \frac{u - \Delta_1}{\alpha} \right)}}  + \frac{1 - X_{2,2}}{1 + \exp{\left( - \frac{u - \Delta_2}{\alpha} \right)}}.
 	\end{equation}
 \end{enumerate}
-Тут: $x_{2,i} = \sigma_{2,i}/\sigma_0$ -- відносні провідності оболонок з
-відносними товщинами $\delta_i$ (відносні відстані зовнішнього радіусу $i$-ої
-оболонки до поверхні ядра); $x^{\ast}_{2,i}$, $\delta^{\ast}_{i}$ та $\alpha$
-виступають в ролі параметрів функції профілю оболонки. У наближенні $\alpha \to 0$
-параметри $x^{\ast}_{2,i}$, $\delta^{\ast}_{i}$ прямують до $x_{2,i}$ та
-$\delta_i$, відповідно, а рівняння (\ref{eq:profilex2-sigmoid2}) приймає 
-вигляд (\ref{eq:profilex2-double}). Верхня межа інтегрування $\delta_M$ була
-зафіксована у значенні 5, що не вливало на остаточні результати розрахунку.
+Тут: $x_{2,i} = \sigma_{2,i}/\sigma_0$ -- відносні провідності 
+оболонок з відносними товщинами $\delta_i$; $X_{2,i}$,
+$\Delta_{i}$ та $\alpha$ виступають в ролі параметрів функції 
+профілю оболонки. У наближенні $\alpha \to 0$ параметри $X_{2,i}$,
+$\Delta_{i}$ прямують до $x_{2,i}$ та $\delta_i$, відповідно, а 
+рівняння (\ref{eq:profilex2-sigmoid2}) приймає вигляд
+(\ref{eq:profilex2-double}). 
+
+Всі параметри оболонок вважалися підгінними.
+
+2) Аналіз та фізична інтерпретація отриманих профілів провідності. 
+Об'єм\-на концентрація різних частин оболонки має максимум у різних
+концентраційних інтервалах, тож саме в останніх вклади відповідних 
+частин профілю оболонки будуть домінуючими: 
+в області малих концентрацій після порогу перколяції
+найбільш вагомим є вклад дальньої від ядра частини профілю;
+при збільшенні концентрації починають грати роль все ближчі 
+частини. За рахунок цього, вважається, що різні частини профілю можуть 
+ефективно враховувати вклади процесів та механізмів, що впливають 
+на формування ефективних електрофізичних властивостей системи на 
+відповідному концентраційному проміжку. У цьому сенсі на практиці зручно
+використовувати модель зі ступінчатою функцією профілю (наприклад,
+(\ref{eq:profilex2-double})): концентраційний проміжок 
+$(c_{c,j}, c_{c,j-1})$, що відповідає $j$-ій оболонці ($j>1$), можна 
+визначити як інтервал між порогом перколяції $c_{c,j}$, що відповідає 
+формуванню перколяційного кластеру за рахунок даної оболонки 
+та знаходиться зі співвідношення $\phi(c_{c,j},\delta_j)=1/3$, 
+та $c_{c,j-1}$, що відповідає формуванню перколяційного кластеру 
+за рахунок сусідньої, ближчої до ядра, оболонки (при $j=1$, $c_{c,0}=1/3$).
 
 
-Для початку розглянемо застосування теорії до одних з перших експериментальних
-результатів з провідності композитних електролітів~\cite{Liang1973}.
+чим більша
+різниця між провідностями сусідніх оболонок тим помітнішим буде
+вплив. З фізичної точки зору, якщо різниця між відносними 
+провідностями сусідніх частин оболонки істотна, ці частини
+можна трактувати як ефективний прояв різних процесів. 
+
 
 \subsection{Результати обробки концентраційної залежності}
 
@@ -2274,10 +2332,15 @@ $\sigma_2 (r)$.
 
 \begin{figure}[tb]
 	\centering
-	\includegraphics[width=0.4\textwidth]{Fig12_Liang_LiI-Al2O3-Processing.eps}
-	\qquad
-	\includegraphics[width=0.4\textwidth]{Fig13_Liang_LiI-Al2O3-Profile.eps}\\
-	(a)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad(б)
+	\begin{subfigure}[c]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{Fig12_Liang_LiI-Al2O3-Processing.eps}
+		\caption{} \label{fig:Liang_LiI-Al2O3-Processing-a}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[c]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{Fig13_Liang_LiI-Al2O3-Profile.eps}
+		\caption{} \label{fig:Liang_LiI-Al2O3-Processing-b}
+	\end{subfigure}
 	\caption{\label{fig:Liang_LiI-Al2O3-Processing} (а) Експериментальні дані
 		\cite{Liang1973} ($\circ$) з $\sigma_{\rm eff}$ для ТКЕ
 		$\rm{LiI/Al_2O_3}$ та їх обробка в рамках а) однорідної
@@ -2362,9 +2425,6 @@ $c$ на рис.~\ref{fig:Liang_LiI-Al2O3-Processing}. Це означає, внутрішні
 		внутрішньою оболонкою.}
 \end{figure}
 
-Інший результат цього аналізу полягає у вираженні якості самоподібності моделі.
-Дійсно, ({\bf НУЖНО ЛИ})
-
 Процеси в матриці, що збільшують провідність, можуть включати: формування
 поблизу поверхні частинок області просторового заряду за рахунок високої
 концентрації дефектів в полікристалічній матриці~\cite{Maier1986}; розвинення
@@ -2396,9 +2456,30 @@ $\delta=0.4$, $x_2 = 324$ \cite{Jiang1995a,Jiang1995b} отриманих для області
 
 \section{Застосування до полімерних композитних електролітів}
 
-Експериментальні дані
+В дисертаційній роботі проаналізовано ефективну квазістатичну
+провідність двох типі ПКЕ: з неорганічною дисперсною фазою
+(NASICON~\cite{Przl1995}, $\rm \theta-Al_2O_3$~\cite{Wiec1994}), 
+на основі PEO з додаванням $\rm NaI$, та з органічною дисперсною 
+фазою (PAAM), на основі PEO~\cite{Przl1995, Wiec1994} та 
+OMPEO~\cite{Wiec1994} з додаванням $\rm LiClO_4$. 
 
-({\bf ОПИСАТЬ ЕКСП})
+Для виготовлення КПЕ полімерна матриця 
+та сіль розчинялися у ацетонітрилі куди додавалися частинки 
+дисперсної фази. Отримана суспензія перемішувалась до видимої
+однорідності та поміщалась на плоску скляну або тефлонову підкладку.
+Розчинник випарювався під вакуумом у вакуумному ексикаторі. 
+Далі отримані композити висушувалися при $\rm 60^{o}C$ приблизно
+48 годин до будь-яких вимірювань. 
+PAAM отримувався полімеризацією акриламіда в ацетонітрильному
+розчині використовуючи пероксид бензолу. Далі він висушувався
+при $\rm 100^{o}C$ 48 годин. 
+Всі етапи проходили у наповненій аргоном сухій ємності.
+
+Провідність зразків вимірювалась методами імпедансної спектроскопії
+у частотному проміжку 5~Гц--13~Гц. Мікроструктура зразків вивчалася
+рентгенівською дифрактометрією. Для отримання рівня кристалізованості
+використовували метод диференційної скануючої калориметрії.
+
 
 \subsection{Процедура обробки експериментальних даних}
 
@@ -2410,25 +2491,12 @@ $\delta=0.4$, $x_2 = 324$ \cite{Jiang1995a,Jiang1995b} отриманих для області
 ($x_1 \to 0$) для наступних трьох типів профілів оболонок $x_2 = x_2 (u)$ 
 ($u > 0$):
 \begin{enumerate}[label={\alph*)}]
-	\item однорідна оболонка з провідністю $x_{2,1} = \sigma_{2,1}/\sigma_0$
-	та товщиною $\delta_1$:
-	\begin{equation}\label{eq:profilex2-uniform}
-	x_2 (u) = x_{2,1} + (1 - x_{2,1}) \theta(u - \delta_1);
-	\end{equation}
-	\item подвійна оболонка:
-	\begin{equation}\label{eq:profilex2-double}
-	x_2 (u) = x_{2,1} + (x_{2,2} - x_{2,1}) \theta(u - \delta_1) 
-	+ (1 - x_{2,2}) \theta(u - \delta_2);
-	\end{equation}
 	\item потрійна оболонка:
 	\begin{equation}\label{eq:profilex2-triple}
 	x_2 (u) = x_{2,1} + (x_{2,2} - x_{2,1}) \theta(u - \delta_1) 
 	+ (x_{2,3} - x_{2,2}) \theta(u - \delta_2) + (1 - x_{2,3}) \theta(u - \delta_3);
 	\end{equation}
 	\item неперервна гладка оболонка типу сигмоїди:
-	\begin{equation}\label{eq:profilex2-sigmoid2}
-	x_2 (u) = x_{2,1}^{\ast} + \frac{x^{\ast}_{2,2} - x^{\ast}_{2,1}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_1}{\alpha} \right)}}  + \frac{1 - x^{\ast}_{2,2}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_2}{\alpha} \right)}},
-	\end{equation}
 	\begin{equation}\label{eq:profilex2-sigmoid3}
 	x_2 (u) = x_{2,1}^{\ast} + \frac{x^{\ast}_{2,2} - x^{\ast}_{2,1}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_1}{\alpha} \right)}}  + \frac{x^{\ast}_{2,3} - x^{\ast}_{2,2}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_2}{\alpha} \right)}}
 	+ \frac{1 - x^{\ast}_{2,3}}{1 + \exp{\left( - \frac{u - \delta^{\ast}_3}{\alpha} \right)}}.
@@ -2767,10 +2835,16 @@ $\sigma_0$ та $\sigma_{2,i}$ були використані для оцінки параметрів
 
 \begin{figure}[tb]
 	\centering
-	\includegraphics[width=0.45\textwidth]{Fig8_TemperatureDependence_1.eps}
-	~
-	\includegraphics[width=0.45\textwidth]{Fig8_TemperatureDependence_2.eps}\\
-	(a)\hfil(b)\hfil \caption{\label{fig:OMPEO-LiClO4-TempDependence}
+	\begin{subfigure}[c]{0.37\textwidth}
+		\includegraphics[width=\textwidth]{Fig8_TemperatureDependence_1.eps}
+		\caption{} \label{fig:OMPEO-LiClO4-TempDependence-a}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[c]{0.37\textwidth}
+		\includegraphics[width=\textwidth]{Fig8_TemperatureDependence_2.eps}
+		\caption{} \label{fig:OMPEO-LiClO4-TempDependence-b}
+	\end{subfigure}
+	\caption{\label{fig:OMPEO-LiClO4-TempDependence}
 		Експериментальні дані~\cite{Wiec1994} для температурної залежності
 		$\sigma_{\rm eff}$ ПКЕ OMPEO--LiClO$_4$--PAAM
 		(з молярною концентрацією LiClO$_4$ 10~\%, після отжигу) з 5 
