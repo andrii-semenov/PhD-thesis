@@ -335,9 +335,9 @@
   {\expandafter\emphsurname\@author \par}%
   \vspace{\stretch{1}}%
   {\raggedleft
-    \CYRP\cyrr\cyri\cyrm.\
-    N\textsuperscript{\underline{o}}\ %\textnumero\ %with textcomp package
-    \underline{\hspace{1cm}}\hfill\par
+    %\CYRP\cyrr\cyri\cyrm.\
+    %N\textsuperscript{\underline{o}}\ %\textnumero\ %with textcomp package
+    %\underline{\hspace{1cm}}\hfill\par
     \CYRU\CYRD\CYRK\ \@udc \par
   }%
   \vspace{\stretch{1}}%
