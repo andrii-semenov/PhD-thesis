@@ -319,10 +319,11 @@
 \newcommand{\secretary}[2]{\def\@secretary{#1}\def\@secretary@title{#2}}
 \def\@town{<\CYRM\cyrii\cyrs\cyrt\cyro>}
 %% Синтаксис команди
-%% \library{назва}{адреса}
-\newcommand{\library}[2]{%
+%% \library{назва}{адреса}{сайт}
+\newcommand{\library}[3]{%
   \def\@library@institution{#1}%
-  \def\@library@address{#2}}
+  \def\@library@address{#2}%
+  \def\@library@url{#3}}
 \def\@library@institution{}
 %% Синтаксис команди
 %% \linstitution{назва, підрозділ, відомство}{місто}
@@ -461,8 +462,10 @@
     \cyrs\cyrp\cyre\cyrc\cyrii\cyra\cyrl\cyrii\cyrz\cyro\cyrv\cyra\cyrn\cyro\cyryi\
     \cyrv\cyrch\cyre\cyrn\cyro\cyryi\ \cyrr\cyra\cyrd\cyri\
     \@council@code\ \transformsentence{G}{\@council@institution}
-    \ \cyrz\cyra\ \cyra\cyrd\cyrr\cyre\cyrs\cyro\cyryu:
-    \@council@address.\par
+    \ \cyrz\cyra\ \cyra\cyrd\cyrr\cyre\cyrs\cyro\cyryu:\par
+    \leftskip 5mm
+    \@council@address.\par%
+    \leftskip 0mm
   \vfil%\smallskip
   \ifx\@library@institution\@empty
     \let\@library@institution\@council@institution
@@ -473,8 +476,12 @@
     \cyru\ \cyrb\cyrii\cyrb\cyrl\cyrii\cyro\cyrt\cyre\cyrc\cyrii\
     \transformsentence{G}{\@library@institution}
     \@ifundefined{@library@address}{.\par}
-      {\ \cyrz\cyra\ \cyra\cyrd\cyrr\cyre\cyrs\cyro\cyryu:
-       \@library@address.\par}
+      {\ \cyrz\cyra\ \cyra\cyrd\cyrr\cyre\cyrs\cyro\cyryu:\par
+       \leftskip 5mm
+       \@library@address\par%
+       \leftskip 0mm
+      }
+  \cyrt\cyra\ \cyrn\cyra\ \cyrs\cyra\cyrishrt\cyrt\cyrii: \@library@url.
   \vfill%\vspace{10pt plus 10pt minus 10pt}%
   \CYRA\cyrv\cyrt\cyro\cyrr\cyre\cyrf\cyre\cyrr\cyra\cyrt\
     \cyrr\cyro\cyrz\cyrii\cyrs\cyrl\cyra\cyrn\cyri\cyrishrt\

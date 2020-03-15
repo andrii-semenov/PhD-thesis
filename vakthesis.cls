@@ -332,7 +332,7 @@
      \cyrn\cyra\ \cyrp\cyrr\cyra\cyrv\cyra\cyrh\
      \cyrr\cyru\cyrk\cyro\cyrp\cyri\cyrs\cyru \par}%
   \vspace{\stretch{1}}%
-  {\expandafter\emphsurname\@author \par}%
+  {\bfseries \expandafter\emphsurname\@author \par}%
   \vspace{\stretch{1}}%
   {\raggedleft
     %\CYRP\cyrr\cyri\cyrm.\
@@ -343,7 +343,7 @@
   \vspace{\stretch{1}}%
   {\bfseries \CYRD\CYRI\CYRS\CYRE\CYRR\CYRT\CYRA\CYRC\CYRII\CYRYA \par}%
   \vspace{\stretch{0}}%
-  {\@title \par}%
+  {\bfseries \@title \par}%
   \vspace{\stretch{0}}%
   \@specialitycode\ --- \@specialityname\par
   \vspace{\stretch{1}}%
@@ -424,7 +424,7 @@
 \renewcommand\thesubsubsection{\thesubsection .\@arabic\c@subsubsection}
 \renewcommand\theparagraph    {\thesubsubsection.\@arabic\c@paragraph}
 \renewcommand\thesubparagraph {\theparagraph.\@arabic\c@subparagraph}
-\newcommand\@chapapp{\bfseries\chaptername}
+\newcommand\@chapapp{\chaptername}
 \def\@make@chapapp#1{\let\\\protected@dblbs\MakeUppercase{#1}}
 \def\protected@dblbs{\noexpand\linebreak}
 \newcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
@@ -453,7 +453,7 @@
   \vspace*{8\p@}%
   {\centering \normalfont
     \ifnum \c@secnumdepth >\m@ne
-        \normalsize \@make@chapapp{\@chapapp}\space \thechapter
+        \normalsize \bfseries \@make@chapapp{\@chapapp}\space \thechapter
         \par\nobreak
     \fi
     \interlinepenalty\@M
@@ -730,8 +730,8 @@
 \newcommand\appendix{\par
   \setcounter{chapter}{0}%
   \setcounter{section}{0}%
-  \gdef\@chapapp{\bfseries\appendixname}%
-  \gdef\thechapter{\@arabic\c@chapter}%appendix
+  \gdef\@chapapp{\appendixname}%
+  \gdef\thechapter{\@Alph\c@chapter}%appendix
   \let\@make@chapapp\relax
   \immediate\write\@auxout{\string\@toc@appendices{\thepage}}}
 \def\@lost@Asbuk#1{\ifcase#1\or
@@ -894,8 +894,8 @@
     \vskip 1.0ex \@plus\p@
     \settowidth\@tempdima{\@chapapp\nobreakspace}%
     \addtolength\@tempdima{\@appendix@number@width}%
-    \addtolength\@tempdima{1.3em}%
-    \@dottedtocline{0}{0em}{\@tempdima}{\bfseries #1}{#2}%Для точечных глав в содержании
+    \addtolength\@tempdima{2.3em}%
+    \@dottedtocline{0}{0em}{\@tempdima}{\MakeUppercase{#1}}{#2}%Для точечных глав в содержании
     \mdseries
     %\begingroup
     %  \parindent \z@ \rightskip \@tocrmarg
