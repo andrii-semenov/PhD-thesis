@@ -16,6 +16,7 @@
 \usepackage{graphicx,caption,subcaption,sidecap}
 \usepackage{wrapfig}
 \usepackage{overpic,tikz}
+\usetikzlibrary{calc}
 \graphicspath{{images/}}
 \usepackage{threeparttable,tablefootnote}
 \usepackage{cite}
@@ -42,8 +43,10 @@
 \setlength{\belowdisplayskip}{4pt}%
 \setlength{\belowdisplayshortskip}{4pt}%
 
-
 \author{СЕМЕНОВ АНДРІЙ КОСТЯНТИНОВИЧ}
+
+%\authorsignature{signature-alph.png}
+%\secretarysignature{signature-alph.png}
 
 \udc{538.956; 537.9; 544.72.05; 544.77}
 
@@ -151,11 +154,11 @@ $
 
 В {\bf підрозділі 2.3} рівняння (\ref{eq:general_Q}) застосовується для аналізу модельної дисперсної системи частинок з морфологією тверде ядро--проникна оболонка. $\delta\hat{\varepsilon}({\bf r})$ для цієї системи моделюється в рамках формалізму характеристичних функцій \cite{Torquato}. У випадку електрично однорідних оболонок із зовнішнім радіусом $R_2$
 \begin{equation}\label{eq:delta-eps-1layer}
-\delta\hat{\varepsilon} ({\bf r}) = (1 - \tilde{\chi}_2 ({\bf r})) [\hat{\varepsilon}_0 - \hat{\varepsilon}_{\rm f}]
-+ \tilde{\chi}_1 ({\bf r}) [\hat{\varepsilon}_1 - \hat{\varepsilon}_{\rm f}]
-+ (\tilde{\chi}_2 ({\bf r}) - \tilde{\chi}_1 ({\bf r})) [\hat{\varepsilon}_2 - \hat{\varepsilon}_{\rm f}],
+\delta\hat{\varepsilon} ({\bf r}) = (1 - \Pi_2 ({\bf r})) [\hat{\varepsilon}_0 - \hat{\varepsilon}_{\rm f}]
++ \Pi_1 ({\bf r}) [\hat{\varepsilon}_1 - \hat{\varepsilon}_{\rm f}]
++ (\Pi_2 ({\bf r}) - \Pi_1 ({\bf r})) [\hat{\varepsilon}_2 - \hat{\varepsilon}_{\rm f}],
 \end{equation}
-де $\tilde{\chi}_1$, $\tilde{\chi}_2$ -- характеристичні функції областей, зайнятих відповідно всіма ядрами (усіх чорних областей) та всіма ядрами разом з оболонками (усіх чорних та сірих областей). Підставляючи цей вираз в (\ref{eq:general_Q}), отримаємо рівняння для $\hat{\varepsilon}_{\rm eff}$:
+де $\Pi_1$, $\Pi_2$ -- характеристичні функції областей, зайнятих відповідно всіма ядрами (усіх чорних областей) та всіма ядрами разом з оболонками (усіх чорних та сірих областей). Підставляючи цей вираз в (\ref{eq:general_Q}), отримаємо рівняння для $\hat{\varepsilon}_{\rm eff}$:
 \begin{equation}\label{eq:general_uniformshell}
 	\left[1-\phi(c, \delta)\right]\frac{\hat{\varepsilon}_0
 		-\hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm
@@ -166,7 +169,7 @@ $
 		-\hat{\varepsilon}_{\rm eff}}{2\hat{\varepsilon}_{\rm
 			eff}+\hat{\varepsilon}_2}=0,
 \end{equation}
-де $c = \langle \tilde{\chi}_1 ({\bf r}) \rangle$ -- об'ємна концентрація ядер; $\phi(c,\delta_M) = \langle \tilde{\chi}_2 ({\bf r}) \rangle$ -- об'ємна концентрація всіх частинок разом з їх оболонками товщиною $\delta = (R_2 - R_1)/R_1$. Статистичні оцінки $\phi$ для рівноважної системи розглядуваних частинок відомі в літературі \cite{RikvoldP.1985}:
+де $c = \langle \Pi_1 ({\bf r}) \rangle$ -- об'ємна концентрація ядер; $\phi(c,\delta_M) = \langle \Pi_2 ({\bf r}) \rangle$ -- об'ємна концентрація всіх частинок разом з їх оболонками товщиною $\delta = (R_2 - R_1)/R_1$. Статистичні оцінки $\phi$ для рівноважної системи розглядуваних частинок відомі в літературі \cite{RikvoldP.1985}:
 \begin{equation}\label{eq:phi_pen}
 \begin{split}
 \phi(c,&\delta) = 1 - (1-c)\exp{\left[ -\frac{(1-\psi)\phi_t}{1-c} \right]} \times \\

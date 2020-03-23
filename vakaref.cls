@@ -166,6 +166,12 @@
   \CYRII\cyrm'\cyrya\
   \CYRP\cyro\ \cyrb\cyra\cyrt\cyrsftsn\cyrk\cyro\cyrv\cyrii>%
   \@nocmdgiven{\author}}
+\newcommand{\authorsignature}[1]{\def\@authorsignature{
+		\includegraphics[width=3cm]{#1}}}
+\def\@authorsignature{}
+\newcommand{\secretarysignature}[1]{\def\@secretarysignature{
+		\includegraphics[width=3cm]{#1}}}
+\def\@secretarysignature{}
 \newcounter{@supervisors@count}
 \newcommand{\supervisor}[3]{%
   \stepcounter{@supervisors@count}%
@@ -407,7 +413,19 @@
 \def\@makecover{%
   {\@council@institutiont@office\par\@council@institutiont\par}
   \vspace{\stretch{3}}%
-  {\expandafter\emphsurname\@author \par}%
+  {\expandafter\emphsurname\@author 
+  	\makebox[0pt][l]{%
+  		\raisebox{-\totalheight}[0pt][0pt]{\@authorsignature}} \par
+  	}%
+%  {%\begin{tikzpicture}[overlay, remember picture]
+  	%\node[anchor=north west, %anchor is upper left corner of the graphic
+  	%xshift=17cm, %shifting around
+  	%yshift=-7cm] 
+  	%at (current page.north west) %left upper corner of the page
+  	%{\includegraphics[width=0.15\textwidth]{signature-alph.png}}; 
+  	%\end{tikzpicture}
+  	%%%%%OR
+%  }%
   \vspace{\stretch{2}}%
   {\raggedleft \CYRU\CYRD\CYRK\ \@udc \par}%
   \vspace{\stretch{2}}%
@@ -494,7 +512,17 @@
   \cyrv\cyrch\cyre\cyrn\cyro\cyryi\ \cyrr\cyra\cyrd\cyri\ \@council@code\newline
   \@secretary@title\hfill
   %\placeholder{\cyrp\cyrii\cyrd\cyrp\cyri\cyrs}\quad
-  \@secretary\par}
+  %	\begin{tikzpicture}[overlay, remember picture]
+  %	\node[anchor=north west, %anchor is upper left corner of the graphic
+  %	xshift=12cm, %shifting around
+  %	yshift=-26cm] 
+  %	at (current page.north west) %left upper corner of the page
+  %	{\includegraphics[width=0.15\textwidth]{signature-alph.png}}; 
+  %	\end{tikzpicture}
+  %%%%%OR
+  \makebox[0pt][r]{%
+  	\raisebox{-0.4\totalheight}[0pt][0pt]{\@secretarysignature}}
+  \qquad\@secretary\par}
 \def\@supervisors@caption{%
   \ifnum\value{@supervisors@count}>1
     \manysupervisorsname:%

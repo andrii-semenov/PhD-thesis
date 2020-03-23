@@ -449,8 +449,9 @@
                       \@makechapterhead{#2}%
                       \@afterheading
                     \fi}
+%%%%%%%%%%%%%%%%%%%%%%%ÍÀÇÂÀ ĞÎÇÄ²Ë²Â
 \def\@makechapterhead#1{%
-  \vspace*{8\p@}%
+  %\vspace*{8\p@}%
   {\centering \normalfont
     \ifnum \c@secnumdepth >\m@ne
         \normalsize \bfseries \@make@chapapp{\@chapapp}\space \thechapter
@@ -478,19 +479,20 @@
     \normalsize \bfseries \@make@chapapp{#1}\par\nobreak
     \vskip 40\p@
   }}
+%%%%%%%%%%%%%%Â²ÄÑÒÓÏÈ Ì²Æ ĞÎÇÄ²ËÀÌÈ, Ï²ÄĞÎÇÄ²ËÀÌÈ, ...
 \newcommand\section{\@startsection {section}{1}{\parindent}%
                                    {3.5ex \@plus 1ex \@minus .2ex}%
-                                   {2.3ex \@plus.2ex}%
+                                   {0.1ex \@plus 0ex}%2.3ex + 0.2ex
                                    {\normalfont\normalsize\bfseries
                                     \rightskip\@flushglue}}
 \newcommand\subsection{\@startsection{subsection}{2}{\parindent}%
-                                     {2.3ex \@plus 1ex \@minus .2ex}%
-                                     {2.3ex \@plus 1ex \@minus .2ex}%{-1em}%
+                                     {3.5ex \@plus 1ex \@minus .2ex}%
+                                     {0.1ex}%{-1em}%2.3ex \@plus 1ex \@minus .2ex
                                      {\normalfont\normalsize\bfseries
                                       \rightskip\@flushglue}}
 \newcommand\subsubsection{\@startsection{subsubsection}{3}{\parindent}%
                                      {1.5ex\@plus 1ex \@minus .2ex}%
-                                     {2.3ex \@plus 1ex \@minus .2ex}%{-1em}%
+                                     {0.1ex}%{-1em}%2.3ex \@plus 1ex \@minus .2ex
                                      {\normalfont\normalsize\bfseries}}
 \newcommand\paragraph{\@startsection{paragraph}{4}{\parindent}%
                                     {1ex \@plus .2ex \@minus .1ex}%
@@ -774,8 +776,8 @@
      {\ifnum \c@chapter>\z@ \thechapter.\fi \@arabic\c@table}
 \def\fps@table{htbp}
 \def\ftype@table{2}
-\def\ext@table{lot}
-\let\tablenamefont\itshape
+\def\ext@table{lot}%%%%%%%%%%%%%%Øğèôò íàçâè òàáëèöü
+\let\tablenamefont\normalfont%\itshape
 \def\fnum@table{{\tablenamefont\tablename\/}\nobreakspace\thetable}
 \newenvironment{table}
                {\let\@makecaption\@maketablecaption
