@@ -451,7 +451,7 @@
                     \fi}
 %%%%%%%%%%%%%%%%%%%%%%%ÍÀÇÂÀ ÐÎÇÄ²Ë²Â
 \def\@makechapterhead#1{%
-  %\vspace*{8\p@}%
+  \vspace*{8\p@}%
   {\centering \normalfont
     \ifnum \c@secnumdepth >\m@ne
         \normalsize \bfseries \@make@chapapp{\@chapapp}\space \thechapter
