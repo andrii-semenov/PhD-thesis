@@ -5,21 +5,72 @@
     	ABSTRACT\\
     	Semenov A.K. Electrophysical properties of multiphase disperse systems.} -- Qualification scientific paper, manuscript.}
 \end{center}
-\vskip 15pt
+\vskip 5pt
 
 Thesis for a Candidate of Science in Physics and Mathematics (Philosophy Doctor) degree by specialty 01.04.02 -- theoretical physics. -- Odesa I.I.~Mechnikov National University, the MES of Ukraine, Odesa, Ukraine, \the\year.
 
-\vskip 15pt
+\vskip 5pt
 
-We have developed a model for quasi-static electric response of random 3-D  systems of particles with a hard-core--penetrable-shell morphology. The shells were in general electrically inhomogeneous. The derivations were carried out using the method of compact groups of inhomogeneities. The requirement that the known boundary conditions for the normal component of complex fields be valid for the homogenized medium allowed us to close the theory.
+The thesis is focused on construction and analysis of the theoretical model for quasistatic electrical response of three-dimensional disordered particulate systems. These systems are one of the most common, but the least theoretically studied because one needs take into account a large number of different effects, among which are interphase effects (formation of oxide shells, areas with high defect concentration, double electric layers, regions of amorphous polymer, etc.) and processes related changes in the properties of the matrix (due to uncontrolled doping, contamination, changes in the internal structure, etc.).
 
-The theory was tested using existing simulation data for the system under consideration. Taking into account the peculiarities of the simulations, it was shown to be capable of reproducing the data fully.
+In the first section we analyze some of the main theories, typically used to describe electrophysical properties of macroscopically homogeneous and isotropic disperse systems. The compact group of inhomogeneities approach (CGA) is chosen as a basis for further calculations, which allows to avoids excessive detailing of the processes in the system.
 
-The theory was shown to be applicable for the description of real solid composite and polymer composite electrolytes. A physical interpretation was discussed of different parts of the shell’s conductivity profile obtained by fitting the experimental data.
+In the second section we generalize the CGA to conductive systems with complex dielectric permittivity and apply it to the model of particles with hard-core--penetrable-shell morphology. When the shells overlap, local permittivity is determined by one-particle permittivity profile of the nearest particle.
+This model is known in literature, however, in comparison with the   hard-core--hard-shell particles model, is much less analytically studied. We expect that this model can reflect manifestations of the stated physicochemical processes in the system better.
+The main results are the relationships between the effective quasi-static complex dielectric permittivity $ \hat {\varepsilon} _ {\rm eff} $ of the system and permittivities of its components $ \hat {\varepsilon} _ {q} $ ($ q = 0,1,2 $) together with their volume concentrations. The obtained from these results relationship for the effective static conductivity $ \sigma _ {\rm eff} $ is considered to be strict.
 
-The theory was also used to analyze electric percolation in insulator/con\-ductor  systems. It was shown that within the model, the percolation threshold depends only on the relative thickness of the shell, whereas the effective critical exponents depend not only on the geometric and electrical parameters of the components, but also on the widths of the processed concentration intervals.
+The third section is concentrated on testing and practical application of theoretical results for static conductivity, when the matrix's and cores' conductivities are much smaller than the shells' ones ($ \sigma_ {0}, \sigma_1 \ll \sigma_2 $), which is a typical case for composite solid (CSE) and  composite polymer (CPE) electrolytes.
 
-It was also shown that existing differential schemes for calculating the effective quasi-static electric parameters of dispersed systems are applicable only for systems with slightly differing dielectric constants of the components and within narrow concentration ranges.
+Testing of the model is performed by comparing its results with a wide array of existing numerical simulation data, obtained within the Random Resistor Network (RRN) algorithm, for the concentration dependencies of the volume concentration of shells $ \phi-c $ and the static conductivity $ \sigma _ {\rm eff} $ of the considered model system for different core diameters and thicknesses of the shells of two types: electrically homogeneous and electrically inhomogeneous with a Gaussian radial conductivity profile. We show, that by considering the system modeling inaccuracies of the RRN algorithm, our theory is able to restore simulation data over the entire concentration range with satisfactory accuracy.
+
+Next, we describe a general algorithm for using the model for analysis of experimental data, and present the results of its application to existing data for the quasistatic conductivity of CSE formed by the dispersion of $ \rm Al_2O_3 $ particles into $ \rm LiI $ polycrystalline matrix and CPEs based on poly(ethylene oxide) (PEO) and oxymethylene-linked PEO (OMPEO) with the addition of $ \rm NaI $ or $ \rm LiClO_4 $ salts. The fillers were conductive ($ \rm Na_ {3.2} Zr_2P_ {0.8} Si_ {2.2} O_ {12} $ (NASICON)) or non-conductive ($ \rm \theta Al_2O_3 $) particles, or a polymer of another sort (polyacrylamid (PAAM)) that does not mix with the polymer matrix.
+It is concluded that the parameters of the model conductivity profile of the shell $ \sigma_2 (r) $, obtained from the experimental data processing, effectively incorporate effects of various physical mechanisms on the formation of $\sigma_{\rm eff}$. The presence of several well-pronounced regions in the profile indicates a change in the relative role of these mechanisms with the change in the concentration of dispersed particles -- as the cores' concentration increases, the regions closer to the core become more dominant.
+
+In particular, for $ \rm LiI-Al_2O_3 $ the outer region of the profile $ \sigma_2 (r) $ incorporates the contribution of matrix processes in formation of $ \sigma _ {\rm eff} $. It can be uncontrolled doping of the matrix during the experimental samples preparation step, accumulation of dislocations and formation of high-conductive paths for ion transport etc..
+The inner region may indicate the existence of a high conducting space charge layer  around $ \rm Al_2O_3 $ particles. Our estimates for characteristics of this layer are in good agreement with the results of the other authors, obtained combining the percolation theory and the space charge layer model.
+
+The results for the CPEs report the presence of two or three distinct regions in the obtained conductivity profiles $ \sigma_2 (r) $.
+The central region of $ \sigma_2 (r) $ has a conductivity value that is several orders of magnitude higher than the matrix's one. This result is consistent with the experimentally proven fact of formation around particles in the CPE of the amorphous regions with relatively high conductivity, which results from the increased segmental flexibility of the polymer chains and, respectively, the increased mobility of dissolved salt ions in these regions.
+The closest to the core region of $ \sigma_2 (r) $ describes the overall effect of several possible processes: the hindrance of movement of polymer chains' segments in the immediate vicinity of solid fillers (the so-called ``stiffening effect''), which leads to a decrease in local conductivity; the dependence of the latter on the conductive properties of the particles, and therefore on the nature of the interfacial surface; irregularity of particles' shapes.
+In addition, the conductivity value $ \sigma_1 \approx 0.690\,\mu$S/cm of NASICON particles in the CPE significantly differs from the conductivity $ \sigma_1 \approx 138\,\mu$S/cm before their dispersion in the CPE. This result indicates formation of a thin weakly conductive shell on the surface of particles, which is confirmed by the analysis data for the experimental samples.
+The outermost region of $ \sigma_2 (r) $ effectively incorporates the dependence of the matrix's conductivity $ \sigma_0 $ on the cores concentration $ c $. In particular, our results suggest that $ \sigma_0 $ in the $ \rm OMPEO-LiClO_4-PAAM $ CPE decreases compared to the conductivity of a pure amorphous OMPEO. This can be explained by binding of salt ions to solitary PAAM chains remaining outside the PAAM globules.
+
+Due to the different physical nature of the mechanisms involved, the parameters of different sections of $ \sigma_2 (r) $ must depend on temperature differently. This assumption opens additional possibilities for further testing and extension of the theory, and is studied on example of the known data for temperature dependence of $ \sigma _ {\rm eff} $ of $ \rm OMPEO-LiClO_4-PAAM $ CPE.
+Since three parts of the profile $ \sigma_2 (r) $ are formed by the processes in regions with different degrees of amorphisation, the temperature dependence of these parts is modeled using the three-parameter empirical Vogel-Tamman-Fulcher law (VTF).
+The corresponding VTF parameters for these parts and the matrix are found from precessing results for three isotherms $ \sigma _ {\rm eff} (c, T) $ within the three-layer model at fixed values of the other model's parameters.
+The obtained values are sufficient to completely restore the temperature dependencies of $ \sigma _ {\rm eff} $ at different values of PAAM concentrations.
+
+In the fourth section we analyze properties of the theoretical results for the case $ \sigma_0 \ll \sigma_2 \leq \sigma_1 $ and demonstrate results of their application for description of electrical percolation effect in the real insulator--conductor type systems with interphase.
+It is shown, that the effective quasistatic conductivity $ \sigma _ {\rm eff} $ and dielectric permittivity $ \varepsilon _ {\rm eff} $ has percolation type behavior. The percolation threshold $ c _ {\rm c} $, which refers to formation of a percolation cluster by the penetrable shells, is found to be determined within the equation $ \phi (c _ {\rm c}, \delta) = 1/3 $ ($ \phi $ is the volume concentration of the cores and the shells; $ \delta $ is a thickness of a shell relative to the radius of its core). 
+The percolation critical indices for the developed model are not universal, but depend on the concentration interval, where they are determined, and values of the relative matrix's conductivity $ x_0 $, which explains a wide range of their values. The conductivity demonstrates ``double percolation'' under the condition $ \sigma_2 \ll \sigma_1 $, which is observed, for example, in systems formed by dispersing nanotubes in a liquid crystal matrix.
+The dielectric permittivity in the vicinity of an electric percolation thresholds has a maximum.
+
+Further, it is shown that the homogeneous shell model at $ c < c _ {\rm c} $ describes sufficiently well the experimental data for the dielectric permittivity and electric conductivity of a specially prepared KCl-based system with Ag nanoparticles having an average radius of $ R \approx 10 $~nm and covered with a permeable oxide layer.
+In particular, the theory satisfies experimental data better than the scaling laws.
+For $ c> c _ {\rm c} $, the power-law dependence of $ \ln \sigma (r) $ was used to recover the known conductivity data.
+The estimates obtained for $ \delta \approx 0.14 \div 0.18 $ are close to those predicted by the experimenters $ \delta \approx 0.1 $.
+The obtained inhomogeneous structure of the oxide shell profile can be a result of an electron tunneling mechanism, which is confirmed by its shape and estimates of the characteristic tunneling length ($ 0.4 \div 1 $~nm).
+Contributions in the profile of the effects noticeable at high concentrations, that were out of the experimental range (for example, the spill-out effect), cannot be detected due to the lack of required experimental data.
+
+In the fifth section, we use the CGA to critically analyze differential scheme for calculating the effective dielectric permittivty of disordered systems, and demonstrates their limitations on example of the system of hard dielectric spheres in a dielectric matrix. It is shown that the known asymmetric Bruggeman model (AMB) can be obtained only under the following conditions:
+a) the concentration of the added component is low;
+b) the differences between the dielectric permittivities of the components are small.
+If, however, only the first condition, that satisfies the classical AMB statements, is fulfilled, we will obtain the improved AMB.
+It is shown that the new equations do not satisfy the Hashin-Shtrickman boundary conditions, which points to their limitation and inability to extrapolate the solutions of differential equations constructed for narrow concentration intervals on the entire concentration interval. The AMB formulas satisfy these conditions, but they are only applicable to a very narrow class of systems defined by conditions a) and b).
+
+The main results of the thesis are as follows:
+\begin {itemize} [leftmargin = *]
+\item
+A closed statistical model for quasistatic electrical response of macroscopically homogeneous and isotropic systems of particles with hard-core--penetrable-shell morphology is constructed based on the CGA.
+\item
+The results of the model for the static conductivity were successfully tested against numerical data obtained within the RRN algorithm for the model systems with electrically homogeneous and inhomogeneous shells;  significant advantages over the Maxwell-Garnett, Bruggeman and Nakamura-Nan-Wieczorek models were demonstrated.
+\item
+We demonstrated applicability of the theory to quantitative processing of experimental data on the effective conductivity of composite solid and composite polymer electrolytes and to analysis of the role of various physicochemical mechanisms in its formation.
+\item
+We demonstrated the theory's applicability to the quantitative processing of the effective electric conductivity and dielectric permittivity of disordered insulator--conductor type composites. The dependence of the percolation threshold position on the geometric parameters of the shells was determined. The dependence of the effective critical indices for such systems on the geometric and electrical parameters of the components and the method of processing the experimental data is demonstrated.
+\item
+The general limitation of the differential scheme for analysis of the effective quasistatic electric parameters of disperse systems is shown.
+\end {itemize}
 
 
 \vskip 15pt
