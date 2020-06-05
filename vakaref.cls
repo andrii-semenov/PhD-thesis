@@ -491,7 +491,7 @@
   \CYRZ\ \cyrd\cyri\cyrs\cyre\cyrr\cyrt\cyra\cyrc\cyrii\cyrie\cyryu\
     \cyrm\cyro\cyrzh\cyrn\cyra\
     \cyro\cyrz\cyrn\cyra\cyrishrt\cyro\cyrm\cyri\cyrt\cyri\cyrs\cyrsftsn\
-    \cyru\ \cyrb\cyrii\cyrb\cyrl\cyrii\cyro\cyrt\cyre\cyrc\cyrii\
+    \cyru\ \cyrn\cyra\cyru\cyrk\cyro\cyrv\cyrii\cyrishrt\ \cyrb\cyrii\cyrb\cyrl\cyrii\cyro\cyrt\cyre\cyrc\cyrii\
     \transformsentence{G}{\@library@institution}
     \@ifundefined{@library@address}{.\par}
       {\ \cyrz\cyra\ \cyra\cyrd\cyrr\cyre\cyrs\cyro\cyryu:\par
