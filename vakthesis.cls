@@ -451,7 +451,7 @@
                     \fi}
 %%%%%%%%%%%%%%%%%%%%%%%ÍÀÇÂÀ ĞÎÇÄ²Ë²Â
 \def\@makechapterhead#1{%
-  \vspace*{8\p@}%
+  \vspace*{1\p@}%
   {\centering \normalfont
     \ifnum \c@secnumdepth >\m@ne
         \normalsize \bfseries \@make@chapapp{\@chapapp}\space \thechapter
@@ -459,7 +459,7 @@
     \fi
     \interlinepenalty\@M
     \normalsize \bfseries \@make@chapapp{#1}\par\nobreak
-    \vskip 40\p@%%skip after chapter name
+    \vskip 25\p@%%skip after chapter name
   }}
 \def\@schapter#1{\addcontentsline{toc}{chapter}{#1}%
                  \chaptermark{#1}%
@@ -472,12 +472,12 @@
                    \@afterheading
                  \fi}
 \def\@makeschapterhead#1{%
-  \vspace*{8\p@}%
+  \vspace*{1\p@}%
   {\centering
     \normalfont
     \interlinepenalty\@M
     \normalsize \bfseries \@make@chapapp{#1}\par\nobreak
-    \vskip 40\p@
+    \vskip 25\p@
   }}
 %%%%%%%%%%%%%%Â²ÄÑÒÓÏÈ Ì²Æ ĞÎÇÄ²ËÀÌÈ, Ï²ÄĞÎÇÄ²ËÀÌÈ, ...
 \newcommand\section{\@startsection {section}{1}{\parindent}%
