@@ -185,6 +185,11 @@
   \CYRII\cyrm'\cyrya\
   \CYRP\cyro\ \cyrb\cyra\cyrt\cyrsftsn\cyrk\cyro\cyrv\cyrii>%
   \@nocmdgiven{\author}}
+\newcommand{\authorsignature}[1]{\def\@authorsignature{%
+		\includegraphics[width=3cm]{#1}}}
+\def\@authorsignature{}
+\newcommand{\authorshort}[1]{\def\@authorshort{#1}}
+\def\@authorshort{}
 \newcounter{@supervisors@count}
 \newcommand{\supervisor}[2]{%
   \stepcounter{@supervisors@count}%
@@ -353,8 +358,8 @@
     \cyrs\cyrt\cyru\cyrp\cyre\cyrn\cyrya\ \linebreak[1]%
     \degreename\cyra\
     \@science
-    %\par(\cyrd\cyro\cyrk\cyrt\cyro\cyrr\cyra\
-    %\cyrf\cyrii\cyrl\cyro\cyrs\cyro\cyrf\cyrii\cyryi)\par
+    \par(\cyrd\cyro\cyrk\cyrt\cyro\cyrr\cyra\
+    \cyrf\cyrii\cyrl\cyro\cyrs\cyro\cyrf\cyrii\cyryi)\par
   \vspace{\stretch{1}}%
   {\justify%
     \CYRD\cyri\cyrs\cyre\cyrr\cyrt\cyra\cyrc\cyrii\cyrya\
@@ -374,7 +379,12 @@
   }
   \vspace{\stretch{1}}%
   {\raggedright
-    \underline{\hspace{8cm}}\par
+    \underline{\hspace{4cm}
+    \makebox[0pt][r]{%
+    	\raisebox{-0.3\totalheight}[0pt][0pt]{\@authorsignature}} \par
+	}%
+	\@authorshort
+    \par
   }
   \vspace{\stretch{2}}%
   {\raggedright
