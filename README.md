@@ -1,5 +1,5 @@
 # PhD-thesis
-My PhD thesis
+
 The styles worked only with cp-1251 encoding for me.
 
 The working files are aref1 and thesis4_6.
